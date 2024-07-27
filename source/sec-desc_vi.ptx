@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-desc_vi" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Crosstabulation</title>
+
+<p>
+  Crosstabulation (cross-tab) is a table summary for two categorical vaiables 
+  It is used to understand patterns between the variables. 
+  It is also useful in hypothesis testing such as chi-square test and annova test. 
+  To know the relationship between two nominal variables like class and unemployment, gender and drug use we use hypothesis testing.
+  Categorical data are separated into different categories that are mutually exclusive (independent) from one another. 
+  For example: eye color (blue, brown, green). It is impossible for eye color to belong to more than one color.
+  </p>
+<p>
+ Cross-tab is used for nominal/ordinal variables. It is a tool to descriptively examine variables and identify the relationship between two variables.
+ The size of the crosstab is the number of categories of one variable multiplied by the number of categories of the second variable. 
+ Cross tab presents joint frequencies, hence it is alos clalled a '<em>joint contingency table</em>'. 
+ Each <term>cell</term> is an intersection of the two categories at that point. Table below shows a sample layout of a <m>2 \times 2</m> crosstab. 
+ Analyzing large datasets can be difficult. Finding relevant, actionable insights within large amounts of data 
+ is even more complicated. Crosstabs simplify and divide data into subgroups for ease of interpretation—they show 
+ percentages and frequencies that may change when contrasted with variables in other categories. 
+ By making datasets more manageable at scale, fewer errors will result.
+ <me>
+  \begin{array}{c|c|c} 
+  \text{ Political Parties} &amp; Women &amp; Men \\ \hline 
+  Republican &amp; 27 &amp; 10  \\ 
+  Democratic &amp; 16 &amp; 15  \\ \hline 
+ \end{array}
+</me>
+</p>
+ <p>
+  Cross tabulation is typically used when you have information that can be divided into mutually exclusive groups, 
+  also known as categorical variables. It allows you to examine relationships within the data that may not be readily apparent. 
+  A crosstab report can show the connection between two or more survey questions from the study in market research studies.
+  A Chi-square test is used to test data in a cross-tabulation table to determine whether or not the data is statistically significant. 
+  The results are statistically significant if the two categorical variables are independent (unrelated). 
+  Basically, the Chi-square test is a correlation test for categorical variables.
+  </p>
+  <p>
+    cross tab may have additional information such as row and column <term>marginals</term> (i.e., total).
+    <me>
+      \begin{array}{|c|c|c|c|} \hline 
+      \text{ Political Parties} &amp; Women &amp; Men &amp; Total\\ \hline 
+      Republican &amp; 27 &amp; 10 &amp; 37  \\ 
+      Democratic &amp; 16 &amp; 15  &amp; 31 \\ \hline 
+      Total &amp; 43 &amp; 25  &amp; 68 \\ \hline 
+     \end{array}
+    </me>
+    The cell of the last row and the last column is called grand total. Here 68 is the grand total. Table can also reflect percentages. 
+    <me>
+      \begin{array}{|c|c|c|c|} \hline 
+      \text{ Political Parties} &amp; Women &amp; Men &amp; Total\\ \hline 
+      Republican &amp; 27 (39.7\%) &amp; 10 (14.7\%) &amp; 37  \\ 
+      Democratic &amp; 16 (23.5\%) &amp; 15  (22.1\%) &amp; 31 \\ \hline 
+      Total &amp; 43 &amp; 25  &amp; 68 \\ \hline 
+     \end{array}
+    </me>
+    To find the percentage divide each cell value by the grand total and multiply them by 100. 
+    For example: 
+    <me>
+      \frac{10}{68} \times 100 = 14.7\%.
+    </me>
+  </p>
+</section>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-desc_ii" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Frequency Table</title>
+<p>
+  <term>Frequency: </term> It is the number of times a value of data occurs. It is useful to analyse categorical variables. 
+  <term>Relative frequency: </term> percentage or portion of the data value present in complete dataset.
+  <men xml:id="eqn-rlfreq1">
+    RF = \frac{frequency}{\text{ total number of observation } }\times 100\%
+  </men>
+  
+  For example: <m>\{1,3,3,2,4,1,2,2,1,2,3,5,4,1,2,1,3,1,4,1\}</m>
+  <me>
+    \begin{array}{c|c|c} 
+    \text{ Data value} &amp; Frequency &amp; \text{ Relative Frequency} \\ \hline 
+    1 &amp; 7 &amp; 7/20  \\ 
+    2 &amp; 5 &amp; 5/20  \\ 
+    3 &amp; 4 &amp; 4/20  \\ 
+    4 &amp; 3 &amp; 3/20  \\ 
+    5 &amp; 1 &amp; 1/20  \\ \hline 
+     &amp; \sum f=20 &amp;   \\  
+    \end{array}
+</me>
+
+</p>
+  <p> <em>Displaying qualitative data:</em> Imagine that you are picking candy from a bag of candies. 
+    You have picked 16 times and pulled out the following colors of candy. 
+    Record your results in a frequency distribution table.</p>
+    <p>
+      The sample dataset: red, green, green, green, blue, blue, red, blue, green, green, red, red, blue, green, red, red.
+    </p>
+<p>
+  <term>Frequency Table: </term>
+  
+  <me>
+    \begin{array}{c|c|c} 
+    Color &amp; Frequency &amp; \text{ Commulative Frequency} \\ \hline 
+    Red &amp; 6 &amp; 6  \\ 
+    Green &amp; 6 &amp; 12  \\ 
+    Blue &amp; 4 &amp; 16  \\ \hline 
+    \end{array}
+</me>
+<term>Cumulative frequency</term> is used to determine the number of observations that lie above (or below) a particular value in a dataset. 
+</p>
+</section>

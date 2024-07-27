@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-prob" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Probability</title>
+
+  <introduction>
+    <p> Probability is a measure of the likelihood of an event to occur. 
+      Many events cannot be predicted with total certainty. 
+      Probability can help predict the chance of an event to occur. 
+      It measures the extent to which something is likely to happen. 
+      Many events cannot be predicted with total certainty. We can predict only the chance of an event to occur 
+      i.e., how likely they are going to happen, using it. Probability can range from 0 to 1, 
+      where 0 means the event to be an impossible one and 1 indicates a certain event. 
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Basic probability concepts: Sample space, event, etc.
+          </p>
+        </li>
+        <li>
+          <p>
+            Types of events: Disjoint or Non-disjoint events, Independent or dependent events.
+          </p>
+        </li>
+        <li>
+          <p>
+            Complement of probability.
+          </p>
+        </li>
+        <li>
+          <p>
+            Conditional probability.
+          </p>
+        </li>
+        <li>
+          <p>
+            Baye's theorem.
+          </p>
+        </li>
+        <li>
+          <p>
+            Probability distribution.
+            <ol marker="a">
+              <li>
+                <p>
+                  Discrete distribution: Binomial, Bernoulli.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Continuous distribution: Uniform, Normal.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Standard normal distribution.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Standarization.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Normalization.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Emperical rule.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Random variables and its types (Discrete and continuous).
+          </p>
+        </li>
+        <li>
+          <p>
+            Probability mass function (PMF) and probability density function (PDF).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-prob_i.ptx" />
+  <xi:include href="sec-prob_ii.ptx" />
+
+</chapter>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intr_iii" xmlns:xi="http://www.w3.org/2001/XInclude">
+ 
+  <title>Levels of Measurement</title>
+  <p>
+    They are also called scales of measurement. It tells how precisely variables are recorded. 
+    In scientific research, a variable is anything that can take on different values across the data set (e.g., height or test scores).
+  </p>
+  <p>
+   There are 4 levels of measurement: 
+   <ol marker ="i">
+    <li>
+      <p>
+        <term>Nominal:</term> the data can only be categorized. For example: color, gender, preferences, etc.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Ordinal:</term> the data can be categorized and ranked. Here order of the 
+        data matters but distances between values does not. For example: I, II, and III place in race. 
+        Suppose, I took 10 seconds to finish the race, II took 15 seconds, and III took 25 second to finish the race.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Interval: </term> the data can be categorized, ranked, and evenly spaced. 
+        Here order matters and distance between values are equal and meaningful, and a natural zero is not 
+        present (or zero is arbitrary, it has no meaning). For example: <m>0 ^{o} C </m> does not mean no 
+        temperature or no heat, negative values are allowed.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Ratio:</term> the data can be categorized, ranked, evenly spaced, and has a natural zero. 
+        Here order matters and distance between values are equal and meaningful, and a natural zero is present. 
+        For example: <m>0 K </m> means no temperature or no heat, negative values are not allowed. Weight, age are in ratio data.
+      </p>
+    </li>
+   </ol>
+    There is a hierarchy in the complexity and precision of the level of measurement, from low (nominal) to high (ratio). 
+    Nominal data has <em>less information</em> than ratio data.
+  </p>
+  <p>
+    Different types of data allow for the different types of data analysis.
+  </p>
+
+
+</section>

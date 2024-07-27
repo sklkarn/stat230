@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-desc_stat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Descriptive Statistics</title>
+
+  <introduction>
+    <p> Text before the first section. </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Measure of central tendency: Mean, Median, and Mode.
+          </p>
+        </li>
+        <li>
+          <p>
+            Measure of dispersion (variabilty): Range, variance, standard deviation, quartiles, and percentiles.
+          </p>
+        </li>
+        <li>
+          <p>
+            Graphical representations: Box plots, histograms, scatter plots.
+          </p>
+        </li>
+        <li>
+          <p>
+            Outliers and understanding their impact.
+          </p>
+        </li>
+        <li>
+          <p>
+            Correlation and covariance.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-desc_i.ptx" />
+  <xi:include href="sec-desc_ii.ptx" />
+  <xi:include href="sec-desc_iii.ptx" />
+  <xi:include href="sec-desc_iv.ptx" />
+  <xi:include href="sec-desc_v.ptx" />
+  <xi:include href="sec-desc_vi.ptx" />
+ 
+</chapter>

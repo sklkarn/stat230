@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-infr_stat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Inferential Statistics</title>
+
+  <introduction>
+    <p> Inferential statistics helps to make inferences about a population based on a sample data. 
+      It shows the elationship with descriptive statistics. It uses probability theory to estimate 
+      population parameters, test hypotheses, and make predictions.  
+      Here are the main components and techniques of inferential statistics: 
+      <ol>
+        <li>
+          <p>
+            <term>Population vs. Sample:</term>
+          Population: The entire group of individuals or instances about whom we hope to learn.
+          Sample: A subset of the population selected for analysis.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Parameter vs. Statistic:</term>
+          Parameter: A numerical characteristic of a population (e.g., population mean).
+          Statistic: A numerical characteristic of a sample (e.g., sample mean) used to estimate the population parameter.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Estimation:</term>
+          Point Estimation: Provides a single value estimate of a population parameter (e.g., the sample mean as an estimate of the population mean).
+          Interval Estimation: Provides a range of values (confidence interval) within which the population parameter is expected to lie.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Hypothesis Testing:</term>
+          Formulating a null hypothesis (H₀) and an alternative hypothesis (H₁).
+          Using test statistics to determine whether to reject the null hypothesis.
+          Common tests include t-tests, chi-square tests, and ANOVA.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Confidence Intervals (z/t distribution):</term>
+          A range of values derived from sample statistics that is likely to contain the population parameter. 
+          Typically expressed at a confidence level, such as 95%.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Significance Levels <m>(\alpha)</m>:</term>
+          The probability of rejecting the null hypothesis when it is true (Type I error).
+          Common significance levels are 0.05, 0.01, and 0.10.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>P-value:</term>
+          The probability of obtaining test results at least as extreme as the results actually observed, 
+          under the assumption that the null hypothesis is correct.
+          A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Types of Errors:</term>
+            Type I Error: Incorrectly rejecting the null hypothesis when it is true.
+            Type II Error: Failing to reject the null hypothesis when it is false.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Power of a Test:</term>
+          The probability that the test correctly rejects a false null hypothesis (1 - Type II error rate).  
+          One-tailed and two-tailed test. Types of tests in statistics (z-test, t-test, chi-square test, annova (F) test, etc.)
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Regression Analysis:</term>
+            Assessing the relationship between dependent and independent variables.
+            Includes techniques like linear regression, multiple regression, and logistic regression.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>ANOVA (Analysis of Variance):</term>
+            Comparing means across multiple groups to see if at least one group mean is different from the others.
+          </p>
+        </li>
+        <li>
+          <p>
+           <term> Non-parametric Tests:</term>
+          Used when data do not meet the assumptions required for parametric tests.
+          Includes tests like the Mann-Whitney U test and the Kruskal-Wallis test.
+          </p>
+        </li>
+      </ol>
+      Inferential statistics helps in making generalizations from a sample to a population, testing theories, 
+      and making predictions, which are crucial for scientific research, policy-making, and various fields 
+      requiring data analysis. 
+    </p>
+      
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-infr_i.ptx" />
+  <xi:include href="sec-infr_ii.ptx" />
+  <xi:include href="sec-infr_iii.ptx" />
+  <xi:include href="sec-infr_iv.ptx" />
+  <xi:include href="sec-infr_v.ptx" />
+
+</chapter>

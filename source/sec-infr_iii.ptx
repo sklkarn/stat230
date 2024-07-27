@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-infr_iii" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>T Test</title>
+<introduction>
+  <p>
+    A t-test is used to compare the means of two groups and determine if the differences between them 
+    are statistically significant. It's commonly used when dealing with small sample sizes and when 
+    the population standard deviation is unknown. There are different types of t-tests, including:
+<ol marker ="i">
+  <li>
+    <p>
+     <alert> One-sample t-test:</alert> Compares the mean of a single group against a known mean (or a hypothesized mean).
+    </p>
+  </li>
+  <li>
+    <p>
+      <alert>Independent two-sample t-test:</alert> Compares the means of two independent groups to see if they are 
+      significantly different from each other.
+    </p>
+  </li>
+  <li>
+    <p>
+      <alert>Paired sample t-test:</alert> Compares means from the same group at different times (e.g., before and after a treatment) or from matched pairs.
+    </p>
+  </li>
+</ol>  
+  </p>
+</introduction>
+
+<subsection xml:id="subsec-t_steps">
+  <title>Steps to Perform a t-test</title>
+  <p>
+    <ol marker ="i">
+      <li>
+        <p>
+          <alert>Formulate the Hypotheses:</alert> <ul>
+            <li>
+              <p>
+                Null Hypothesis (H0): Assumes no difference between the groups.
+              </p>
+            </li>
+            <li>
+              <p>
+                Alternative Hypothesis (H1): Assumes a significant difference between the groups.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          Choose the Significance Level <m>(\alpha)</m>: Commonly used values are 0.05 or 0.01, representing a 5% or 
+    1% risk of concluding that a difference exists when there is no actual difference.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate the Test Statistic: 
+          <ul>
+            <li>
+              <p>
+                For a one-sample t-test: 
+                <me>
+                  t = \frac{\bar{x}-\mu}{s/\sqrt{n}}
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                For an independent two-sample t-test: 
+                <me>
+                  t= \frac{\bar{x}_1-\bar{x}_2}{\sqrt{\frac{s^2_1}{n_1}+\frac{s^2_2}{n_2}}}
+                </me>
+                </p>
+            </li>
+            <li>
+              <p>
+                For a paired sample t-test: 
+                <me>
+                  t =\frac{\bar{d}}{s_d/\sqrt{n}}
+                </me>
+                Here, <m>\bar{x}</m> is the sample mean, <m>\mu</m> is the population mean, 
+                <m>s</m> is the sample standard deviation, <m>n</m> is the sample size, <m>\bar{d}</m> 
+                is the mean difference in paired samples, and <m>s_d</m>​ is the standard deviation of the differences.
+              </p>
+            </li>
+          </ul>
+         </p>
+      </li>
+      <li>
+        <p>
+          Determine the Degrees of Freedom (df): 
+          <ul>
+            <li>
+              <p>
+                For a one-sample t-test: 
+                <me>
+                  d_f =n-1
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                For an independent two-sample t-test: 
+                <me>
+                  d_f = n_1+n_2 -2
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+             For a paired sample t-test: 
+             <me>
+              d_f =n-1
+            </me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the Critical t-value: Using t-distribution tables or software, 
+          find the critical value for the given degrees of freedom and significance level.
+        </p>
+      </li>
+      <li>
+        <p>
+          Compare the Test Statistic to the Critical Value: 
+          <ul>
+            <li>
+              <p>
+                If the calculated t-value is greater than the critical value, reject the null hypothesis.
+              </p>
+            </li>
+            <li>
+              <p>
+                Otherwise, fail to reject the null hypothesis.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+    </ol>
+     </p>
+
+
+     <example>
+      <statement>
+        <p>
+          <term>One sample t -test:</term> 
+          In the population, the average IQ is 100. A team of researcher want to test a new medication 
+          to see if it has either a positive or negative effect on intelligence or no effect at all. 
+          A sample of 30 participants who have taken the medication has a mean of 140 with a standard deviation of 20. 
+          Did the medication effect intelligence? [CI=95%]
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given: <m>\mu = 100, \, n = 30, \, \bar{x} = 140, \, s= 20, \, \alpha = 1-CI =1-0.95 =0.05.</m>
+        </p>
+        <p>
+          Null hypothesis, <m>H_o: \, \mu = 100</m>
+        </p>
+        <p>
+          Alternative hypothesis, <m>H_a: \, \mu \neq 100</m> [two-tail test]
+        </p>
+        <p>
+          Significance value, <m>\alpha = 0.05</m>
+        </p>
+        <p>
+          Degree of freedon, <m>d_f=n-1 = 30-1 =29.</m>
+        </p>
+        <figure xml:id="fig-t1">
+          <caption></caption>
+          <image source="t1.png" width="50%"/>
+      </figure>
+        <p>
+          Decision boundary: Use t table to find <m>t_{tab} </m>. If t-test or <m>t_{cal}</m> 
+          is less than -2.045 or greater than +2.045, reject null hupothesis.
+        </p>
+        <p>
+          Calculate t-test statistics,
+          <me>
+            t_{cal} = \frac{\bar{x}-\mu}{s/\sqrt{n}} = \frac{140-100}{20/\sqrt{30}} =\frac{40}{3.45} =10.96.
+          </me>
+        </p>
+        <p>
+          Conclusion: Decision rule: If <m>t_{cal}</m> or t-test is less than -2.045 or greater than +2.045, reject null hupothesis.
+          Here, 
+          <me>
+             t_{cal} \gt t_{tab}
+          </me>
+          We must reject null hypothesis. i.e., medication has positive effect on intelligence.
+        </p>
+      </solution>
+     </example>
+
+     <example>
+      <statement>
+        <p>
+          A random sample of size 20 from a normal population gives a sample mean of 42 and 
+          sample standard deviation of 6. Test the hypothesis that the population mean is 44.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given: <m>n=20, \, s=6, \, \bar{x}=42, \, \mu_o =44</m>
+        </p>
+        <p>
+          Step I: Null hypothesis, <m>H_o: \mu=\mu_o=44.</m> (population mean is same as sample mean.)
+        </p>
+        <p>
+          Step II: Alternative hypothesis, <m>H_a: \mu \neq 44.</m>  (two tail test) (no wording for comparision)
+        </p>
+        <p>
+         Step III:  Test Statistics: 
+          <me>
+            t_{cal} = \frac{\bar{x}-\mu}{s/\sqrt{n-1}} = \frac{42-44}{6/\sqrt{19}} =-\frac{2}{1.38} =-1.45.
+          </me>
+          <m>d_f = n-1 =20-1 =19.</m>
+          </p>
+        <p>
+          Step IV: Level of significance, <m>\alpha =0.05,\, d_f = 19.</m>
+          <me>
+            |t_{tab}| = 2.093.
+          </me>
+          use t table to determine the value of <m>t_{tab}</m>
+        </p>
+        <p>
+          Step V: Comparision and Decision:
+           <me>
+            |t_{tab}| \gt |t_{cal}|
+          </me>
+          Hence, it is not significant, therefore, we fail to reject null hypothesis.
+        </p>
+      </solution>
+     </example>
+</subsection>
+
+
+
+</section>

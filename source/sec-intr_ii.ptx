@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intr_ii" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Variables</title>
+ 
+
+   
+  <p>A variable is a property that can take on many values. In other words, it is 
+    characteristics of population which differs from individual to individual. For examples: "length", 
+    "mass", "age", "gender", "place", "temperature", "proximity to a neighbour," etc. </p>
+    <p>
+      Variable is taken as singular. "age" is a variable but "ages" is not a variable. 
+    </p>
+    <p>
+      There are two types of variables: 
+      <ol>
+        <li>
+          <p>
+            Quantitative (numerical) variables:
+            <ol marker="i">
+              <li>
+                <p>
+                  Discrete variables: countable or finite number of values. For example: number of children in a household.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Continuous variables: measured or infinite number of values. For example: temperature, length of song, etc.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Qualitative (categorical) variables: Nominal, ordinal. For examples: "eye colors: brown, black", "state: Kentucky, Florida", 
+            "dog breeds: Jerman shepheerd, Husky ", "gender: male, female", "survey" etc.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      <term>Independent and dependent variables: </term> To test cause-and-effect relationships 
+      there are two kinds of variables based on whether to manipulate or measure. Imagine that researchers 
+      want to test the effectiveness of a new weight loss medication. They split participants into three groups: 
+      one group gets 0 mg dosage (control), another gets a 50 mg dosage, and the last group gets a 100 mg dosage. After six months, the participants weights are measured.
+    </p>
+    <p>
+      The independent variable is the cause. Its value is independent of other variables in your study. It can be manipulated. For example: doses.
+       </p>
+       <p>
+        The dependent variable is the effect. Its value depends on changes in the independent variable. It can be measured. For example: weight.
+       </p>
+    
+
+   
+
+</section>

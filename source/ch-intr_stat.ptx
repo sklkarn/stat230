@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-intr_stat" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Statistics</title>
+
+  <introduction>
+    <p> The following topics are being discussed here. </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            What is statistics?
+          </p>
+          <p>
+            <term>Statistics:</term> It is science of collecting, organizing, analyzing, and 
+            interpreting data and drawing conclusion from the given data (informations).
+          </p>
+          <p>
+            According to the 2014 Surgeon General's Report, about 3 out of 4 high school students 
+            who smoke never quit smoking.
+          </p>
+          <p>
+            Almost <m>85\%</m> of lung cancer in men and <m>45\%</m> in women are tobacco related.
+          </p>
+          <p>
+            There is a <m>40\%</m> chance that in a room full of 30 people, two of them have the same date of birth.
+          </p>
+          <p>
+            The average ACT score of the students is 19.5.
+          </p>
+        </li>
+        <li>
+          <p>
+            Types of statistics:
+          </p>
+          <p>
+            Statisctics is divided into two parts: 
+            <ol marker="i">
+              <li>
+                <p>
+                  <term>Descriptive statistics: </term> the collection, analysis, and interpretation of data is done here. 
+                  It helps us to understand the main feature of the data. Central tendency, spread, and 
+                  deviation, etc. of the data can be studied here. 
+                </p>
+                <p>
+                  It organizes and summarizes the information of data. It consists of graph, table, 
+                  descriptive measures suchas average, variations, percentiles, etc.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <term>Inferential statistics: </term> It helps draw the conclusion for population using the sample data.
+                </p>
+                <p>
+                  Testing whether the average exam scores of two groups are significantly different. 
+                </p>
+                <p>
+                  Estimating the average height of popultion with a <m>95\%</m> confidence interval.
+                </p>
+                <p>
+                  Analyzing the relationship between hours of study and test scores.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Types of data:
+          </p>
+          <figure>
+            <caption>Data Types</caption>
+            <image source="data.png" width="75%"/>
+        </figure>
+        <p>
+          <ol marker="i">
+            <li>
+              <p>
+                <em>Structured:</em> Tables, spreadsheet, data base, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Unstructured:</em> Multimedia contents, audio, video, texts, email, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Cross-sectional:</em> Data collected at a single point of time such as survey, students scores in exam, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Time seies:</em> Data collected over a sequence of time interval such as stock price,  sales data for years, etc.
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Univeriate:</em> single variable data.
+              </p>
+            </li>
+            <li>
+              <p>
+                <em>Multiveriate:</em> two or more variables data.
+              </p>
+            </li>
+          </ol>
+        </p>
+        </li>
+        <li>
+          <p>
+            Types of Variables:
+          </p>
+          <p>
+            <ol marker="i">
+              <li>
+                <p>
+                 <em> Nominal:</em> Gender, race, colors, etc.
+                </p>
+              </li>
+              <li>
+                <p>
+                 <em> Ordinal:</em> Ranked data, education level (Graduate, Ph.D.), customer ratings, etc.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <em>Numerical:</em> Discrete or continuous number values, age, price, income, etc.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <em>Categorical:</em> Nominal, ordinal, product categories, types of cars, etc.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <em>Interval:</em> Temperature, IQ score, etc, (zero is arbitrary without meaning in interval variables).
+                </p>
+              </li>
+              <li>
+                <p>
+                  <em>Ratio:</em> height, weight, age, etc, (zero is not arbitrary but has specific meaning).
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <p>
+            Population and sampling: 
+          </p>
+          <p>
+            Population is the entire group of individuals. eg., all people of USA, all users of Netflix, etc.
+          </p>
+          <p>
+            Sample is a subset of population. To reduce the cost of data collection or the taking full census data is 
+            not possible we take <term>sample.</term>
+          </p>
+          <p>
+            <term>Sampling Techniques:</term> 
+            <ol marker="i">
+              <li>
+                <p>
+                  Random sampling:
+                </p>
+              </li>
+              <li>
+                <p>
+                  Stratified sampling: divide the population into groups based on some properties such as gender, profession, etc. and then 
+                  randomly select samples.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Systematic sampling: select every <m>k^{th}</m> sample.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Clustered sampling: divide the population into clusters and then randomly select complete clusters.
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+            Sampling technique is based on nature of population, research objective, and available resources.
+          </p>
+        </li>
+        <li>
+          <p>
+            Statistical data analysis steps:
+          </p>
+          <p>
+            <ol marker="i">
+              <li>
+                <p>
+                  Define the problem or research question.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Data collection.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Data cleaning.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Explorating data analysis.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Data transformation.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Hypothesis formulation.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Statistical testing.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Interpretation of results.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Draw conclusions.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Presenting the reports.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-intr_i.ptx" />
+  <xi:include href="sec-intr_ii.ptx" />
+  <xi:include href="sec-intr_iii.ptx" />
+
+</chapter>

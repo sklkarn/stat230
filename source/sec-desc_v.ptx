@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-desc_v" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Central Limit Theorem (CLT) </title>
+    
+      <p>
+        It states that the sampling distribution of the sample means approaches a normal distribution as the sample size gets larger. 
+        It holds true if the sample size, <m>n \geq</m> 30 (population may be normally or skewed distributed). 
+        When <m>n \lt 30</m> then it only works for the normally distributed population.
+      </p>
+      <p>
+        The essential component of the CLT is that average sample means will be the population mean. 
+        Relation between the shape of population distribution and the shape of sampling distribution of mean is known as CLT. 
+        It helps inference about the population parameters without knowing the shape of frquency of population distribution. 
+        As the sample size gets larger, sampling distribution becomes almost normal regardless of the shape of population.
+      </p>
+      <figure>
+        <caption>clt</caption>
+        <image source="pop_dist.png" width="100%"/>
+    </figure>
+
+<p>
+ According to CLT normal distribution is the limiting distribution to the sum of independent random variables with finite variance 
+ as the number of random variables get indefinitely large. 
+</p>
+<p> 
+  Since many real processes yield distributions with finite variance, this 
+ theorem has a wide range of application in sampling theory and other areas of statistics.
+  If <m>x_i (i=1, 2, 3, \cdots, n) </m> be independently distributed random variables such that <m>E(x_i) = \mu_i</m> 
+  and <m>var(x_i)=\sigma_i^2</m> then as <m>n\to \infty</m>, the distribution of the sum of these random variables, namely 
+  <me>
+    S_n = x_1 + x_2 + x_3 + \cdots + x_n
+  </me>
+  tends to the normal distribution with mean, <m>\mu</m> and variance <m>\sigma^2,</m>  where <m>\mu = \sum_{i=1}^n \mu_i,</m> 
+ <m>\sigma^2 =  = \sum_{i=1}^n \sigma_i^2.</m>
+  
+</p>
+    <example>
+      <statement>
+        <p>
+          There are 250 cats at show, when average weight of cat is 12 kg, with standard deviation of 8 kg. If we choose 4 samples, 
+          then what is the probability they have an average weight greater than 10 kg and less than 25 kg?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given: Population size, <m>N=250 \,cats, \mu =12 kg, \sigma=8 kg, </m> Sample size, <m>n=4. </m>
+          then <me>
+            P(10\lt \bar{x}\lt 25)=?
+          </me>
+          <me>
+            z_{score} = \frac{x-\mu_{\bar{x}}}{\sigma_{\bar{x}}}
+          </me>
+          and 
+          <me>
+            \sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}
+          </me>
+          where, <m>\mu </m> = population mean, <m>\sigma</m> = population standard deviation, 
+          <m>\mu_{\bar{x}}</m> = sample mean, <m>\sigma_{\bar{x}}</m> = sample standard deviation, and <m>n=</m> sample size.
+        </p>
+        <p>
+          Now, 
+          <me>
+            \sigma_{\bar{x}} = \frac{8}{\sqrt{4}} =4.
+          </me>
+          Hence, z-score = 
+          <me>
+            z_{25} =\frac{25-12}{4} = 13/4=3.25.
+          </me>
+          and 
+          <me>
+            z_{10} =\frac{10-12}{4} = -2/4=-0.5.
+          </me>
+        </p>
+        <figure>
+          <caption></caption>
+          <image source="z1.png" width="50%"/>
+      </figure>
+        <p>
+          Using z-table, we have 
+          <me>
+            z_{value(3.25)} = 0.994
+          </me>
+          Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, 
+          <me>
+            z_{value(-0.5)} = 0.6915
+          </me>
+          Hence, area under the curve from center = 0.6915-0.5 = 0.1915.
+          Adding these two values we get 
+          <me>
+            P(10\lt \bar{x}\lt 25) = 0.494+0.1915 = 0.6855 = 68.5\%.
+          </me>
+           </p>
+
+      </solution>
+    </example>
+   
+
+    <example>
+      <statement>
+        <p>
+          A coin is tossed 200 times, find the approximate probability that the number of heads obtained is between 80 and 120.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x:</m> number of heads, 
+          <me>
+            p(x) = \frac{1}{2}
+          </me>
+          Discrete binomial distribution.
+          Since the sample size, <m>n=200</m> is very large, we can apply CLT. From binomial distribution approximation, we have - 
+          mean, <m>\mu =np=200 \times  \frac{1}{2} = 100</m> and variance, <m>\sigma^2 = npq = 200\times  \frac{1}{2} \times  \frac{1}{2} = 50.</m>
+          here <m>q=1-p</m>. Now  <m>P(80\lt x \lt 120)=?</m>
+        </p>
+        <p>
+          Now,  <me>
+            z_{score} = \frac{x-\mu}{\sqrt{\sigma}} = \frac{x-100}{\sqrt{50}}
+          </me>
+          Hence, 
+          <me>
+            z_{80} = \frac{80-100}{\sqrt{50}} = -2.82
+          </me>
+          and  <me>
+            z_{80} = \frac{120-100}{\sqrt{50}} = 2.82
+          </me>
+          Therefore the required probability = 
+          <me>
+            P(80\lt x \lt 120) = P(-2.82 \lt z \lt 2.82)
+          </me>
+        </p> 
+        <figure>
+          <caption></caption>
+          <image source="z2.png" width="50%"/>
+      </figure>
+      <p>
+          Use standard normal distribution table, we get -
+           <me>
+            P(z_{-2.82})= 0.0024
+          </me>
+        Therefore, 
+          <me>
+            P(z \gt -2.82)= 0.5-0.0024 =0.4976
+          </me>
+          Hence, 
+          <me>
+            P(-2.82 \lt z \lt 2.82) =0.4976+0.4976 = 0.9952
+          </me>
+          
+        </p>
+      </solution>
+    </example>
+
+
+</section>

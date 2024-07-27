@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains all of the "backmatter" material -->
+<!-- In comments, we show examples of how to have hints to divisional -->
+<!-- excercies appear in a section, and then their -->
+<!-- solutions in the next. Then there is an appendix -->
+<!-- with all notation generated, and finally the index. -->
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
+  <title>Backmatter</title>
+
+  <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
+
+  <!-- <solutions divisional="solution"> <title>Selected Solutions</title> </solutions> -->
+
+  <appendix> <title>List of Symbols</title> <notation-list/> </appendix> 
+  
+     <appendix xml:id="append_z-tab">
+        <title>z-table </title>
+        <p>
+          STANDARD NORMAL DISTRIBUTION: Table Values Represent AREA to the LEFT of the Z score.
+          <me>
+            \begin{array}{c|c c c c c c c c c} \hline 
+          Z &amp; .00  &amp; .01  &amp; .02  &amp; .03  &amp; .04  &amp; .05  &amp; .06  &amp; .07  &amp; .08  &amp; .09 \\ \hline 
+          -3.9 &amp; .00005  &amp; .00005  &amp; .00004  &amp; .00004 &amp; .00004  &amp; .00004 &amp; .00004  &amp; .00004  &amp; .00003  &amp; .00003 \\
+          -3.8 &amp; .00007  &amp; .00007  &amp; .00007  &amp; .00006  &amp; .00006  &amp; .00006  &amp; .00006  &amp; .00005  &amp; .00005  &amp; .00005 \\
+          -3.7 &amp; .00011  &amp; .00010  &amp; .00010  &amp; .00010  &amp; .00009  &amp; .00009  &amp; .00008  &amp; .00008  &amp; .00008  &amp; .00008 \\
+          -3.6 &amp; .00016  &amp; .00015  &amp; .00015  &amp; .00014  &amp; .00014  &amp; .00013  &amp; .00013  &amp; .00012  &amp; .00012  &amp; .00011 \\  
+          -3.5 &amp; .00023  &amp; .00022  &amp; .00022  &amp; .00021  &amp; .00020  &amp; .00019  &amp; .00019  &amp; .00018  &amp; .00017  &amp; .00017 \\  \hline 
+          -3.4 &amp; .00034  &amp; .00032  &amp; .00031  &amp; .00030 &amp; .00029  &amp; .00028 &amp; .00027  &amp; .00026  &amp; .00025  &amp; .00024 \\
+          -3.3 &amp; .00048  &amp; .00047  &amp; .00045  &amp; .00043  &amp; .00042  &amp; .00040  &amp; .00039  &amp; .00038  &amp; .00036  &amp; .00035 \\
+          -3.2 &amp; .00069  &amp; .00066  &amp; .00064  &amp; .00062  &amp; .00060  &amp; .00058  &amp; .00056  &amp; .00054  &amp; .00052  &amp; .00050 \\
+          -3.1 &amp; .00097  &amp; .00094  &amp; .00090  &amp; .00087  &amp; .00084  &amp; .00082  &amp; .00079  &amp; .00076  &amp; .00074  &amp; .00071 \\  
+          -3.0 &amp; .00135  &amp; .00131  &amp; .00126  &amp; .00122  &amp; .00118  &amp; .00114  &amp; .00111  &amp; .00107  &amp; .00104  &amp; .00100 \\  \hline 
+          -2.9 &amp; .00187  &amp; .00181  &amp; .00175  &amp; .00169 &amp; .00164  &amp; .00159 &amp; .00154  &amp; .00149  &amp; .00144  &amp; .00139 \\
+          -2.8 &amp; .00048  &amp; .00047  &amp; .00045  &amp; .00043  &amp; .00042  &amp; .00040  &amp; .00039  &amp; .00038  &amp; .00036  &amp; .00035 \\
+          -2.7 &amp; .00069  &amp; .00066  &amp; .00064  &amp; .00062  &amp; .00060  &amp; .00058  &amp; .00056  &amp; .00054  &amp; .00052  &amp; .00050 \\
+          -2.6 &amp; .00097  &amp; .00094  &amp; .00090  &amp; .00087  &amp; .00084  &amp; .00082  &amp; .00079  &amp; .00076  &amp; .00074  &amp; .00071 \\  
+          -2.5 &amp; .00135  &amp; .00131  &amp; .00126  &amp; .00122  &amp; .00118  &amp; .00114  &amp; .00111  &amp; .00107  &amp; .00104  &amp; .00100 \\  \hline 
+          \end{array}
+          </me>
+        </p>
+      </appendix> 
+
+
+  <!-- <index> <title>Index</title> <index-list/> </index> -->
+
+  <colophon>
+    <p> This book was authored in <pretext />. </p>
+  </colophon>
+</backmatter>
+

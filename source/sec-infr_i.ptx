@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-infr_i" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Testing</title>
+<introduction>
+  
+  <p> 
+    Hypothesis testing is a statistical method used to make inferences or draw conclusions 
+    about a population based on sample data. It involves making an assumption (the hypothesis) 
+    and then using statistical techniques to determine the likelihood that this assumption is true. 
+    Here's a basic outline of the process:
+    <ol marker ="i">
+      <li>
+        <p>
+          <em>Formulate Hypotheses: </em>
+    Null Hypothesis <m>(H_0)</m>: This is a statement of no effect or no difference. It represents the status quo or a baseline assumption.
+    Alternative Hypothesis <m>(H_1 or H_a)</m>: This is a statement that indicates the presence of an effect or a difference. 
+    It represents what you are trying to prove.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Choose the Significance Level</em> <m>(\alpha)</m>: 
+    The significance level is the probability of rejecting the null hypothesis when it is actually true. 
+    Common values for <m>\alpha</m> are 0.05, 0.01, and 0.10.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Select the Appropriate Test:</em> 
+              The choice of test depends on the type of data and the hypothesis. 
+              Common tests include t-tests, chi-square (<m>\chi^2</m>) tests, ANOVA test, F-test, and regression analysis. 
+        </p>
+       </li>
+      <li>
+        <p>
+          <em>Calculate the Test Statistic:</em>
+          This involves computing a value (test statistic) from the sample data that is used to evaluate the hypotheses.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Determine the P-value:</em>
+    The p-value is the probability of observing the test statistic or 
+    something more extreme if the null hypothesis is true. It helps in deciding whether to reject the null hypothesis.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Compare the P-value with the Significance Level:</em> 
+          If the p-value is less than or equal to <m>\alpha</m>, reject the null hypothesis in favor of the alternative hypothesis. 
+          If the p-value is greater than <m>\alpha</m>, fail to reject the null hypothesis.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Draw a Conclusion:</em> 
+              Based on the comparison, conclude whether there is sufficient evidence to support the alternative hypothesis.
+        </p>
+      </li>
+    </ol>
+  </p>
+</introduction>
+
+
+<subsection xml:id="subsec-hyp_test">
+  <title>Test Selection</title>
+  <introduction>
+   
+
+  <p>
+    The choice between using a chi-square test, ANOVA, or F-test or others depends on the type of data 
+    you have and the hypotheses you are testing. Here's a brief overview to help you decide which test to use:
+  </p>
+  <p>
+    <term>Z or T test:</term>
+    If population standard deviation is not known and the sample size is relatively small (typically <m>n \lt 30</m>), 
+    then t-test is used instead of the Z-test. The t-test is more appropriate in these situations because it accounts 
+    for the additional variability introduced by estimating the population standard deviation from the sample.
+    </p>
+
+    <figure xml:id="fig-test_tree">
+      <caption>z-test vs. t-test</caption>
+      <image source="test_tree.png" width="70%"/>
+  </figure>
+ 
+  <p>
+    z-test: <m>n \geq 30.</m> and 
+    t-test: <m>n \lt 30.</m>
+  </p>
+  <p>
+    <term>Chi-square test:</term> The chi-square test is used for categorical data to test relationships 
+    between variables or the goodness of fit of observed data to an expected distribution. 
+    <ol>
+      <li>
+        <p>
+          Chi-Square Test for Independence:  Used to determine if there is a significant association between two categorical variables.
+          Example: Testing if there is a relationship between gender (male, female) and voting preference (yes, no).
+        </p>
+      </li>
+      <li>
+        <p>
+          Chi-Square Goodness of Fit Test: Used to determine if a sample data matches a population with a specific distribution.
+    Example: Testing if the distribution of colors of M &amp; Ms in a bag matches the company's stated proportions.
+        </p>
+      </li>
+    </ol>
+     </p>
+     <p>
+      <term>ANOVA (Analysis of Variance): </term> ANOVA is used for comparing the means of three or more groups to see if 
+      at least one group mean is significantly different from the others. 
+      <ol>
+        <li>
+          <p>
+            One-Way ANOVA:
+        Used when comparing the means of three or more independent groups based on one factor.
+        Example: Testing if the average exam scores differ among students taught by three different teaching methods.
+          </p>
+        </li>
+        <li>
+          <p>
+            Two-Way ANOVA:
+        Used when comparing means based on two factors and their interaction.
+        Example: Testing if exam scores are affected by both teaching method and type of school (public, private).
+          </p>
+        </li>
+      </ol>
+     </p>
+     <p>
+      <term>F-Test:</term> The F-test is used to compare variances or test hypotheses that involve variances.
+      <ol>
+        <li>
+          <p>
+            F-test for Variances:
+        Used to compare the variances of two populations to see if they are significantly different.
+        Example: Testing if the variance in test scores between two classes is different.
+          </p>
+        </li>
+        <li>
+          <p>
+            F-statistic in ANOVA:
+        The F-statistic is used within the ANOVA framework to determine if there are significant differences between group means.
+        Example: As part of one-way or two-way ANOVA to compare group means.
+          </p>
+        </li>
+      </ol>
+     </p>
+    </introduction>
+
+     <subsubsection xml:id="subsubsec-test_selctii">
+      <title>One sample and two sample test.</title>
+      <p>
+        
+        <me>
+          \begin{array}{c|c|c}
+         Categorical &amp; Continuous &amp; Categorical \\ \hline
+         Gender &amp; score &amp; Subject \\ \hline
+         M &amp; 90 &amp; A \\ 
+         F &amp; 85 &amp; A \\ 
+         M &amp; 84 &amp; B \\ 
+         F &amp; 91 &amp; B \\ \hline
+         \end{array}
+        </me>
+      </p>
+     
+      <p>
+        When to use which test?
+        <me>
+          \begin{array}{c|c|c}
+         {} &amp; Categorical &amp; Continuous  \\ \hline
+         Categorical &amp; chi-sq. &amp; t-test, Annova \\ \hline
+         Continuous &amp; \text{ logistic regression} &amp; Correlation \\ 
+          \hline
+         \end{array}
+        </me>
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              On analysis of one variable test (or one sample test): 
+              <fn>Continuous variables are counted or measured.</fn> <fn>Categorical variables cannot be counted.</fn>
+            </p>
+            <p>
+              For one sample continuous variable, we use one sample t -test or z-test.
+            </p>
+            <p>
+              For one sample categorical variable, we use one sample proportion test.
+            </p>
+           </li>
+           <li>
+            <p>
+              For two sample continuous to continuous variables, we find correlation.
+            </p>
+           </li>
+            <li>
+              <p>
+                For one sample categorical and one continuous variable: 
+                </p>
+                <p>
+                  if there are only two classes in categorical variables, we use two-sample t-test or z-test.
+                </p>
+                <p>
+                  if there are more than two classes in categorical variable, we use Annova test.
+                </p>
+            </li>
+            <li>
+              <p>
+                For two categorical variables, we use chi-square test.
+              </p>
+            </li>
+            <li>
+              <p>
+                For one categorical and one continuous variables but the target is categorical variable, then we go to logistic regression.
+              </p>
+            </li>
+        </ul>
+      </p>
+     </subsubsection>
+     
+     <subsubsection xml:id="subsubsec-I_II">
+      <title>One-tail and two-tail Test</title>
+      <p>
+        Technique to identify one-tailed and two-tailed test: 
+        <ul>
+          <li>
+            <p>
+              If the statement of questions uses the comparative degree: less than, more than, 
+              smaller than, larger than, taller than, superior, inferior, increase, decrease, 
+              at least, at most, only improved, then use <term>one-tailed test</term>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Otherwise, use <term>two -tailed test</term>.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        Note: If <m>\mu \lt \mu_o</m> use Left-Tailed test, if <m>\mu \gt \mu_o</m> then use right-tailed test, 
+        and if <m>\mu \neq \mu_o</m> then use two-tailed test.
+       </p>
+     </subsubsection>
+</subsection>
+
+
+
+
+</section>

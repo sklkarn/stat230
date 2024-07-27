@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intr_i" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Population and Sampling</title>
+
+ 
+  <p><term>Population: </term> Any collection of individual items or units which are the subject of investigation. </p>
+  
+    <p>
+      <term>Sampling Method:</term> The goal of sampling is to create a sample that is representative of the population it is being drawn from. 
+      The size of population is represented using the letter <m>N</m> and the size of sample is represented using the letter <m>n.</m> 
+      The most basic sampling methods are: 
+      <ol marker ="I">
+        <li>
+          <p>
+            <term>Simple Random Sampling: </term> Every member of the population, <m>N</m> has an equal chance of 
+            being selected for the sample, <m>n</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Stratified Sampling: </term> The population, <m>N</m> is split into non-overlapping groups (strate), 
+            then simple random sampling is done on each group to form a sample, <m>n.</m> For example: 
+            split population of student in 'women' and 'men' group.
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Systematic Sampling: </term> Every <m>n^{th}</m> individual from the population, <m>N </m> is placed in the sample, <m>n.</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Convenience Sampling (Voluntary response sample): </term> Easily obtained individuals from the population, <m>N</m> are placed in the sample, <m>n</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+   
+
+
+   
+</section>

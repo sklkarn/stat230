@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-infr_ii" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Z Test</title>
+
+  <introduction>
+   
+    <p>
+      The z-test is used to determine whether there is a significant difference between sample and population 
+      means or between the means of two samples, assuming the data is normally distributed and the variances 
+      are known (or the sample size is large enough to use the Central Limit Theorem). 
+    </p>
+    <figure xml:id="fig-z3">
+      <caption></caption>
+      <image source="z3.png" width="50%"/>
+  </figure>
+  <p>
+    The above distribution shows the rejection regions and fail to rejection region (acceptance region) of 
+    Null hypothesis test in z test with the 95% confidence inetrval (or 5% significance level) in two tailed test. 
+   </p>
+    <p>
+     <term> Types of Z-tests:</term> 
+     <ol marker ="i">
+      <li>
+        <p>
+          One-Sample z-test: Tests whether the mean of a single sample is different from a known population mean.
+        </p>
+        <p>
+          <em>Hypotheses: </em> 
+          <ul>
+            <li>
+              <p>
+                Null Hypothesis <m>(H_o)</m>: The sample mean is equal to the population mean <m>(μ = μ_o)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Alternative Hypothesis <m>(H_1)</m>: The sample mean is not equal to the population mean <m>(μ \neq μ_o)</m>.
+              </p>
+            </li>
+          </ul>
+             Formula: 
+          <me>
+            z = \frac{\bar{x}-\mu_o}{\sigma_{\bar{x}}} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{\sqrt{n}}}
+          </me>
+          where: <m>\bar{x}</m> is the sample mean, <m>\mu_o</m> is the population mean, 
+          <m>\sigma</m> is the population standard deviation, <m>n</m>  is the sample size.
+            </p>
+            <p>
+              <term>Steps:</term> 
+              <ol marker ="a">
+                <li>
+                  <p>
+                    State the hypotheses.  
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Choose the significance level <m>(\alpha)</m> =1-Confidence Interval. 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Calculate the z statistic using the formula. 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Determine the p-value corresponding to the z statistic. 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Compare the p-value to <m>(\alpha)</m>: 
+                   </p>
+                   <p>
+                    If <m>p\leq \alpha</m>, reject the null hypothesis. 
+                   </p>
+                   <p>
+                    If <m>p \gt \alpha</m>, fail to reject the null hypothesis.
+                   </p>
+                </li>
+              </ol>      
+            </p>
+            <p>
+              <term>Note:</term> if <m>\bar{x} \lt \mu_o</m> use Left-Tailed test and if <m>\bar{x} \gt \mu_o</m> then use right-tailed test.
+            </p>
+      </li>
+      <li>
+        <p>
+          Two-Sample Z-test: Tests whether the means of two independent samples are different.
+        </p>
+        <p>
+          <em>Hypotheses:</em> 
+          <ul>
+            <li>
+              <p>
+                Null Hypothesis <m>(H_o)</m>: The means of the two samples are equal <m>(μ_1 = μ_2)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Alternative Hypothesis <m>(H_1)</m>: The means of the two samples are not equal <m>(μ_1 \neq μ_2)</m>.
+              </p>
+            </li>
+          </ul>
+      Formula: 
+      <me>
+        z = \frac{(\bar{x_1}-\bar{x_2})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}
+      </me>
+      where: <m>\bar{x_1}, \bar{x_2}</m> are the sample means, <m>\mu_1, \mu_2</m> are the population means, 
+      <m>\sigma_1, \sigma_2</m> are the population standard deviations, <m>n_1, n_2</m>  are the sample sizes.
+        </p>
+        <p>
+          <term>Steps:</term> 
+          <ol marker ="a">
+            <li>
+              <p>
+                State the hypotheses.  
+              </p>
+            </li>
+            <li>
+              <p>
+                Choose the significance level <m>(\alpha)</m>. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Calculate the z statistic using the formula. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Determine the p-value corresponding to the z statistic. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Compare the p-value to <m>(\alpha)</m>: 
+               </p>
+               <p>
+                If <m>p\leq \alpha</m>, reject the null hypothesis. 
+               </p>
+               <p>
+                If <m>p \gt \alpha</m>, fail to reject the null hypothesis.
+               </p>
+            </li>
+          </ol>      
+        </p>
+      </li>
+      <li>
+        <p>
+          Z-test for Proportions: Tests whether the proportion of a single sample is different from a 
+          known population proportion or whether the proportions of two samples are different.
+        </p>
+        <p>
+          <em>Hypotheses: </em> 
+          <ul>
+            <li>
+              <p> 
+                Null Hypothesis <m>(H_o)</m>: The proportion of the sample is equal to the population proportion <m>(p = p_o)</m>.
+                </p>
+            </li>
+            <li>
+              <p>
+                Alternative Hypothesis <m>(H_1)</m>: The proportion of the sample is not equal to the population proportion <m>(p \neq p_o)</m>.
+              </p>
+            </li>
+          </ul>
+             Formula: 
+          <me>
+            z = \frac{\hat{p} - p_o}{\sqrt{\frac{p_o(1-p_o)}{n}}}
+          </me>
+          where: <m>\hat{p}</m> is the sample proportion, <m>p_o</m> is the population proportion, 
+          <m>n</m>  is the sample size.
+            </p>
+      </li>
+     </ol>   
+    </p>
+  
+  
+  
+    <example>
+      <statement>
+        <p>
+          A random sample of 50 items gives the mean 6.2 and variance 10.24. Can it be regarded as drawn from a normal population 
+          with 5.4 mean at <m>5\%</m> of level of significance?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given: <m>n=50,</m> <m>\bar{x}=6.2,</m> <m>\sigma^2 =10.24,</m> <m>\mu_o = 5.4.</m>
+        </p>
+        <p>
+          Step I: Null hypothesis, <m>H_o:</m> <m>\mu = 5.4 = \mu_o</m> (i.e., normal population mean)
+        </p>
+        <p>
+          Step II: Alternative hypothesis, <m>H_a:</m> <m>\mu \neq 5.4</m> (two-tailed test, i.e., normal population mean is not 5.4)
+        </p>
+        <p>
+          <term>Note:</term> 
+          In alternative hypothesis: Use one tailed test: if <m>\bar{x} \gt 5.4</m> (i.e., pop. mean) do right-tailed test (RTT),  
+          if <m>\bar{x} \lt 5.4</m> (i.e., pop. mean) then do left-tailed test (LTT), and if <m>\mu \neq 5.4</m> (i.e., normal population is not 5.4) 
+          then do two-tailed test.
+        </p>
+        <p>
+          Step III: Test statistics: <m>H_o</m> test statistics is given by 
+          <me>
+            z_{cal} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{\sqrt{n}}} = \frac{6.2-5.4}{\sqrt{10.24/50}} = 1.77.
+          </me>
+             </p>
+             <p>
+              Step IV: Level of significance, <m>\alpha = 0.05: </m> Tabulated value of z score at <m>5\%</m> level of significance
+              for two tailed test (z value of 0.025%): 
+              <me>
+                z_{tab} = 1.96
+              </me>
+              see <xref ref="fig-z3"/>
+               </p>
+               <p>
+                Step V: Comparision and decesion: 
+                <me>
+                  \because |z_{tab}| \geq |z_{cal}|
+                </me>
+                hence, null hypothesis is failed to reject (i.e., it is not significant) and reject the alternative hypothesis.
+               </p>
+      </solution>
+    </example>
+  
+  
+    <example>
+      <statement>
+        <p>
+          A sample of 64 glass rod is taken from a manufacture under a new process and tested their breaking strength. The mean breaking 
+          strength of the sample is found to be 47.8 lbs and standard deviation 10 lbs. Test the claim that the average breaking strength of the 
+          rod is at least 50 lbs. [level of significance =5%]
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given: <m>n=64,</m> <m>\bar{x} = 47.8 lbs,</m> <m>\sigma = 10 lbs.</m> and <m>\mu_o = 50 lbs.</m>
+        </p>
+        <p>
+          Step I: <m>H_o: </m> 
+          <me>
+            \mu = \mu_o = 50
+          </me>
+          i.e., average breaking strength of the rod is 50.
+        </p>
+        <p>
+          Step II: <m>H_a: </m> 
+          <me>
+            \mu \lt \mu_o 
+          </me>
+          i.e., average breaking strength of the rod is not 50. It is a one-tailed test because of the word "at least."
+          Here, <m>\bar{x} \lt \mu_o</m>.
+        </p>
+        <p>
+          Note: if <m>\bar{x} \lt \mu_o</m> use Left-Tailed test and if <m>\bar{x} \gt \mu_o</m> then use right-tailed test.
+        </p>
+        <p>
+          Step III: Test statistics:
+          <me>
+            z_{cal} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{\sqrt{n}}} = \frac{47.8-50}{10/\sqrt{64}} = -1.76.
+          </me>
+         <me>
+          \therefore |z_{cal}| = 1.76
+         </me>
+         </p>
+         <p>
+          Step IV: Level of significance, <m>\alpha = 5\%. </m> This is a left tailed test, hence 
+          z score = <m>\frac{1-0.05-0.05}{2} = 0.45.</m>
+          <me>
+            z_{tab} = -1.65
+          </me>
+          or,
+          <me>
+            |z_{tab}| = 1.65
+          </me>
+           </p>
+         <p>
+          Step V: Comparision and decesion: 
+          <me>
+            \because |z_{tab}| \lt |z_{cal}|
+          </me>
+          hence, null hypothesis is rejected (i.e., it is significant) and we fail to reject alternative hypothesis.
+         </p>
+      </solution>
+    </example>
+  
+  
+  <example>
+    <statement>
+      <p>
+        <term>Z-test for Two mean problem: </term> A potential buyer of light bulbs bought 50 bulbs each of two brands. 
+        On testing these bulbs he found that brand A had a mean life of 1282 hours with a standard deviation of 80 hours. 
+        Whereas brand B  had a mean life of 1208 hours with standard deviation of 94 hours. Can the buyer be quite certain 
+        that the two brands do differ in quality.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Given: <m>n=50,</m> <m>\bar{x}_A =1282 hrs.,</m> <m>\bar{x}_B =1208 hrs., </m> <m>\sigma_A =80 hrs., </m> 
+        and <m>\sigma_B =94 hrs.</m>
+      </p>
+      <p>
+        Step I: Null hypotesis, <m>H_o: \mu_1 = \mu_2</m> [i.e., two brands do not differ in quality.]
+      </p>
+      <p>
+        Step II: Alternative hypotesis, <m>H_a: \mu_1 \neq \mu_2</m> (two-tailed test) [i.e., brands do differ in quality.]
+      </p>
+      <p>
+        Step III: Test Statistics: 
+        <me>
+          z_{cal}= \frac{(\bar{x_1}-\bar{x_2})}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} = 4.24
+        </me>
+        <me>
+          \therefore | z_{cal}| =4.24.
+        </me>
+        </p>
+        <p>
+          Step IV: <m>\alpha = 5\% =0.05</m>
+          <me>
+            \therefore |z_{tab}|= 1.96.
+          </me>
+          see <xref ref="eqn-z2"/>.
+          For 5% sig. level, <m>z_{tab} </m> can be taken for two tailed test as <m>\frac{100-5}{2} = 95/2 = 47.5% = 0.475.</m>
+        </p>
+        <p>
+          Step V: Comparision and dicesion:
+          <me>
+             |z_{tab}| \lt  |z_{cal}|
+          </me>
+          Hence, it is significant and <m>H_o</m> is rejected but <m>H_a</m> is failed to reject.
+        </p>
+    </solution>
+  </example>
+  
+  
+  <example>
+    <statement>
+      <p>
+        The average height of all residents in a city is 168 cm with a population standard deviation, <m>\sigma =3.9.</m> 
+        A doctor believe that the mean to be different. He measure the height of 36 individual and found the average to be 
+        169.5 cm. 
+        <ol marker ="a">
+          <li>
+            <p>
+              State null and alternative hypothesis.
+            </p>
+          </li>
+          <li>
+            <p>
+              At a 95% confidence interval, is their enough evidence to reject the null hypothesis?
+            </p>
+          </li>
+        </ol> 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Given: <m>H_o: \mu = \mu_o = 168 cm., </m> <m>H_1: \mu \neq 168 cm. </m> (two tailed test) [<m>\because \mu =169.5 cm.</m>]. 
+        Confidence interval, CI =  95% =0.95, <m>\alpha = 1-CI = 1-0.95 =0.05. </m>
+      </p>
+      <p>
+        Decesion boundary: <xref ref="fig-z3"/>
+  From z-table range =1.0.025 =0.9750. If z-test value falls between -1.96 to + 1.96 then we fail to reject the null hypothesis.
+      </p>
+      <p>
+        Statistical Analysis: 
+        <me>
+          z-test = \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} = \frac{169.5-168}{3.9/\sqrt{36}}=2.31.
+        </me>
+        here <m>\sigma/\sqrt{n}</m> is a standard error.
+      </p>
+      <p>
+        Conclusion: If z-test is less than - 1.96 or greater than + 1.96, we must reject null hypothesis. i.e., 
+        in this case, doctor belief seems right.
+      </p>
+    </solution>
+  </example>
+  </introduction>
+  
+
+
+<subsection xml:id="subsubsec-z_tab">
+  <title>z tabulated value (<m>z_{tab})</m></title>
+  <p>
+   If <m>\bar{x} \lt \mu_o</m> use Left-Tailed test, if <m>\bar{x} \gt \mu_o</m> then use right-tailed test, 
+   and if <m>\mu =\neq \mu_o</m> then use two-tailed test.
+  </p>
+  <p>
+    For two-tailed test: 
+    <mdn>
+      <mrow xml:id="eqn-z1"> \alpha = \amp 1\%; \quad z_{tab} = +2.56 </mrow>
+      <mrow xml:id="eqn-z2"> \alpha = \amp 5\%, \quad z_{tab} = +1.96 </mrow>
+      <mrow xml:id="eqn-z3"> \alpha = \amp 10\%, \quad z_{tab} = +1.65 </mrow>
+    </mdn>
+  </p>
+  <p>
+    For right-tailed test: 
+    <mdn>
+      <mrow xml:id="eqn-z4"> \alpha = \amp 1\%; \quad z_{tab} = +2.33 </mrow>
+      <mrow xml:id="eqn-z5"> \alpha = \amp 5\%, \quad z_{tab} = +1.65 </mrow>
+      <mrow xml:id="eqn-z6"> \alpha = \amp 10\%, \quad z_{tab} = +1.28 </mrow>
+    </mdn>
+  </p>
+  <p>
+    For left-tailed test: 
+    <mdn>
+      <mrow xml:id="eqn-z7"> \alpha = \amp 1\%; \quad z_{tab} = -2.33 </mrow>
+      <mrow xml:id="eqn-z8"> \alpha = \amp 5\%, \quad z_{tab} = -1.65 </mrow>
+      <mrow xml:id="eqn-z9"> \alpha = \amp 10\%, \quad z_{tab} = -1.28 </mrow>
+    </mdn>
+  </p>
+  
+</subsection>
+
+
+
+
+
+</section>

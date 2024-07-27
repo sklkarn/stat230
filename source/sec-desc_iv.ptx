@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-desc_iv" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Graphical Representation</title>
+
+<introduction>
+  <p> Graphical representation involves visual tools to summarize and present data 
+    in a way that highlights patterns, trends, and insights. There are different types of graphical 
+    representation. Some of them are as follows:</p>
+<p>
+  <ol marker="i">
+    <li>
+      <p>
+        <term>Line Graphs</term> Line graph or the linear graph is used to display the continuous data 
+        and it is useful for predicting future events over time. Example: Stock prices over a year.
+      </p>
+      <figure>
+        <caption>Line Graph</caption>
+        <image source="lineplt.png" width="25%"/>
+    </figure>
+    </li>
+    <li>
+      <p>
+        <term>Bar Graphs</term> Bar Graph is used to display the category of data and it compares the data using 
+        solid bars to represent the quantities. It compares the number, frequency, or other measure (e.g., mean) 
+        for different discrete categories. Example: Showing the sales of different product categories.
+      </p>
+  <figure>
+    <caption>Bar graph</caption>
+    <image source="bargrp.png" width="25%"/>
+</figure>
+    </li>
+    <li>
+      <p>
+        <term>Histograms</term> The graph that uses bars to represent the frequency of numerical data that are organised into intervals. 
+        Since all the intervals are equal and continuous, all the bars have the same width (called bins). Example: Distribution of students' test scores.
+      </p>
+      <figure>
+        <caption>Histogram</caption>
+        <image source="histgrm.png" width="25%"/>
+    </figure>
+    </li>
+      <li>
+      <p>
+        <term>Stem and Leaf Plot</term> In the stem and leaf plot, the data are organised from least value to the greatest value. 
+        The digits of the least place values from the leaves and the next place value digit forms the stems. 
+        Example: Showing test scores in a detailed manner.
+        <me>
+          \begin{array}{c|c} 
+          \text{ Stem} &amp; Leaf \\ \hline 
+          0 &amp; 1 \quad 1 \quad 2 \quad3 \quad3 \quad 4 \quad 4 \\ 
+          1 &amp; 5 \quad6 \quad6 \quad8 \\ 
+          2 &amp; 0 \quad3 \\ 
+          3 &amp; 7 \quad8   \\ 
+          4 &amp;     \\ 
+          5 &amp; 5\quad 7 \quad8 \quad8   \\ 
+          6 &amp; 0 \quad0 \quad0 \quad1 \quad2 \quad4\quad4\quad 4   \\ 
+          7 &amp; 5 \quad5 \quad6 \quad7 \quad7 \quad7\quad8 \quad8 \quad9    \\ \hline 
+         \end{array}
+      </me>
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Box and Whisker Plot</term> It displays the distribution of a dataset based on a five-number summary 
+        (minimum, first quartile, median, third quartile, and maximum). It shows the range (spread) and the middle ( median) of the data. 
+        Example: Comparing the distribution of test scores across different classes.
+      </p>
+      <figure>
+        <caption>Box Plot</caption>
+        <image source="boxplt.png" width="50%"/>
+    </figure>
+    <p>
+      In a box plot, the upper whisker represents the upper boundary of the data that is not considered an outlier. 
+      It is calculated based on the interquartile range (IQR), which is the range between the first quartile (Q1) 
+      and the third quartile (Q3). Here's how to calculate the upper whisker:
+      <me>
+        IQR = Q_3-Q_1
+      </me>
+       <me>
+       \text{ upper whisker} \leq Q_3+1.5\times IQR.
+      </me>
+      Upper Whisker (UW) equals to maximum data observation value that is less than or equal to Upper Bound.
+      <me>
+        \text{ lower whisker} \geq Q_1 -1.5\times IQR.
+       </me>
+       Lower Whisker (LW) equals to minimum data observation value that is greater than or equal to Lower Bound.
+      <md>
+        <mrow>\text{ upper bound} \amp = Q_3 +1.5\times IQR </mrow>
+        <mrow>\text{ lower bound} \amp = Q_1-1.5\times IQR </mrow>
+      </md>
+      Values greater than Upper Bound or less than Lower Bound are considered to be outliers.
+    </p>
+    </li>
+    <li>
+      <p>
+        <term>Pie Chart (Circle Graph) </term> It shows the relationships of the parts of the whole. 
+        The circle is considered with 100% and the categories occupied is represented with that specific percentage like 15%, 56%, etc. 
+        Example: Market share of different companies.
+      </p>
+      <figure>
+        <caption>Pie Chart</caption>
+        <image source="piechrt.png" width="25%"/>
+    </figure>
+    </li>
+    <li>
+      <p>
+       <term> Scatter Plot</term> To show the relationship between two continuous variables. 
+    Example: Relationship between height and weight.
+      </p>
+      <figure>
+        <caption>Scatter Plot</caption>
+        <image source="scatter.png" width="25%"/>
+    </figure>
+    </li>
+    <li>
+      <p>
+        <term>Frequency Table</term> The table shows the number of pieces of data that falls within the given interval. 
+        <me>
+          \begin{array}{c|c|c} 
+         Color &amp; Tally   &amp; Frequency \\ \hline 
+         Black &amp; I   &amp; 1  \\ 
+          Blue &amp; \cancel{IIII}   &amp; 5 \\ 
+         Green &amp; II &amp; 2 \\ 
+          Red &amp; IIII  &amp; 4 \\  \hline 
+           &amp; sum &amp; 12 
+         \end{array}
+        </me>
+      </p>
+    </li>
+  </ol>
+    </p>
+  </introduction>
+
+    <subsection xml:id="subsec-outliers">
+      <title>Outliers</title>
+      <p>
+        Outliers are extreme data points with respect to normal data points. 
+        They are unusual values in your dataset which can distort statistical analyses and violate their assumptions. 
+        Unfortunately, all analysts will confront outliers and be forced to make decisions about what to do with them. 
+        Given the problems they can cause, you might think that it's best to remove them from your data. 
+        But, that's not always the case. Removing outliers is legitimate only for specific reasons.
+      </p>
+      <p>
+        Removing outliers: Outliers can be very informative about the subject-area and data collection process. 
+        It's essential to understand how outliers occur and whether they might happen again as a normal part of the 
+        process or study area. Unfortunately, resisting the temptation to remove outliers inappropriately can be difficult. 
+        Outliers increase the variability in your data, which decreases statistical power. 
+        Consequently, excluding outliers can cause your results to become statistically significant. 
+        There are two methods to remove outliers: standard deviation (z-score) method and IQR method. 
+        We can use the IQR method of identifying outliers to set up a “fence” outside of <m>Q_1</m> and <m>Q_3</m>. 
+        Any values that fall outside of this fence are considered outliers. To build this fence we take 1.5 times 
+        the IQR and then subtract this value from <m>Q_1</m>  and add this value to <m>Q_3</m> . 
+        This gives us the minimum and maximum fence posts that we compare each observation to. 
+        Any observations that are more than 1.5 (IQR) below <m>Q_1</m>  or more than 1.5 (IQR) above <m>Q_3</m>  
+        are considered outliers.  
+      </p>
+      <figure>
+        <caption>z-score</caption>
+        <image source="zscore.png" width="50%"/>
+    </figure>
+<p>
+  When a distribution is normal, the histogram takes on a bell shape, which is why it is sometimes referred to as a “bell curve.” 
+  A standard normal distribution, also called the z-distribution, is the most commonly used normal distribution with a mean of 0 
+  and a standard deviation of 1. In the standard normal distribution, <m>68\%</m> of data falls within 1 standard deviation of the mean, 
+  <m>95\%</m> falls within 2 standard deviations, and <m>99.7\%</m> falls within 3 standard deviations of the mean. 
+  Consider the image of the bell curve. In all normal distributions, the area under the curve is 1, the curve is symmetrical 
+  around the mean, and exactly half of the data falls on the right and left of the mean. Any value falls out side of 
+  3 standard deviation, that is less than <m>-3\sigma</m> and higher than <m>+3\sigma</m> are considered as outliers.
+</p>
+
+
+
+
+      <example>
+        <statement>
+          <p>
+            The student test scores are: 74, 88, 78, 90, 94, 90, 84, 90, 98, and 80. Find the outliers.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Arrange the data in ascending order: 74, 78, 80, 84, 88, 90, 90, 90, 94, 98. 
+          </p>
+          <p>
+            Five number summary: 74, 80, 89, 90, 98.
+            <me>
+              IQR = Q_3-Q_1 = 90-80=10.
+            </me>
+            <md>
+              <mrow>\text{ upper fence} \amp = Q_3 +1.5\times IQR = 90+1.5*10 = 105.</mrow>
+              <mrow>\text{ lower fence} \amp = Q_1-1.5\times IQR = 80 -1.5*10 = 65.</mrow>
+            </md>
+            Any scores that are less than 65 or greater than 105 are outliers. Hence, here we do not have any outliers.
+          </p>
+        </solution>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            A survey was given to a random sample of 20 sophomore college students. 
+            They were asked, “how many textbooks do you own?” Their responses, 
+            were: 0, 0, 2, 5, 8, 8, 8, 9, 9, 10, 10, 10, 11, 12, 12, 12, 14, 15, 20, and 25.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Arrange the data in ascending order: 0, 0, 2, 5, 8, 8, 8, 9, 9, 10, 10, 10, 11, 12, 12, 12, 14, 15, 20, 25. 
+            </p>
+            <p>
+              Five number summary: 0, 8, 10, 12, 25.
+              <me>
+                IQR = Q_3-Q_1 = 12-8 =4.
+              </me>
+                <md>
+                <mrow>\text{ upper fence} \amp = Q_3 +1.5\times IQR = 12+1.5*4 = 18.</mrow>
+                <mrow>\text{ lower fence} \amp = Q_1-1.5\times IQR = 8 -1.5*4 = 2.</mrow>
+              </md>
+              Any scores that are less than 2 or greater than 18 are outliers. Hence, we have 0, 0, 20, and 25 are outliers.
+          </p>
+        </solution>
+      </example>
+
+
+    </subsection>
+
+    
+</section>
