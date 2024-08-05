@@ -5,7 +5,7 @@
 <introduction>
   
   <p> 
-    Hypothesis testing is a statistical method used to make inferences or draw conclusions 
+    Hypothesis testing is a statistical method to draw conclusions (or make inferences) 
     about a population based on sample data. It involves making an assumption (the hypothesis) 
     and then using statistical techniques to determine the likelihood that this assumption is true. 
     Here's a basic outline of the process:
@@ -13,7 +13,8 @@
       <li>
         <p>
           <em>Formulate Hypotheses: </em>
-    Null Hypothesis <m>(H_0)</m>: This is a statement of no effect or no difference. It represents the status quo or a baseline assumption.
+    Null Hypothesis <m>(H_0)</m>: This is a statement of no effect or no difference. It represents the status quo or a baseline assumption. 
+    It assumes that there is no significant difference between the sample and population mean.
     Alternative Hypothesis <m>(H_1 or H_a)</m>: This is a statement that indicates the presence of an effect or a difference. 
     It represents what you are trying to prove.
         </p>

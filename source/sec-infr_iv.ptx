@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-infr_iv" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Type I and II errors</title>
+  <title>Type I and Type II errors</title>
 
  
-  <p> Text of section. </p>
-
+  <p> 
+   <term>Power of a Test:</term> The power of a test is a concept in hypothesis testing. It measures the test's ability to correctly reject a false null hypothesis. 
+    It is the probability that the test correctly rejects the 
+    null hypothesis <m>(H_o)</m> when a specific alternative hypothesis <m>(H_1)</m> is true. 
+  </p>
+<p>
+  When testing a null hypothesis, <m>(H_o)</m> against alternative hypothesis, <m>(H_1)</m> then there are four possibilities arise
+</p>
+<p>
+  <ul>
+    <li>
+      <p>
+        <m>(H_o)</m> is accepted when  <m>(H_o)</m> is true. (Correct)
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>(H_o)</m> is rejected when  <m>(H_o)</m> is true. (<term>Type I error</term>) or <m>\alpha</m> error.
+      </p>
+      <p>
+        <m>\alpha = p (\text{ reject } H_o|H_o \text{ is true}) </m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>(H_o)</m> is accepted when  <m>(H_o)</m> is false. (<term>Type II error</term>) or <m>\beta</m> error.
+      </p>
+      <p>
+        <m>\beta = p (\text{ accept }  H_o|H_1 \text{ is true}) </m>
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>(H_o)</m> is rejected when  <m>(H_o)</m> is false. (Correct)
+      </p>
+    </li>
+  </ul>
+</p>
 </section>
