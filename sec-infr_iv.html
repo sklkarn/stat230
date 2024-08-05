@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Type I and II errors</title>
+<title>Type I and Type II errors</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -106,7 +106,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-infr_iii.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infr_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-infr_v.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-infr_iii.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infr_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -245,8 +245,7 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">T Test</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Type I and II errors</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_v.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Type I and II errors</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Type I and Type II errors</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -259,11 +258,29 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-infr_iv"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Type I and II errors</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.4</span><span class="space"> </span><span class="title">Type I and Type II errors</span>
 </h2>
-<div class="para" id="sec-infr_iv-2">Text of section.</div></section></div>
+<div class="para" id="sec-infr_iv-2">
+<dfn class="terminology">Power of a Test:</dfn> The power of a test is a concept in hypothesis testing. It measures the test’s ability to correctly reject a false null hypothesis. It is the probability that the test correctly rejects the null hypothesis <span class="process-math">\((H_o)\)</span> when a specific alternative hypothesis <span class="process-math">\((H_1)\)</span> is true.</div>
+<div class="para" id="sec-infr_iv-3">When testing a null hypothesis, <span class="process-math">\((H_o)\)</span> against alternative hypothesis, <span class="process-math">\((H_1)\)</span> then there are four possibilities arise</div>
+<div class="para logical" id="sec-infr_iv-4"><ul class="disc">
+<li id="sec-infr_iv-4-1-1"><div class="para" id="sec-infr_iv-4-1-1-1">
+<span class="process-math">\((H_o)\)</span> is accepted when  <span class="process-math">\((H_o)\)</span> is true. (Correct)</div></li>
+<li id="sec-infr_iv-4-1-2">
+<div class="para" id="sec-infr_iv-4-1-2-1">
+<span class="process-math">\((H_o)\)</span> is rejected when  <span class="process-math">\((H_o)\)</span> is true. (<dfn class="terminology">Type I error</dfn>) or <span class="process-math">\(\alpha\)</span> error.</div>
+<div class="para" id="sec-infr_iv-4-1-2-2"><span class="process-math">\(\alpha = p (\text{ reject } H_o|H_o \text{ is true}) \)</span></div>
+</li>
+<li id="sec-infr_iv-4-1-3">
+<div class="para" id="sec-infr_iv-4-1-3-1">
+<span class="process-math">\((H_o)\)</span> is accepted when  <span class="process-math">\((H_o)\)</span> is false. (<dfn class="terminology">Type II error</dfn>) or <span class="process-math">\(\beta\)</span> error.</div>
+<div class="para" id="sec-infr_iv-4-1-3-2"><span class="process-math">\(\beta = p (\text{ accept }  H_o|H_1 \text{ is true}) \)</span></div>
+</li>
+<li id="sec-infr_iv-4-1-4"><div class="para" id="sec-infr_iv-4-1-4-1">
+<span class="process-math">\((H_o)\)</span> is rejected when  <span class="process-math">\((H_o)\)</span> is false. (Correct)</div></li>
+</ul></div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-infr_iii.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-infr_v.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-infr_iii.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
