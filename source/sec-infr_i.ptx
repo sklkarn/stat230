@@ -8,7 +8,28 @@
     Hypothesis testing is a statistical method to draw conclusions (or make inferences) 
     about a population based on sample data. It involves making an assumption (the hypothesis) 
     and then using statistical techniques to determine the likelihood that this assumption is true. 
-    Here's a basic outline of the process:
+    There are two categories of hypothesis testing: parametric and non-parametric. 
+    <em>Parametric test</em> gives generalization of generating records regarding the mean of the population. 
+    It is based on the assumption that the population data are normally distributed. Z-test, t-test, 
+    Annova tests are usually used in parametric test. <em>Non-parametric test</em> does not require any population distributin  
+    and are used when parametric test assumptions cannot be satisfied. <m>\chi^2</m> test, Kruskal-Wallis test, Wilcoxon Signed-Rank test, 
+    Mann-Whitney U test, etc. 
+  </p>
+  <p>
+    Use Parametric Tests When:
+        The sample size is large enough (often <m>n \gt 30</m>) to rely on the Central Limit Theorem, 
+        which implies that the sample mean will be approximately normally distributed.
+        The data is normally distributed, or you have sufficient evidence to assume normality.
+  </p>
+  <p>
+    Use Non-Parametric Tests When:
+        The data does not meet the assumptions required for parametric tests, such as normality.
+        The sample size is small, making it difficult to assess or rely on the assumption of normality.
+        You are dealing with ordinal data or ranked data instead of interval or ratio data.
+        The data includes outliers or is skewed, which could affect the results of parametric tests.
+  </p>
+  <p>
+    Here's a basic outline of the hypothesis test process:
     <ol marker ="i">
       <li>
         <p>

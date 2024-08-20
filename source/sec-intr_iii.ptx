@@ -26,15 +26,16 @@
       <p>
         <term>Interval: </term> the data can be categorized, ranked, and evenly spaced. 
         Here order matters and distance between values are equal and meaningful, and a natural zero is not 
-        present (or zero is arbitrary, it has no meaning). For example: <m>0 ^{o} C </m> does not mean no 
-        temperature or no heat, negative values are allowed.
+        present (or zero is arbitrary, it has no meaning). Negative values are allowed. For example: Temperature in Celcius or Fahrenheit scale. 
+        As <m>0 ^{o} C </m> does not mean no temperature or no heat; IQ score, Time of the day, SAT scores, pH scale, calender years, etc.  
       </p>
     </li>
     <li>
       <p>
-        <term>Ratio:</term> the data can be categorized, ranked, evenly spaced, and has a natural zero. 
+        <term>Ratio:</term> the data can be categorized, ranked, evenly spaced, and has a natural zero. Negative values are not allowed.
         Here order matters and distance between values are equal and meaningful, and a natural zero is present. 
-        For example: <m>0 K </m> means no temperature or no heat, negative values are not allowed. Weight, age are in ratio data.
+        For example: Temperature in Kelvin scale. As <m>0 K </m> means no temperature or no heat; height, Weight, age, speed of a vehicles, 
+        income levels, distance travelled, time duration, etc.
       </p>
     </li>
    </ol>

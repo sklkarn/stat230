@@ -387,7 +387,7 @@
   <title>z tabulated value (<m>z_{tab})</m></title>
   <p>
    If <m>\bar{x} \lt \mu_o</m> use Left-Tailed test, if <m>\bar{x} \gt \mu_o</m> then use right-tailed test, 
-   and if <m>\mu =\neq \mu_o</m> then use two-tailed test.
+   and if <m>\mu \neq \mu_o</m> then use two-tailed test.
   </p>
   <p>
     For two-tailed test: 
