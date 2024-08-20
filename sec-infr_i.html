@@ -260,22 +260,22 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-infr_i"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">Hypothesis Testing</span>
 </h2>
-<section class="introduction" id="sec-infr_i-2"><div class="para logical" id="sec-infr_i-2-1">
-<div class="para">Hypothesis testing is a statistical method to draw conclusions (or make inferences) about a population based on sample data. It involves making an assumption (the hypothesis) and then using statistical techniques to determine the likelihood that this assumption is true. Here’s a basic outline of the process:</div>
+<section class="introduction" id="sec-infr_i-2"><div class="para" id="sec-infr_i-2-1">Hypothesis testing is a statistical method to draw conclusions (or make inferences) about a population based on sample data. It involves making an assumption (the hypothesis) and then using statistical techniques to determine the likelihood that this assumption is true. There are two categories of hypothesis testing: parametric and non-parametric. <em class="emphasis">Parametric test</em> gives generalization of generating records regarding the mean of the population. It is based on the assumption that the population data are normally distributed. Z-test, t-test, Annova tests are usually used in parametric test. <em class="emphasis">Non-parametric test</em> does not require any population distributin and are used when parametric test assumptions cannot be satisfied. <span class="process-math">\(\chi^2\)</span> test, Kruskal-Wallis test, Wilcoxon Signed-Rank test, Mann-Whitney U test, etc.</div> <div class="para" id="sec-infr_i-2-2">Use Parametric Tests When: The sample size is large enough (often <span class="process-math">\(n \gt 30\)</span>) to rely on the Central Limit Theorem, which implies that the sample mean will be approximately normally distributed. The data is normally distributed, or you have sufficient evidence to assume normality.</div> <div class="para" id="sec-infr_i-2-3">Use Non-Parametric Tests When: The data does not meet the assumptions required for parametric tests, such as normality. The sample size is small, making it difficult to assess or rely on the assumption of normality. You are dealing with ordinal data or ranked data instead of interval or ratio data. The data includes outliers or is skewed, which could affect the results of parametric tests.</div> <div class="para logical" id="sec-infr_i-2-4">
+<div class="para">Here’s a basic outline of the hypothesis test process:</div>
 <ol class="lower-roman">
-<li id="sec-infr_i-2-1-1-1"><div class="para" id="sec-infr_i-2-1-1-1-1">
+<li id="sec-infr_i-2-4-1-1"><div class="para" id="sec-infr_i-2-4-1-1-1">
 <em class="emphasis">Formulate Hypotheses:</em> Null Hypothesis <span class="process-math">\((H_0)\text{:}\)</span> This is a statement of no effect or no difference. It represents the status quo or a baseline assumption. It assumes that there is no significant difference between the sample and population mean. Alternative Hypothesis <span class="process-math">\((H_1 or H_a)\text{:}\)</span> This is a statement that indicates the presence of an effect or a difference. It represents what you are trying to prove.</div></li>
-<li id="sec-infr_i-2-1-1-2"><div class="para" id="sec-infr_i-2-1-1-2-1">
+<li id="sec-infr_i-2-4-1-2"><div class="para" id="sec-infr_i-2-4-1-2-1">
 <em class="emphasis">Choose the Significance Level</em> <span class="process-math">\((\alpha)\text{:}\)</span> The significance level is the probability of rejecting the null hypothesis when it is actually true. Common values for <span class="process-math">\(\alpha\)</span> are 0.05, 0.01, and 0.10.</div></li>
-<li id="sec-infr_i-2-1-1-3"><div class="para" id="sec-infr_i-2-1-1-3-1">
+<li id="sec-infr_i-2-4-1-3"><div class="para" id="sec-infr_i-2-4-1-3-1">
 <em class="emphasis">Select the Appropriate Test:</em> The choice of test depends on the type of data and the hypothesis. Common tests include t-tests, chi-square (<span class="process-math">\(\chi^2\)</span>) tests, ANOVA test, F-test, and regression analysis.</div></li>
-<li id="sec-infr_i-2-1-1-4"><div class="para" id="sec-infr_i-2-1-1-4-1">
+<li id="sec-infr_i-2-4-1-4"><div class="para" id="sec-infr_i-2-4-1-4-1">
 <em class="emphasis">Calculate the Test Statistic:</em> This involves computing a value (test statistic) from the sample data that is used to evaluate the hypotheses.</div></li>
-<li id="sec-infr_i-2-1-1-5"><div class="para" id="sec-infr_i-2-1-1-5-1">
+<li id="sec-infr_i-2-4-1-5"><div class="para" id="sec-infr_i-2-4-1-5-1">
 <em class="emphasis">Determine the P-value:</em> The p-value is the probability of observing the test statistic or something more extreme if the null hypothesis is true. It helps in deciding whether to reject the null hypothesis.</div></li>
-<li id="sec-infr_i-2-1-1-6"><div class="para" id="sec-infr_i-2-1-1-6-1">
+<li id="sec-infr_i-2-4-1-6"><div class="para" id="sec-infr_i-2-4-1-6-1">
 <em class="emphasis">Compare the P-value with the Significance Level:</em> If the p-value is less than or equal to <span class="process-math">\(\alpha\text{,}\)</span> reject the null hypothesis in favor of the alternative hypothesis. If the p-value is greater than <span class="process-math">\(\alpha\text{,}\)</span> fail to reject the null hypothesis.</div></li>
-<li id="sec-infr_i-2-1-1-7"><div class="para" id="sec-infr_i-2-1-1-7-1">
+<li id="sec-infr_i-2-4-1-7"><div class="para" id="sec-infr_i-2-4-1-7-1">
 <em class="emphasis">Draw a Conclusion:</em> Based on the comparison, conclude whether there is sufficient evidence to support the alternative hypothesis.</div></li>
 </ol>
 </div></section><section class="subsection" id="subsec-hyp_test"><h3 class="heading hide-type">
