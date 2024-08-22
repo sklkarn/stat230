@@ -5,41 +5,75 @@
 
  <introduction>
   
-  <p><term>Population: </term> Any collection of individual items or units which are the subject of investigation. </p>
-  
-    <p>
-      <term>Sampling Method:</term> The goal of sampling is to create a sample that is representative of the population it is being drawn from. 
-      The size of population is represented using the letter <m>N</m> and the size of sample is represented using the letter <m>n.</m> 
-      The most basic sampling methods are: 
-      <ol marker ="I">
-        <li>
-          <p>
-            <term>Simple Random Sampling: </term> Every member of the population, <m>N</m> has an equal chance of 
-            being selected for the sample, <m>n</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <term>Stratified Sampling: </term> The population, <m>N</m> is split into non-overlapping groups (strate), 
-            then simple random sampling is done on each group to form a sample, <m>n.</m> For example: 
-            split population of student in 'women' and 'men' group.
-          </p>
-        </li>
-        <li>
-          <p>
-            <term>Systematic Sampling: </term> Every <m>n^{th}</m> individual from the population, <m>N </m> is placed in the sample, <m>n.</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <term>Convenience Sampling (Voluntary response sample): </term> Easily obtained individuals from the population, <m>N</m> are placed in the sample, <m>n</m>.
-          </p>
-        </li>
-      </ol>
-    </p>
-   
+  <p><term>Population: </term> Any collection of individual items or units which are the 
+    subject of investigation is a population. An individual item is a member of population being investigated. 
+    A sample is a small group of items that are selected from the population. 
+    In other words <term>sample</term> is a subset of population. 
+   </p>
+  <p>
+    For example: All students of the school is a population (total of 200 student). Each student is a member of the population, and if we select 
+    50 random students from the school to participate in some kind of study then they are sample.
+  </p>
+  <p>
+    In statistics, "statistic" and "parameter" are terms used to distinguish between measures 
+    calculated from a sample and those related to the entire population. 
+    <term>Statistic:</term> It is a numerical summary of the sample. For example: mean, median, mode, etc. 
+    Suppose you survey 100 students at a school to estimate the average height of all students. 
+    The average height calculated from your sample (e.g., 5'8") is a statistic. 
+    <term>Parameter:</term> It is a numerical summary of the population. 
+    Unlike a statistic, which is calculated from a sample, a parameter represents the true value for the population. 
+    If you could measure the height of every student at the school, the actual average height of all students (e.g., 5'9") would be a parameter. 
+  </p>
+  <p>
+    Parameters are often unknown because it is impossible to measure the entire population. 
+    The goal of statistical analysis is to estimate population parameters using sample statistics. 
+    Since we usually cannot measure an entire population, we rely on sample statistic to estimate population parameters.
+  </p>
+    
+ <p>
+  Suppose you are interested in understanding the average height of male students in your school. 
+  If you could somehow measure the height of every male student in the school, you would calculate 
+  the true average height of all these male students. Let's say this true average height is 5'10" (or, 70 inches). 
+  This 70 inches is a parameter because it reflects the average height of the entire population of male students in your school. 
+  Since measuring every male student in the school is impractical, you decide to randomly select a sample of 
+  100 male students and measure their heights. You calculated the average height of these 100 students and 
+  found that it is 5'9" (69 inches). This 69 inches is a statistic because it reflects the average height of your sample.
+ </p>
       </introduction>
 
+      <subsection xml:id="subsec-sample_method">
+        <title>Sampling Method:</title>
+        <p>
+          The goal of sampling is to create a sample that is representative of the population it is being drawn from. 
+          The size of population is represented using the letter <m>N</m> and the size of sample is represented using the letter <m>n.</m> 
+          The most basic sampling methods are: 
+          <ol marker ="I">
+            <li>
+              <p>
+                <term>Simple Random Sampling: </term> Every member of the population, <m>N</m> has an equal chance of 
+                being selected for the sample, <m>n</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Stratified Sampling: </term> The population, <m>N</m> is split into non-overlapping groups (strate), 
+                then simple random sampling is done on each group to form a sample, <m>n.</m> For example: 
+                split population of student in 'women' and 'men' group.
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Systematic Sampling: </term> Every <m>n^{th}</m> individual from the population, <m>N </m> is placed in the sample, <m>n.</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Convenience Sampling (Voluntary response sample): </term> Easily obtained individuals from the population, <m>N</m> are placed in the sample, <m>n</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </subsection>
 
       <subsection xml:id="subsec-sample_bias">
         <title>Bias in Sampling</title>

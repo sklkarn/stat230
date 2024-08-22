@@ -3,9 +3,10 @@
 <section xml:id="sec-intr_ii" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Variables</title>
  
-
-   
-  <p>A variable is a property that can take on many values. In other words, it is 
+<introduction>
+  
+  <p>
+    A variable is a property that can take on many values. In other words, it is 
     characteristics of population which differs from individual to individual. For examples: "length", 
     "mass", "age", "gender", "place", "temperature", "proximity to a neighbour," etc. </p>
     <p>
@@ -52,7 +53,53 @@
         The dependent variable is the effect. Its value depends on changes in the independent variable. It can be measured. For example: weight.
        </p>
     
-
+       <p>
+    
+       </p>
+     </introduction>  
    
+     <subsection xml:id="subsec-data_varbles">
+      <title>Data and Variables</title>
+      <p>
+        An individual (member of sample) is an object or person for whom you obtained data. 
+        Data refers to the collection of facts, figures, measurements, or observations 
+        that are gathered for analysis. Data can be quantitative (numerical) or qualitative (categorical) 
+        and is used to answer questions, test hypotheses, and make decisions. For example: 
+        Imagine conducting a survey to understand people's preferences for different types of coffee. 
+        The responses you collected such as "likes espresso," "dislikes latte," "age 25," or "income $50,000" are your data.
+      </p>
+      <p>
+        The variables are the characteristics of the individuals, and the data are the specific values of the variables. 
+        In the coffee preference survey: Age is a variable because it can vary from person to person. 
+        Type of coffee preferred is a variable because different people may prefer different types of coffee. 
+        Variables are also both qualitative and quantitative types.
+      </p>
+      <p>
+        When you collect data, you are essentially gathering values for one or more variables. 
+        For example, if you collect data on people's ages and coffee preferences, "age" and "type of coffee preferred" 
+        are the variables, and the individual values for each person are the data.
+      </p>
+      <p>
+        A <term>dataset</term> is a structured collection of data, typically organized in a table 
+        where each row represents an observation (e.g., a person, a test result) and each column 
+        represents a variable (e.g., age, income, coffee preference).
+      </p>
+      <p>
+        Imagine a study examining the effects of exercise on health. 
+        The researchers might collect data from 100 participants. Here's how data and variables relate in this context:
+        <term> Variables:</term> Exercise Frequency (quantitative, discrete): How many times per week a participant exercises.
+        Heart Rate (quantitative, continuous): A participant's resting heart rate. 
+        Gender (qualitative, nominal): Male or Female.
+        Health Rating (qualitative, ordinal): A self-reported scale from 1 (poor) to 5 (excellent).
+       <term> Data:</term> For each participant, you collect values for these variables. 
+       For example, Participant 1 might have the data: exercises 3 times a week, 
+       has a heart rate of 70 bpm, is male, and rates their health as a 4.  
+      </p>
+      <p>
+        In a table I column is observations, I row is variables and the intersection of each row and column is a data.
+        Data: The actual values you collect (e.g., "3 times a week," "70 bpm," "male," "rating 4").
+        Variables: The characteristics that those values describe (e.g., Exercise Frequency, Heart Rate, Gender, Health Rating).
+      </p>
+     </subsection>
 
 </section>
