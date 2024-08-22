@@ -124,9 +124,15 @@ window.MathJax = {
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-intr_i.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Population and Sampling</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intr_i.html#subsec-sample_bias" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Bias in Sampling</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intr_i.html#subsec-sample_method" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Sampling Method:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intr_i.html#subsec-sample_bias" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Bias in Sampling</span></a></div></li>
+</ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-intr_ii.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Variables</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-intr_ii.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Variables</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intr_ii.html#subsec-data_varbles" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Data and Variables</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-intr_iii.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Levels of Measurement</span></a></div></li>
 </ul>
 </li>
@@ -264,24 +270,26 @@ window.MathJax = {
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Population and Sampling</span>
 </h2>
 <section class="introduction" id="sec-intr_i-2"><div class="para" id="sec-intr_i-2-1">
-<dfn class="terminology">Population:</dfn> Any collection of individual items or units which are the subject of investigation.</div> <div class="para logical" id="sec-intr_i-2-2">
-<div class="para">
-<dfn class="terminology">Sampling Method:</dfn> The goal of sampling is to create a sample that is representative of the population it is being drawn from. The size of population is represented using the letter <span class="process-math">\(N\)</span> and the size of sample is represented using the letter <span class="process-math">\(n.\)</span> The most basic sampling methods are:</div>
+<dfn class="terminology">Population:</dfn> Any collection of individual items or units which are the subject of investigation is a population. An individual item is a member of population being investigated. A sample is a small group of items that are selected from the population. In other words <dfn class="terminology">sample</dfn> is a subset of population.</div> <div class="para" id="sec-intr_i-2-2">For example: All students of the school is a population (total of 200 student). Each student is a member of the population, and if we select 50 random students from the school to participate in some kind of study then they are sample.</div> <div class="para" id="sec-intr_i-2-3">In statistics, "statistic" and "parameter" are terms used to distinguish between measures calculated from a sample and those related to the entire population. <dfn class="terminology">Statistic:</dfn> It is a numerical summary of the sample. For example: mean, median, mode, etc. Suppose you survey 100 students at a school to estimate the average height of all students. The average height calculated from your sample (e.g., 5’8") is a statistic. <dfn class="terminology">Parameter:</dfn> It is a numerical summary of the population. Unlike a statistic, which is calculated from a sample, a parameter represents the true value for the population. If you could measure the height of every student at the school, the actual average height of all students (e.g., 5’9") would be a parameter.</div> <div class="para" id="sec-intr_i-2-4">Parameters are often unknown because it is impossible to measure the entire population. The goal of statistical analysis is to estimate population parameters using sample statistics. Since we usually cannot measure an entire population, we rely on sample statistic to estimate population parameters.</div> <div class="para" id="sec-intr_i-2-5">Suppose you are interested in understanding the average height of male students in your school. If you could somehow measure the height of every male student in the school, you would calculate the true average height of all these male students. Let’s say this true average height is 5’10" (or, 70 inches). This 70 inches is a parameter because it reflects the average height of the entire population of male students in your school. Since measuring every male student in the school is impractical, you decide to randomly select a sample of 100 male students and measure their heights. You calculated the average height of these 100 students and found that it is 5’9" (69 inches). This 69 inches is a statistic because it reflects the average height of your sample.</div></section><section class="subsection" id="subsec-sample_method"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Sampling Method:</span>
+</h3>
+<div class="para logical" id="subsec-sample_method-2">
+<div class="para">The goal of sampling is to create a sample that is representative of the population it is being drawn from. The size of population is represented using the letter <span class="process-math">\(N\)</span> and the size of sample is represented using the letter <span class="process-math">\(n.\)</span> The most basic sampling methods are:</div>
 <ol class="upper-roman">
-<li id="sec-intr_i-2-2-4-1"><div class="para" id="sec-intr_i-2-2-4-1-1">
+<li id="subsec-sample_method-2-3-1"><div class="para" id="subsec-sample_method-2-3-1-1">
 <dfn class="terminology">Simple Random Sampling:</dfn> Every member of the population, <span class="process-math">\(N\)</span> has an equal chance of being selected for the sample, <span class="process-math">\(n\text{.}\)</span>
 </div></li>
-<li id="sec-intr_i-2-2-4-2"><div class="para" id="sec-intr_i-2-2-4-2-1">
+<li id="subsec-sample_method-2-3-2"><div class="para" id="subsec-sample_method-2-3-2-1">
 <dfn class="terminology">Stratified Sampling:</dfn> The population, <span class="process-math">\(N\)</span> is split into non-overlapping groups (strate), then simple random sampling is done on each group to form a sample, <span class="process-math">\(n.\)</span> For example: split population of student in ’women’ and ’men’ group.</div></li>
-<li id="sec-intr_i-2-2-4-3"><div class="para" id="sec-intr_i-2-2-4-3-1">
+<li id="subsec-sample_method-2-3-3"><div class="para" id="subsec-sample_method-2-3-3-1">
 <dfn class="terminology">Systematic Sampling:</dfn> Every <span class="process-math">\(n^{th}\)</span> individual from the population, <span class="process-math">\(N \)</span> is placed in the sample, <span class="process-math">\(n.\)</span>
 </div></li>
-<li id="sec-intr_i-2-2-4-4"><div class="para" id="sec-intr_i-2-2-4-4-1">
+<li id="subsec-sample_method-2-3-4"><div class="para" id="subsec-sample_method-2-3-4-1">
 <dfn class="terminology">Convenience Sampling (Voluntary response sample):</dfn> Easily obtained individuals from the population, <span class="process-math">\(N\)</span> are placed in the sample, <span class="process-math">\(n\text{.}\)</span>
 </div></li>
 </ol>
 </div></section><section class="subsection" id="subsec-sample_bias"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Bias in Sampling</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">Bias in Sampling</span>
 </h3>
 <div class="para" id="subsec-sample_bias-2">Bias refers to a systematic error that creates misleading conclusion about the population. It can occur at different stages of data collection, analysis, and interpretation. Here are some common types of bias in statistics:</div>
 <div class="para logical" id="subsec-sample_bias-3"><ol class="lower-roman">
