@@ -3,7 +3,8 @@
 <section xml:id="sec-intr_i" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Population and Sampling</title>
 
- 
+ <introduction>
+  
   <p><term>Population: </term> Any collection of individual items or units which are the subject of investigation. </p>
   
     <p>
@@ -37,7 +38,49 @@
       </ol>
     </p>
    
+      </introduction>
 
 
+      <subsection xml:id="subsec-sample_bias">
+        <title>Bias in Sampling</title>
+        <p>
+          Bias refers to a systematic error that creates misleading conclusion about the population. 
+          It can occur at different stages of data collection, analysis, and interpretation.  
+          Here are some common types of bias in statistics:
+        </p>
+        <p>
+          <ol marker="i">
+            <li>
+              <p>
+                <term>Sampling Bias: </term> It occurs when the sample is not representative of the population.
+                It can happen due to faulty sampling methods, when selecting participants for the sample 
+                causes certain groups to be underrepresented or overrepresented. Convenience sample gets sampling bias 
+                as the individuals are not selected from random sample.
+                Example: Conducting a survey on internet for only those individuals who are already online,
+                 thereby excluding those who may not have access to the internet.
+              </p>
+            </li>
+            <li>
+              <p>
+               <term> Nonresponse Bias:</term> It happens when a significant portion of the selected sample does not 
+               respond, and those who do respond differ in relevant ways from those who do not. 
+               If individuals with strong opinions on a topic are more likely to respond to a survey, 
+               while those who are indifferent do not, the results may be skewed toward more extreme views.
+              </p>
+            </li>
+            <li>
+              <p>
+                <term>Response Bias: </term> It exists when the answers on survey do not reflect the true 
+                feelings of the respondent. It can occur in a number of ways. In a survey on alcohol consumption, 
+                respondents might underreport their drinking habits because excessive drinking is socially frowned upon. 
+                This bias is especially prevalent in sensitive topics like drug use, income, or sexual behavior. 
+                When presented with a <em>Likert scale</em> (e.g., 1-5, where 1 is strongly disagree and 5 is strongly agree), 
+                some participants may consistently choose the "agree" option (4 or 5) without fully considering 
+                each question. This can lead to artificially high agreement levels.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </subsection>
    
 </section>
