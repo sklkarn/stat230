@@ -122,7 +122,10 @@ window.MathJax = {
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-intr_stat.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-intr_i.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Population and Sampling</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-intr_i.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Population and Sampling</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intr_i.html#subsec-sample_bias" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Bias in Sampling</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-intr_ii.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Variables</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-intr_iii.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Levels of Measurement</span></a></div></li>
 </ul>
@@ -239,7 +242,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Z Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.2.1</span> <span class="title">z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">T Test</span></a></div>
@@ -260,25 +263,35 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-intr_i"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Population and Sampling</span>
 </h2>
-<div class="para" id="sec-intr_i-2">
-<dfn class="terminology">Population:</dfn> Any collection of individual items or units which are the subject of investigation.</div>
-<div class="para logical" id="sec-intr_i-3">
+<section class="introduction" id="sec-intr_i-2"><div class="para" id="sec-intr_i-2-1">
+<dfn class="terminology">Population:</dfn> Any collection of individual items or units which are the subject of investigation.</div> <div class="para logical" id="sec-intr_i-2-2">
 <div class="para">
 <dfn class="terminology">Sampling Method:</dfn> The goal of sampling is to create a sample that is representative of the population it is being drawn from. The size of population is represented using the letter <span class="process-math">\(N\)</span> and the size of sample is represented using the letter <span class="process-math">\(n.\)</span> The most basic sampling methods are:</div>
 <ol class="upper-roman">
-<li id="sec-intr_i-3-4-1"><div class="para" id="sec-intr_i-3-4-1-1">
+<li id="sec-intr_i-2-2-4-1"><div class="para" id="sec-intr_i-2-2-4-1-1">
 <dfn class="terminology">Simple Random Sampling:</dfn> Every member of the population, <span class="process-math">\(N\)</span> has an equal chance of being selected for the sample, <span class="process-math">\(n\text{.}\)</span>
 </div></li>
-<li id="sec-intr_i-3-4-2"><div class="para" id="sec-intr_i-3-4-2-1">
+<li id="sec-intr_i-2-2-4-2"><div class="para" id="sec-intr_i-2-2-4-2-1">
 <dfn class="terminology">Stratified Sampling:</dfn> The population, <span class="process-math">\(N\)</span> is split into non-overlapping groups (strate), then simple random sampling is done on each group to form a sample, <span class="process-math">\(n.\)</span> For example: split population of student in ’women’ and ’men’ group.</div></li>
-<li id="sec-intr_i-3-4-3"><div class="para" id="sec-intr_i-3-4-3-1">
+<li id="sec-intr_i-2-2-4-3"><div class="para" id="sec-intr_i-2-2-4-3-1">
 <dfn class="terminology">Systematic Sampling:</dfn> Every <span class="process-math">\(n^{th}\)</span> individual from the population, <span class="process-math">\(N \)</span> is placed in the sample, <span class="process-math">\(n.\)</span>
 </div></li>
-<li id="sec-intr_i-3-4-4"><div class="para" id="sec-intr_i-3-4-4-1">
+<li id="sec-intr_i-2-2-4-4"><div class="para" id="sec-intr_i-2-2-4-4-1">
 <dfn class="terminology">Convenience Sampling (Voluntary response sample):</dfn> Easily obtained individuals from the population, <span class="process-math">\(N\)</span> are placed in the sample, <span class="process-math">\(n\text{.}\)</span>
 </div></li>
 </ol>
-</div></section></div>
+</div></section><section class="subsection" id="subsec-sample_bias"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Bias in Sampling</span>
+</h3>
+<div class="para" id="subsec-sample_bias-2">Bias refers to a systematic error that creates misleading conclusion about the population. It can occur at different stages of data collection, analysis, and interpretation. Here are some common types of bias in statistics:</div>
+<div class="para logical" id="subsec-sample_bias-3"><ol class="lower-roman">
+<li id="subsec-sample_bias-3-1-1"><div class="para" id="subsec-sample_bias-3-1-1-1">
+<dfn class="terminology">Sampling Bias:</dfn> It occurs when the sample is not representative of the population. It can happen due to faulty sampling methods, when selecting participants for the sample causes certain groups to be underrepresented or overrepresented. Convenience sample gets sampling bias as the individuals are not selected from random sample. Example: Conducting a survey on internet for only those individuals who are already online, thereby excluding those who may not have access to the internet.</div></li>
+<li id="subsec-sample_bias-3-1-2"><div class="para" id="subsec-sample_bias-3-1-2-1">
+<dfn class="terminology">Nonresponse Bias:</dfn> It happens when a significant portion of the selected sample does not respond, and those who do respond differ in relevant ways from those who do not. If individuals with strong opinions on a topic are more likely to respond to a survey, while those who are indifferent do not, the results may be skewed toward more extreme views.</div></li>
+<li id="subsec-sample_bias-3-1-3"><div class="para" id="subsec-sample_bias-3-1-3-1">
+<dfn class="terminology">Response Bias:</dfn> It exists when the answers on survey do not reflect the true feelings of the respondent. It can occur in a number of ways. In a survey on alcohol consumption, respondents might underreport their drinking habits because excessive drinking is socially frowned upon. This bias is especially prevalent in sensitive topics like drug use, income, or sexual behavior. When presented with a <em class="emphasis">Likert scale</em> (e.g., 1-5, where 1 is strongly disagree and 5 is strongly agree), some participants may consistently choose the "agree" option (4 or 5) without fully considering each question. This can lead to artificially high agreement levels.</div></li>
+</ol></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-intr_stat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-intr_ii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
