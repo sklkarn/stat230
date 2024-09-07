@@ -148,7 +148,7 @@ window.MathJax = {
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-rawD" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-discrD" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-contS" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Continuous Series:</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Combined Mean</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Weighted (Combined) Mean</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-subsection">
@@ -197,10 +197,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-st_dev" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_dscs" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Discrete Series and Continuous Series</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-mean_dev" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Mean Deviation</span></a></div>
@@ -283,11 +280,11 @@ RF = \frac{frequency}{\text{ total number of observation } }\times 100\%\tag{2.2
 \begin{equation*}
 \begin{array}{c|c|c} 
 \text{ Data value} &amp; Frequency &amp; \text{ Relative Frequency} \\ \hline 
-1 &amp; 7 &amp; 7/20  \\ 
-2 &amp; 5 &amp; 5/20  \\ 
-3 &amp; 4 &amp; 4/20  \\ 
-4 &amp; 3 &amp; 3/20  \\ 
-5 &amp; 1 &amp; 1/20  \\ \hline 
+1 &amp; 7 &amp; 7/20 =0.35  \\ 
+2 &amp; 5 &amp; 5/20 =0.25 \\ 
+3 &amp; 4 &amp; 4/20 =0.20 \\ 
+4 &amp; 3 &amp; 3/20 =0.15 \\ 
+5 &amp; 1 &amp; 1/20 =0.05 \\ \hline 
 &amp; \sum f=20 &amp;   \\  
 \end{array}
 \end{equation*}
@@ -305,6 +302,7 @@ Color &amp; Frequency &amp; \text{ Commulative Frequency} \\ \hline
 Red &amp; 6 &amp; 6  \\ 
 Green &amp; 6 &amp; 12  \\ 
 Blue &amp; 4 &amp; 16  \\ \hline 
+&amp; \sum f=16 &amp;   \\ 
 \end{array}
 \end{equation*}
 </div>

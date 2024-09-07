@@ -148,7 +148,7 @@ window.MathJax = {
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-rawD" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-discrD" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-contS" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Continuous Series:</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Combined Mean</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Weighted (Combined) Mean</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-subsection">
@@ -197,10 +197,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-st_dev" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_dscs" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Discrete Series and Continuous Series</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-mean_dev" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Mean Deviation</span></a></div>
@@ -641,7 +638,7 @@ IQR = Q_3-Q_1 = 50\% \text{ of the data}.
 <div class="para">Number of data values = <span class="process-math">\(n = 16\text{.}\)</span>
 </div>
 </div> <div class="para logical" id="subsubsec-qd_is-3-2-2">
-<div class="para">Median of the even number data set using <a href="sec-desc_i.html#eqn-median2" class="xref" data-knowl="./knowl/xref/eqn-median2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.7">(2.1.7)</a>,</div>
+<div class="para">Median of the even number data set using <a href="sec-desc_i.html#eqn-median2" class="xref" data-knowl="./knowl/xref/eqn-median2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.8">(2.1.8)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-median2.html" id="subsubsec-qd_is-3-2-2-2">
 \begin{align*}
 Q_2  \amp = \frac{1}{2}\{\left( \frac{n}{2}\right)^{th} term + \left( \frac{n}{2}+1\right)^{th} term \} \\
@@ -1060,41 +1057,42 @@ and, \quad CQD = \frac{81.16-57.35}{81.16+57.35}\times 100 =17.19\%.
 <ol class="lower-roman">
 <li id="subsec-st_dev-2-3-2-1">
 <span class="heading"><span class="title">Actual Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-1-2">
-<div class="displaymath process-math" id="eqn-sd1a">
+<div class="para">For a population standard deviation:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mn1a.html" id="eqn-sd1a">
 \begin{equation}
-\sigma = \sqrt{\frac{(x-\bar{x})^2}{N}}\tag{2.3.6}
+\sigma = \sqrt{\frac{(x-\mu)^2}{N}}\tag{2.3.6}
 \end{equation}
 </div>
 <div class="para">
-<span class="process-math">\(n\)</span> is total number of observations.</div>
+<span class="process-math">\(N\)</span> is total number of observations (population) and <span class="process-math">\(\mu\)</span> is a population mean <a href="sec-desc_i.html#eqn-mn1a" class="xref" data-knowl="./knowl/xref/eqn-mn1a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.2">(2.1.2)</a>.</div>
+</div>
+<div class="para logical" id="subsec-st_dev-2-3-2-1-3">
+<div class="para">For a sample standard deviation:</div>
+<div class="displaymath process-math" id="eqn-sd1c">
+\begin{equation}
+\sigma = \sqrt{\frac{(x-\bar{x})^2}{n-1}}\tag{2.3.7}
+\end{equation}
+</div>
+<div class="para">
+<span class="process-math">\(n\)</span> is total number of observations (sample).</div>
 </div>
 </li>
 <li id="subsec-st_dev-2-3-2-2">
-<span class="heading"><span class="title">Assumed Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-2-2">
-<div class="displaymath process-math" id="eqn-sd1b">
-\begin{equation}
-\sigma = \sqrt{\frac{\sum{d^2}}{N}-\left(\frac{\sum d}{N}\right)^2}\tag{2.3.7}
-\end{equation}
-</div>
-<div class="para">here, <span class="process-math">\(d = x-A\text{,}\)</span> <span class="process-math">\(A\)</span> is assumed mean, and  <span class="process-math">\(N\)</span> is total number of observations.</div>
-</div>
-</li>
-<li id="subsec-st_dev-2-3-2-3">
-<span class="heading"><span class="title">Coefficient of standard deviation.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-3-2"><div class="displaymath process-math" id="eqn-csd1">
+<span class="heading"><span class="title">Coefficient of standard deviation.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-2-2"><div class="displaymath process-math" id="eqn-csd1">
 \begin{equation}
 CSD = \frac{\sigma}{\bar{x}}\tag{2.3.8}
 \end{equation}
 </div></div>
 </li>
-<li id="subsec-st_dev-2-3-2-4">
-<span class="heading"><span class="title">Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-4-2"><div class="displaymath process-math" id="eqn-var1">
+<li id="subsec-st_dev-2-3-2-3">
+<span class="heading"><span class="title">Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-3-2"><div class="displaymath process-math" id="eqn-var1">
 \begin{equation}
 \sigma^2 = \frac{(x-\bar{x})^2}{N}\tag{2.3.9}
 \end{equation}
 </div></div>
 </li>
-<li id="subsec-st_dev-2-3-2-5">
-<span class="heading"><span class="title">Coefficient of Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-5-2"><div class="displaymath process-math" id="eqn-cv1">
+<li id="subsec-st_dev-2-3-2-4">
+<span class="heading"><span class="title">Coefficient of Variance.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-4-2"><div class="displaymath process-math" id="eqn-cv1">
 \begin{equation}
 CV = \frac{\sigma}{\bar{x}}\times 100\%\tag{2.3.10}
 \end{equation}
@@ -1107,7 +1105,7 @@ CV = \frac{\sigma}{\bar{x}}\times 100\%\tag{2.3.10}
 <div class="para" id="subsubsec-sd_is-2">The standard deviation of the data below: <span class="process-math">\(10,12,13,15,20\)</span>
 </div>
 <section class="paragraphs" id="subsubsec-sd_is-3"><h5 class="heading"><span class="title">Actual Mean Method (direct method).</span></h5> <div class="para logical" id="subsubsec-sd_is-3-2">
-<div class="para">from equation <a href="sec-desc_i.html#eqn-mean1" class="xref" data-knowl="./knowl/xref/eqn-mean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.2">(2.1.2)</a>
+<div class="para">from equation <a href="sec-desc_i.html#eqn-mean1" class="xref" data-knowl="./knowl/xref/eqn-mean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.3">(2.1.3)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
 \begin{equation*}
@@ -1156,147 +1154,7 @@ CSD = \frac{\sigma}{\bar{x}} =3.4/14 =0.2428.
 CV =\frac{\sigma}{\bar{x}}\times 100 = 24.28/%.
 \end{equation*}
 </div>
-</div></section><section class="paragraphs" id="subsubsec-sd_is-4"><h5 class="heading"><span class="title">Assumed Mean Method (short-cut method).</span></h5> <div class="para logical" id="subsubsec-sd_is-4-2">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-sd1b.html">
-\begin{equation*}
-\begin{array}{c|c|c} 
-x &amp; d=x-A  &amp; d^2 \\ \hline 
-10 &amp; -3  &amp; 9 \\ 
-12 &amp; -1  &amp; 1 \\ 
-13 &amp; 0  &amp; 0 \\ 
-15 &amp; 2  &amp; 4 \\ 
-20 &amp; 7 &amp; 49 \\ \hline
-sum &amp;  5  &amp;  63
-\end{array}
-\end{equation*}
-</div>
-<div class="para">Assumed <span class="process-math">\(A = 13\)</span> and use <a href="sec-desc_iii.html#eqn-sd1b" class="xref" data-knowl="./knowl/xref/eqn-sd1b.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.7">(2.3.7)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-sd1b.html">
-\begin{equation*}
-\sigma = \sqrt{\frac{63}{5}-\left(\frac{5}{5}\right)^2} = \sqrt{12.6-1} =\sqrt{11.6} =3.4.
-\end{equation*}
-</div>
-</div></section></section><section class="subsubsection" id="subsubsec-sd_dscs"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.4.2</span><span class="space"> </span><span class="title">Discrete Series and Continuous Series</span>
-</h4>
-<div class="para logical" id="subsubsec-sd_dscs-2"><ol class="lower-alpha">
-<li id="subsubsec-sd_dscs-2-1-1">
-<span class="heading"><span class="title">Assumed Mean Method:.</span></span><div class="para logical" id="subsubsec-sd_dscs-2-1-1-2">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html" id="eqn-asd2">
-\begin{equation}
-\sigma = \sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2}\tag{2.3.11}
-\end{equation}
-</div>
-<div class="para">here,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html">
-\begin{equation*}
-d=x-A,
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-amean1.html">
-\begin{equation*}
-\bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}
-\end{equation*}
-</div>
-<div class="para">from equation <a href="sec-desc_i.html#eqn-amean1" class="xref" data-knowl="./knowl/xref/eqn-amean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.3">(2.1.3)</a>
-</div>
-</div>
-</li>
-<li id="subsubsec-sd_dscs-2-1-2">
-<span class="heading"><span class="title">Step Deviation Method:.</span></span><div class="para logical" id="subsubsec-sd_dscs-2-1-2-2">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html" id="eqn-ssd2">
-\begin{equation}
-\sigma = \left[\sqrt{\frac{\sum fd^2}{N} - \left(\frac{\sum fd}{N}\right)^2} \right]h\tag{2.3.12}
-\end{equation}
-</div>
-<div class="para">here,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html">
-\begin{equation*}
-d = \frac{x-A}{h},
-\end{equation*}
-</div>
-<div class="para">from equation <a href="sec-desc_i.html#eqn-smean3" class="xref" data-knowl="./knowl/xref/eqn-smean3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.5">(2.1.5)</a> <span class="process-math">\(h = \)</span> class interval, and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-smean3.html ./knowl/xref/eqn-smean2.html">
-\begin{equation*}
-\bar{x} = A+\left( \frac{\sum f d}{\sum f}\right)h 
-\end{equation*}
-</div>
-<div class="para">from equation <a href="sec-desc_i.html#eqn-smean2" class="xref" data-knowl="./knowl/xref/eqn-smean2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.4">(2.1.4)</a>
-</div>
-</div>
-</li>
-</ol></div>
-<details id="subsubsec-sd_dscs-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
-</h5></summary><article class="example example-like knowl__content"><div class="para logical" id="subsubsec-sd_dscs-3-1-1">
-<div class="para">Use assumed mean method to solve the data below:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c} 
-x &amp;  f  \\ \hline 
-1 &amp; 1 \\ 
-3 &amp; 2  \\ 
-5 &amp; 3  \\ 
-7 &amp; 4  \\ 
-8 &amp; 5 
-\end{array}
-\end{equation*}
-</div>
-</div>
-<div class="solutions"><details id="subsubsec-sd_dscs-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para logical" id="subsubsec-sd_dscs-3-2-1">
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c|c|c|c} 
-x &amp;  f &amp; d  &amp; d^2  &amp; fd  &amp; fd^2 \\ \hline 
-1 &amp; 1 &amp; -4  &amp; 16 &amp; -4  &amp; 16 \\ 
-3 &amp; 2 &amp; -2  &amp; 4 &amp; -4  &amp; 8 \\ 
-5 &amp; 3 &amp; 0  &amp; 0 &amp; 0  &amp; 0 \\ 
-7 &amp; 4 &amp; 2  &amp; 4 &amp; 8  &amp; 16 \\ 
-8 &amp; 5 &amp; 3 &amp; 9 &amp; 15  &amp; 45 \\ \hline
-sum &amp;  &amp;   &amp;  &amp; 15  &amp; 85
-\end{array}
-\end{equation*}
-</div>
-<div class="para">here, we set <span class="process-math">\(A = 5\text{.}\)</span>
-</div>
-</div> <div class="para logical" id="subsubsec-sd_dscs-3-2-2">
-<div class="para">Now from equation <a href="sec-desc_iii.html#eqn-asd2" class="xref" data-knowl="./knowl/xref/eqn-asd2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.11">(2.3.11)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
-\begin{equation*}
-\sigma = \sqrt{\frac{85}{15} - \left(\frac{15}{15}\right)^2} =\sqrt{5.66-1} =\sqrt{4.66}= 2.16.
-\end{equation*}
-</div>
-<div class="para">here, <span class="process-math">\(N = \sum f = 15\)</span> also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
-\begin{equation*}
-\bar{x} = 5+\frac{15}{15} =6,
-\end{equation*}
-</div>
-<div class="para">and from eqn. <a href="sec-desc_iii.html#eqn-csd1" class="xref" data-knowl="./knowl/xref/eqn-csd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.8">(2.3.8)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
-\begin{equation*}
-CSD =\sigma /\bar{x} = 2.16/6 =0.36.
-\end{equation*}
-</div>
-<div class="para">Also</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
-\begin{equation*}
-\sigma ^2 = 4.99
-\end{equation*}
-</div>
-<div class="para">and using eqn. <a href="sec-desc_iii.html#eqn-cv1" class="xref" data-knowl="./knowl/xref/eqn-cv1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.10">(2.3.10)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-asd2.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-cv1.html">
-\begin{equation*}
-CV = \frac{\sigma}{\bar{x}}\times 100 = 36/%.
-\end{equation*}
-</div>
-</div>
-</div></details></div></article></details></section></section><section class="subsection" id="subsec-mean_dev"><h3 class="heading hide-type">
+</div></section></section></section><section class="subsection" id="subsec-mean_dev"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="space"> </span><span class="title">Mean Deviation</span>
 </h3>
 <section class="introduction" id="subsec-mean_dev-2"><div class="para logical" id="subsec-mean_dev-2-1">
@@ -1358,17 +1216,17 @@ MD = 30/8 = 3.75.
 <dfn class="terminology">Quartiles:</dfn> there are three quartiles, called I quartile (or lower quartile), II quartile (or median), and III quartile (or upper quartile).</div>
 <div class="displaymath process-math" id="eqn-qrt1">
 \begin{equation}
-Q_1 = \text{ size of 1 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.13}
+Q_1 = \text{ size of 1 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.11}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-qrt2">
 \begin{equation}
-Q_2 = \text{ size of 2 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.14}
+Q_2 = \text{ size of 2 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.12}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-qrt3">
 \begin{equation}
-Q_3 = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.15}
+Q_3 = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.13}
 \end{equation}
 </div>
 </div>
@@ -1377,17 +1235,17 @@ Q_3 = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} term.\tag{2.3.15}
 <dfn class="terminology">Deciles:</dfn> there are 9 deciles:</div>
 <div class="displaymath process-math" id="eqn-dec1">
 \begin{equation}
-D_1 = \text{ size of 1 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.16}
+D_1 = \text{ size of 1 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.14}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-dec2">
 \begin{equation}
-D_2 = \text{ size of 2 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.17}
+D_2 = \text{ size of 2 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.15}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-dec3">
 \begin{equation}
-D_3 = \text{ size of 3 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.18}
+D_3 = \text{ size of 3 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.16}
 \end{equation}
 </div>
 <div class="para">and so on.</div>
@@ -1397,23 +1255,23 @@ D_3 = \text{ size of 3 } \left[ \frac{n+1}{10}\right]^{th} term.\tag{2.3.18}
 <dfn class="terminology">Percentiles:</dfn> there are 99 deciles:</div>
 <div class="displaymath process-math" id="eqn-per1">
 \begin{equation}
-P_1 = \text{ size of 1 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.19}
+P_1 = \text{ size of 1 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.17}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-per2">
 \begin{equation}
-P_2 = \text{ size of 2 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.20}
+P_2 = \text{ size of 2 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.18}
 \end{equation}
 </div>
 <div class="displaymath process-math" id="eqn-per3">
 \begin{equation}
-P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.21}
+P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.19}
 \end{equation}
 </div>
 <div class="para">and so on.</div>
 </div>
 <details id="subsec-QDP-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para logical" id="subsec-QDP-5-1-1">
 <div class="para">Calculate the <span class="process-math">\(3^{rd}\)</span> quartile, <span class="process-math">\(6^{th}\)</span> decile, and <span class="process-math">\(70^{th}\)</span> percentile of the following data:</div>
 <div class="displaymath process-math">
@@ -1433,7 +1291,7 @@ P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.21}
 <div class="para">Number of item, <span class="process-math">\(n = 11.\)</span>
 </div>
 </div> <div class="para logical" id="subsec-QDP-5-2-2">
-<div class="para">Using <a href="sec-desc_iii.html#eqn-qrt3" class="xref" data-knowl="./knowl/xref/eqn-qrt3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.15">(2.3.15)</a>
+<div class="para">Using <a href="sec-desc_iii.html#eqn-qrt3" class="xref" data-knowl="./knowl/xref/eqn-qrt3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.13">(2.3.13)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qrt3.html" id="subsec-QDP-5-2-2-2">
 \begin{align*}

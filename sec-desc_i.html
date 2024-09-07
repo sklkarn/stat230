@@ -148,7 +148,7 @@ window.MathJax = {
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-rawD" class="internal"><span class="codenumber">2.1.1.1</span> <span class="title">Raw Data (individual series):</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-discrD" class="internal"><span class="codenumber">2.1.1.2</span> <span class="title">Discrete Series:</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsubsec-contS" class="internal"><span class="codenumber">2.1.1.3</span> <span class="title">Continuous Series:</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Combined Mean</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-combM" class="internal"><span class="codenumber">2.1.1.4</span> <span class="title">Weighted (Combined) Mean</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-subsection">
@@ -197,10 +197,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-st_dev" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_dscs" class="internal"><span class="codenumber">2.3.4.2</span> <span class="title">Discrete Series and Continuous Series</span></a></div></li>
-</ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-desc_iii.html#subsubsec-sd_is" class="internal"><span class="codenumber">2.3.4.1</span> <span class="title">Individual Series</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-desc_iii.html#subsec-mean_dev" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Mean Deviation</span></a></div>
@@ -292,6 +289,7 @@ window.MathJax = {
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">Mean (average)</span>
 </h3>
 <section class="introduction" id="subsec-mean-2"><div class="para logical" id="subsec-mean-2-1">
+<div class="para">For a sample mean:</div>
 <div class="displaymath process-math" id="eqn-mn1">
 \begin{equation}
 \bar{x} =\sum_{i=1}^{n} \frac{x_i}{n}\tag{2.1.1}
@@ -299,6 +297,14 @@ window.MathJax = {
 </div>
 <div class="para">Here, <span class="process-math">\(x_i\)</span> is the <span class="process-math">\(i^{th}\)</span> observation of sample, and <span class="process-math">\(n\)</span> is number of observations.</div>
 </div> <div class="para logical" id="subsec-mean-2-2">
+<div class="para">For a Population mean:</div>
+<div class="displaymath process-math" id="eqn-mn1a">
+\begin{equation}
+\mu =\sum_{i=1}^{N} \frac{x_i}{N}\tag{2.1.2}
+\end{equation}
+</div>
+<div class="para">Here, <span class="process-math">\(x_i\)</span> is the <span class="process-math">\(i^{th}\)</span> observation of population, and <span class="process-math">\(N\)</span> is number of observations (population).</div>
+</div> <div class="para logical" id="subsec-mean-2-3">
 <div class="para">In mean, numerical variables are affected by outliers or extreme values. For example:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -323,19 +329,19 @@ x=2,4,6,8,10,100
 \bar{x} = \frac{2+4+6+8+10+100}{6} = 21.67.
 \end{equation*}
 </div>
-</div> <div class="para" id="subsec-mean-2-3">Mean gives no information if there are any outliers in the data.</div> <div class="para logical" id="subsec-mean-2-4">
+</div> <div class="para" id="subsec-mean-2-4">Mean gives no information if there are any outliers in the data.</div> <div class="para logical" id="subsec-mean-2-5">
 <div class="para">There are three types of <dfn class="terminology">mean</dfn> being used in mathematical operations: Arithmetic mean, geometric mean, and harmonic mean. Here we only discuss the <em class="emphasis">arithmetic mean</em>. There are three methods to determine the arithmetic mean.</div>
 <ol class="upper-roman">
-<li id="subsec-mean-2-4-3-1"><div class="para" id="subsec-mean-2-4-3-1-1">Direct Method</div></li>
-<li id="subsec-mean-2-4-3-2"><div class="para" id="subsec-mean-2-4-3-2-1">Assume Mean Method, and</div></li>
-<li id="subsec-mean-2-4-3-3"><div class="para" id="subsec-mean-2-4-3-3-1">Step Deviation Method</div></li>
+<li id="subsec-mean-2-5-3-1"><div class="para" id="subsec-mean-2-5-3-1-1">Direct Method</div></li>
+<li id="subsec-mean-2-5-3-2"><div class="para" id="subsec-mean-2-5-3-2-1">Assumed Mean Method, and</div></li>
+<li id="subsec-mean-2-5-3-3"><div class="para" id="subsec-mean-2-5-3-3-1">Step Deviation Method</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-mean-2-5">
-<div class="para">Here we are trying to build an idea to find mean of the three different data (series):</div>
+</div> <div class="para logical" id="subsec-mean-2-6">
+<div class="para">Here we are trying to build an idea to find mean of the three different data (series) using direct mean method:</div>
 <ol class="lower-roman">
-<li id="subsec-mean-2-5-1-1"><div class="para" id="subsec-mean-2-5-1-1-1">Individual Series</div></li>
-<li id="subsec-mean-2-5-1-2"><div class="para" id="subsec-mean-2-5-1-2-1">Discrete Series, and</div></li>
-<li id="subsec-mean-2-5-1-3"><div class="para" id="subsec-mean-2-5-1-3-1">Continuous Series.</div></li>
+<li id="subsec-mean-2-6-1-1"><div class="para" id="subsec-mean-2-6-1-1-1">Individual Series</div></li>
+<li id="subsec-mean-2-6-1-2"><div class="para" id="subsec-mean-2-6-1-2-1">Discrete Series, and</div></li>
+<li id="subsec-mean-2-6-1-3"><div class="para" id="subsec-mean-2-6-1-3-1">Continuous Series.</div></li>
 </ol>
 </div></section><section class="subsubsection" id="subsubsec-rawD"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.1.1</span><span class="space"> </span><span class="title">Raw Data (individual series):</span>
@@ -344,7 +350,7 @@ x=2,4,6,8,10,100
 <div class="para">The value of mean can be calculated as</div>
 <div class="displaymath process-math" id="eqn-mean1">
 \begin{equation}
-\bar{x} =\sum_{i=1}^{n} \frac{x_i}{n}\tag{2.1.2}
+\bar{x} =\sum_{i=1}^{n} \frac{x_i}{n}\tag{2.1.3}
 \end{equation}
 </div>
 <div class="para">Here, <span class="process-math">\(x_i\)</span> is the <span class="process-math">\(i^{th}\)</span> observation of sample, and <span class="process-math">\(n\)</span> is number of observations.</div>
@@ -417,7 +423,7 @@ x=2,4,6,8,10,100
 <div class="para"><dfn class="terminology">Assumed mean method:</dfn></div>
 <div class="displaymath process-math" id="eqn-amean1">
 \begin{equation}
-\bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}\tag{2.1.3}
+\bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i}\tag{2.1.4}
 \end{equation}
 </div>
 <div class="para">here, <span class="process-math">\(A\)</span> is assumed mean (middle mean value), <span class="process-math">\(f_i\)</span> is frequency of <span class="process-math">\(i^{th}\)</span> observation, and <span class="process-math">\(d =x_i -A\)</span> the deviation of observation, <span class="process-math">\(x_i.\)</span>
@@ -425,8 +431,7 @@ x=2,4,6,8,10,100
 </div></li>
 </ol>
 </div>
-<div class="para logical" id="subsec-discrD-3"><ol class="decimal">
-<li id="subsec-discrD-3-1-1"><div class="para logical" id="subsec-discrD-3-1-1-1">
+<div class="para logical" id="subsec-discrD-3"><ol class="decimal"><li id="subsec-discrD-3-1-1"><div class="para logical" id="subsec-discrD-3-1-1-1">
 <div class="para">Direct method to calculate <dfn class="terminology">Mean of grouped data:</dfn>
 </div>
 <div class="displaymath process-math">
@@ -461,84 +466,7 @@ Sum  &amp;   &amp; 17 &amp; 201 \\
 \bar{x} = \sum_{i=1}^{n} \frac{f_i x_i}{f_i} = \frac{213}{17} =11.82.
 \end{equation*}
 </div>
-</div></li>
-<li id="subsec-discrD-3-1-2"><div class="para logical" id="subsec-discrD-3-1-2-1">
-<div class="para">Assumed mean method to calculate <dfn class="terminology">Mean of grouped data</dfn>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c} 
-\circ &amp; x_i &amp; f_i  &amp;  \\ \hline 
-1 &amp; 10 &amp; 3   \\ 
-2 &amp; 12 &amp; 2  \\ 
-3 &amp; 15 &amp;  7  \\ 
-4 &amp; 18 &amp;  5  \\ 
-5 &amp; 22 &amp; 2 \\ 
-\end{array}
-\end{equation*}
-</div>
-<div class="para">Here is the caculation: To find the assumed mean, A we select the central observation (in case of two items at the middle, we need to select those observation which has high frequency). For the table above we select <span class="process-math">\(A=15.\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c|c} 
-\circ &amp; x_i &amp; f_i  &amp; d_i &amp; f_id_i &amp;  \\ \hline 
-1 &amp; 10 &amp; 3  &amp; -5  &amp; -15 \\ 
-2 &amp; 12 &amp; 2 &amp; -3 &amp; -6 \\ 
-3 &amp; 15 &amp;  7 &amp; 0 &amp; 0 \\ 
-4 &amp; 18 &amp;  5  &amp; 3 &amp; 15 \\ 
-5 &amp; 22 &amp; 2  &amp; 7 &amp; 14 \\ \hline 
-Sum  &amp;   &amp; 19 &amp; &amp;  8 \\
-\end{array}
-\end{equation*}
-</div>
-<div class="para">Now,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i} =15+ \frac{8}{19} =15.42.
-\end{equation*}
-</div>
-</div></li>
-</ol></div>
-<div class="para logical" id="subsec-discrD-4">
-<div class="para">If observations are not in order then first need to arrange the observation either in asscending or descending order as shown below:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c} 
-\circ &amp; x_i &amp; f_i  &amp;  \\ \hline 
-1 &amp; 2 &amp; 9   \\ 
-2 &amp; 5 &amp; 3 \\ 
-3 &amp; 15 &amp;  2  \\ 
-4 &amp; 12 &amp;  4  \\ 
-5 &amp; 20 &amp; 3 \\ 
-6 &amp; 10 &amp; 5 \\
-\end{array}
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="subsec-discrD-5">
-<div class="para">First arrange <span class="process-math">\(x_i\)</span> in asscending order.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c|c} 
-\circ &amp; x_i &amp; f_i  &amp; d_i &amp; f_id_i &amp;  \\ \hline 
-1 &amp; 2 &amp; 9 &amp; -8  &amp; -72\\ 
-2 &amp; 5 &amp; 3 &amp; -5 &amp;  -15\\ 
-3 &amp; 10 &amp;  5 &amp; 0 &amp; 0 \\ 
-4 &amp; 12 &amp;  4  &amp; 2 &amp; 8 \\ 
-5 &amp; 15 &amp; 2 &amp;  5 &amp;  10 \\ 
-6 &amp; 20 &amp; 3 &amp; 10 &amp; 30 \\ \hline 
-Sum  &amp;   &amp; 26 &amp; &amp;  -39 \\
-\end{array}
-\end{equation*}
-</div>
-<div class="para">Take <span class="process-math">\(A = 10\text{,}\)</span> as observation 10 has higher frequency than 12. Now,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bar{x} =10 + \sum_{i=1}^{n} \frac{f_i d_i}{f_i} =10+ \frac{-39}{26} =8.5.
-\end{equation*}
-</div>
-</div></section><section class="subsubsection" id="subsubsec-contS"><h4 class="heading hide-type">
+</div></li></ol></div></section><section class="subsubsection" id="subsubsec-contS"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.1.3</span><span class="space"> </span><span class="title">Continuous Series:</span>
 </h4>
 <div class="para" id="subsubsec-contS-2">In continuous series, the observations are presented in different class intervals rather than by a single number and the frequency. It can be presented in two different types of class intervals: <dfn class="terminology">Exclusive series</dfn> and <dfn class="terminology">Inclusive series.</dfn> Continuous series includes the upper limit and the lower limit in the class interval. If the upper limit interval does not repeat itself as a lower limit of the next class interval then it is an inclusive series. There is a gap between upper limit of any class interval to the and lower limit of the next class interval. e.g., <span class="process-math">\(20-29, 30-39, 40-49, 50-59, etc.\)</span> If the upper limit interval repeats itself as a lower limit of the next class interval then it is an exclusive series. There is no gap between the upper limit of any class interval to the and lower limit of the next class interval. e.g., <span class="process-math">\(20-30, 30-40, 40-50, 50-60, etc.\)</span>
@@ -566,53 +494,27 @@ Sum  &amp;   &amp; 22 &amp; &amp;  560 \\
 \end{array}
 \end{equation*}
 </div>
-<div class="para">take average of each class range and the value in <span class="process-math">\(x_i\)</span> column.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bar{x} = A+\sum_{i=1}^{n} \frac{f_i d_i}{f_i} = \frac{560}{22} = 25.45.
-\end{equation*}
-</div>
 </div></li>
 <li id="subsubsec-contS-3-2-2"><div class="para logical" id="subsubsec-contS-3-2-2-1">
 <div class="para">
 <dfn class="terminology">Step deviation method:</dfn> This method is only applicable for continuous series.</div>
 <div class="displaymath process-math" id="eqn-smean2">
 \begin{equation}
-\bar{x} = A+\left(\sum_{i=1}^{n} \frac{f_i d_i}{f_i}\right)h. \tag{2.1.4}
+\bar{x} = A+\left(\sum_{i=1}^{n} \frac{f_i d_i}{f_i}\right)h. \tag{2.1.5}
 \end{equation}
 </div>
 <div class="para">here,</div>
 <div class="displaymath process-math" id="eqn-smean3">
 \begin{equation}
-d= \frac{x_i-A}{h}\text{,}\tag{2.1.5}
+d= \frac{x_i-A}{h}\text{,}\tag{2.1.6}
 \end{equation}
 </div>
 <div class="para">
-<span class="process-math">\(h=\)</span> class interval.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{array}{c|c|c|c} 
-\circ &amp; class &amp; f_i  &amp; x_i &amp; d_i &amp; f_ix_i  \\ \hline 
-1 &amp; 0-10 &amp; 3 &amp; 5  &amp; -2 &amp; -6 \\ 
-2 &amp; 10-20 &amp; 5 &amp; 15 &amp;  -1 &amp; -5 \\ 
-3 &amp; 20-30 &amp;  4 &amp; 25 &amp; 0 &amp; 0 \\ 
-4 &amp; 30-40 &amp;  8  &amp; 35 &amp; 1 &amp; 8 \\ 
-5 &amp; 40-50 &amp; 2 &amp;  45 &amp;  2 &amp; 4 \\  \hline 
-Sum  &amp;   &amp; 22 &amp; &amp;  &amp; 1 \\
-\end{array}
-\end{equation*}
-</div>
-<div class="para">take <span class="process-math">\(x=25 = A\text{.}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bar{x} = 25 + \frac{1}{22} = 25.45. 
-\end{equation*}
-</div>
+<span class="process-math">\(h=\)</span> class interval. </div>
 </div></li>
 </ol>
 </div></section><section class="subsubsection" id="subsec-combM"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.1.4</span><span class="space"> </span><span class="title">Combined Mean</span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.1.4</span><span class="space"> </span><span class="title">Weighted (Combined) Mean</span>
 </h4>
 <div class="para logical" id="subsec-combM-2"><div class="displaymath process-math">
 \begin{equation*}
@@ -721,7 +623,7 @@ median =  \frac{9+12}{2} = 10.5
 <div class="para">Median for <dfn class="terminology">odd</dfn> number of terms is given by</div>
 <div class="displaymath process-math" id="eqn-median1">
 \begin{equation}
-median = \left(\frac{n+1}{2}\right)^{th} \text{ term}.\tag{2.1.6}
+median = \left(\frac{n+1}{2}\right)^{th} \text{ term}.\tag{2.1.7}
 \end{equation}
 </div>
 <div class="para">here <span class="process-math">\(n\)</span> is number of terms in a series.</div>
@@ -730,7 +632,7 @@ median = \left(\frac{n+1}{2}\right)^{th} \text{ term}.\tag{2.1.6}
 <div class="para">Median for <dfn class="terminology">even</dfn> number of terms is given by</div>
 <div class="displaymath process-math" id="eqn-median2">
 \begin{equation}
-median = \frac{\left(\frac{n}{2}\right)^{th} \text{ term} + \left(\frac{n}{2}+1\right)^{th} \text{ term} }{2}.\tag{2.1.7}
+median = \frac{\left(\frac{n}{2}\right)^{th} \text{ term} + \left(\frac{n}{2}+1\right)^{th} \text{ term} }{2}.\tag{2.1.8}
 \end{equation}
 </div>
 <div class="para">here <span class="process-math">\(n\)</span> is number of terms in a series.</div>
@@ -859,7 +761,7 @@ median  = \frac{1}{2}\left[17+20 \right] = 37/2 = 18.5.
 <div class="para logical" id="subsubsec-med_cs-2">
 <div class="displaymath process-math" id="eqn-cont1">
 \begin{equation}
-Median = L + \frac{1}{f}\left(\frac{N}{2}-f_o \right)\times h\tag{2.1.8}
+Median = L + \frac{1}{f}\left(\frac{N}{2}-f_o \right)\times h\tag{2.1.9}
 \end{equation}
 </div>
 <div class="para">
@@ -897,7 +799,7 @@ sum &amp; 22   &amp;
 \end{equation*}
 </div>
 <div class="para">
-<span class="process-math">\(L =20, \)</span> <span class="process-math">\(f_o = 8,\)</span> <span class="process-math">\(h=10.\)</span> from <a href="sec-desc_i.html#eqn-cont1" class="xref" data-knowl="./knowl/xref/eqn-cont1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.8">(2.1.8)</a>
+<span class="process-math">\(L =20, \)</span> <span class="process-math">\(f_o = 8,\)</span> <span class="process-math">\(h=10.\)</span> from <a href="sec-desc_i.html#eqn-cont1" class="xref" data-knowl="./knowl/xref/eqn-cont1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.9">(2.1.9)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-cont1.html">
 \begin{equation*}
@@ -942,7 +844,7 @@ sum &amp; 22 &amp;
 \mbox{[ 69.5-79.5 | 4 | 11 ]}
 \end{equation*}
 </div>
-<div class="para">from <a href="sec-desc_i.html#eqn-cont1" class="xref" data-knowl="./knowl/xref/eqn-cont1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.8">(2.1.8)</a>
+<div class="para">from <a href="sec-desc_i.html#eqn-cont1" class="xref" data-knowl="./knowl/xref/eqn-cont1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.9">(2.1.9)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-cont1.html">
 \begin{equation*}
@@ -1131,8 +1033,8 @@ mode= L + \left(\frac{f_1-f_o}{2f_1-f_o-f_2}\right)h = 99.5 + \left(\frac{10-7}{
 </div></section></section><section class="subsection" id="subsec-summary1"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="space"> </span><span class="title">Summary</span>
 </h3>
-<div class="para" id="subsec-summary1-2">Mean is useful in numerical variables without outliers.</div>
-<div class="para" id="subsec-summary1-3">Median is useful in numerical variables with outliers.</div>
+<div class="para" id="subsec-summary1-2">Mean is useful in numerical variables without outliers. In <em class="emphasis">symmetric distribution</em> of data mean is a good measure of central tendency.</div>
+<div class="para" id="subsec-summary1-3">Median is useful in numerical variables with outliers. In <em class="emphasis">skewed distribution</em> of data median is a good measure of central tendency.</div>
 <div class="para" id="subsec-summary1-4">Mode is useful in categorical variables.</div></section><section class="subsection" id="subsec-rel_mmm"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="space"> </span><span class="title">Relation between Mean, Median, and Mode:</span>
 </h3>
