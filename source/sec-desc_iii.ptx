@@ -880,14 +880,21 @@
      <ol marker ="i">
       <li>
         <title>Actual Mean Method</title>       
-        <p>
+        <p> For a population standard deviation: 
           <men xml:id="eqn-sd1a">
-            \sigma = \sqrt{\frac{(x-\bar{x})^2}{N}}
+            \sigma = \sqrt{\frac{(x-\mu)^2}{N}}
            </men>
-           <m>n</m> is total number of observations.
+           <m>N</m> is total number of observations (population) and <m>\mu</m> is a population mean <xref ref="eqn-mn1a"/>.
+          </p>
+          <p>
+           For a sample standard deviation:
+           <men xml:id="eqn-sd1c">
+            \sigma = \sqrt{\frac{(x-\bar{x})^2}{n-1}}
+           </men>
+           <m>n</m> is total number of observations (sample).
         </p>
       </li>
-      <li>
+      <!-- <li>
         <title>Assumed Mean Method</title> 
         <p>
           <men xml:id="eqn-sd1b">
@@ -896,6 +903,7 @@
            here, <m>d = x-A</m>, <m>A</m> is assumed mean, and  <m>N</m> is total number of observations.
         </p>
       </li>
+      -->
       <li>
         <title>  Coefficient of standard deviation</title>       
         <p>
@@ -972,7 +980,7 @@
     </p>
      
   </paragraphs>
-
+<!-- 
   <paragraphs>
     <title>Assumed Mean Method (short-cut method)</title>
    
@@ -995,13 +1003,15 @@
      </p>
    
 </paragraphs>
-
+-->
   </subsubsection>
 
+    <!--
   <subsubsection xml:id="subsubsec-sd_dscs">
     <title>Discrete Series and Continuous Series</title>
     <p>
-      <ol marker="a">
+      
+      <ol marker="a">  
         <li>
           <title>Assumed Mean Method:</title>        
           <p>
@@ -1037,7 +1047,9 @@
         </li>
       </ol>
     </p>
-   
+ 
+
+
     <example>      
       <statement>
         <p>
@@ -1094,7 +1106,7 @@
       </solution>
     </example>
   </subsubsection>
-
+  -->
 
 
 

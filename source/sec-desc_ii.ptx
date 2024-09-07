@@ -13,11 +13,11 @@
   <me>
     \begin{array}{c|c|c} 
     \text{ Data value} &amp; Frequency &amp; \text{ Relative Frequency} \\ \hline 
-    1 &amp; 7 &amp; 7/20  \\ 
-    2 &amp; 5 &amp; 5/20  \\ 
-    3 &amp; 4 &amp; 4/20  \\ 
-    4 &amp; 3 &amp; 3/20  \\ 
-    5 &amp; 1 &amp; 1/20  \\ \hline 
+    1 &amp; 7 &amp; 7/20 =0.35  \\ 
+    2 &amp; 5 &amp; 5/20 =0.25 \\ 
+    3 &amp; 4 &amp; 4/20 =0.20 \\ 
+    4 &amp; 3 &amp; 3/20 =0.15 \\ 
+    5 &amp; 1 &amp; 1/20 =0.05 \\ \hline 
      &amp; \sum f=20 &amp;   \\  
     \end{array}
 </me>
@@ -38,6 +38,7 @@
     Red &amp; 6 &amp; 6  \\ 
     Green &amp; 6 &amp; 12  \\ 
     Blue &amp; 4 &amp; 16  \\ \hline 
+    &amp; \sum f=16 &amp;   \\ 
     \end{array}
 </me>
 <term>Cumulative frequency</term> is used to determine the number of observations that lie above (or below) a particular value in a dataset. 

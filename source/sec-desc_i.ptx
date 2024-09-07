@@ -64,11 +64,17 @@
     <title>Mean (average)</title>
 
     <introduction>
-    <p>
+    <p> For a sample mean:
       <men xml:id="eqn-mn1">
         \bar{x} =\sum_{i=1}^{n} \frac{x_i}{n}
        </men>
       Here, <m>x_i</m> is the <m>i^{th}</m> observation of sample, and <m>n</m> is number of observations.
+    </p>
+    <p> For a Population mean:
+      <men xml:id="eqn-mn1a">
+        \mu =\sum_{i=1}^{N} \frac{x_i}{N}
+       </men>
+      Here, <m>x_i</m> is the <m>i^{th}</m> observation of population, and <m>N</m> is number of observations (population).
     </p>
     <p>
       In mean,
@@ -101,7 +107,7 @@
         </li>
         <li>
           <p>
-            Assume Mean Method, and
+            Assumed Mean Method, and
           </p>
         </li>
         <li>
@@ -112,7 +118,7 @@
       </ol>
     </p>
     <p>
-      Here we are trying to build an idea to find mean of the three different data (series):
+      Here we are trying to build an idea to find mean of the three different data (series) using direct mean method:
       <ol marker ="i">
         <li>
           <p>
@@ -206,7 +212,7 @@
               and <m>d =x_i -A</m> the deviation of observation, <m>x_i.</m>
             </p>
           </li>
-        </ol>
+         </ol>
        </p>
 
        
@@ -243,7 +249,7 @@ Here is the caculation:
         </me>
             </p>
           </li>
-          <li>
+          <!-- <li>
             <p>
               Assumed mean method to calculate <term>Mean of grouped data</term> 
               <me>
@@ -274,10 +280,11 @@ Here is the caculation:
                 \bar{x} =A+ \sum_{i=1}^{n} \frac{f_i d_i}{f_i} =15+ \frac{8}{19} =15.42.
               </me>
             </p>
-          </li>
-        </ol>
+          </li> 
+              -->
+             </ol>
       </p>
-      
+      <!-- 
        <p>
       If observations are not in order then first need to arrange the observation either 
       in asscending or descending order as shown below:
@@ -312,6 +319,7 @@ Here is the caculation:
           \bar{x} =10 + \sum_{i=1}^{n} \frac{f_i d_i}{f_i} =10+ \frac{-39}{26} =8.5.
         </me>
         </p>
+      -->
       </subsubsection>
 
        
@@ -349,13 +357,15 @@ Here is the caculation:
             Sum  &amp;   &amp; 22 &amp; &amp;  560 \\
             \end{array}
           </me>
-          take average of each class range and the value in <m>x_i</m> column. 
+            <!--
+            Take average of each class range and the value in <m>x_i</m> column. 
           <me>
             \bar{x} = A+\sum_{i=1}^{n} \frac{f_i d_i}{f_i} = \frac{560}{22} = 25.45.
-          </me>
+          </me> 
+          -->
         </p>
-      </li>
-      <li>
+      </li> 
+         <li>
         <p>
           <term>Step deviation method: </term> This method is only applicable for continuous series.
           <men xml:id="eqn-smean2">
@@ -365,6 +375,7 @@ Here is the caculation:
             d= \frac{x_i-A}{h}
           </men>,
            <m>h=</m> class interval.
+            <!-- 
           <me>
             \begin{array}{c|c|c|c} 
             \circ &amp; class &amp; f_i  &amp; x_i &amp; d_i &amp; f_ix_i  \\ \hline 
@@ -380,8 +391,9 @@ Here is the caculation:
           <me>
             \bar{x} = 25 + \frac{1}{22} = 25.45. 
           </me>
+          -->
           </p>
-      </li>
+      </li>  
     </ol>
   </p>
 
@@ -389,7 +401,7 @@ Here is the caculation:
 
    
 <subsubsection xml:id="subsec-combM">
-  <title>Combined Mean</title>
+  <title>Weighted (Combined) Mean</title>
   
   <p>
     <me>
@@ -953,10 +965,10 @@ Here is the caculation:
   <subsection xml:id="subsec-summary1">
    <title>Summary</title>
    <p>
-     Mean is useful in numerical variables without outliers.
+     Mean is useful in numerical variables without outliers. In <em>symmetric distribution</em> of data mean is a good measure of central tendency.
    </p>
    <p>
-     Median is useful in numerical variables with outliers.
+     Median is useful in numerical variables with outliers. In <em>skewed distribution</em> of data median is a good measure of central tendency.
    </p>
    <p>
      Mode is useful in categorical variables.

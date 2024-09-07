@@ -16,7 +16,7 @@
       </p>
       <figure>
         <caption>Line Graph</caption>
-        <image source="lineplt.png" width="25%"/>
+        <image source="lineplt.png" width="40%"/>
     </figure>
     </li>
     <li>
@@ -27,7 +27,7 @@
       </p>
   <figure>
     <caption>Bar graph</caption>
-    <image source="bargrp.png" width="25%"/>
+    <image source="bargrp.png" width="40%"/>
 </figure>
     </li>
     <li>
@@ -37,7 +37,7 @@
       </p>
       <figure>
         <caption>Histogram</caption>
-        <image source="histgrm.png" width="25%"/>
+        <image source="histgrm.png" width="40%"/>
     </figure>
     </li>
       <li>
@@ -59,6 +59,15 @@
          \end{array}
       </me>
       </p>
+    </li>
+    <li>
+      <p>
+        <term>Dot plot</term> A dot plot groups the number of data points in a data set based on the value of each point.
+      </p>
+      <figure>
+        <caption>Dot Plot</caption>
+        <image source="dotplt.png" width="50%"/>
+    </figure>
     </li>
     <li>
       <p>
@@ -100,7 +109,7 @@
       </p>
       <figure>
         <caption>Pie Chart</caption>
-        <image source="piechrt.png" width="25%"/>
+        <image source="piechrt.png" width="50%"/>
     </figure>
     </li>
     <li>
@@ -110,7 +119,7 @@
       </p>
       <figure>
         <caption>Scatter Plot</caption>
-        <image source="scatter.png" width="25%"/>
+        <image source="scatter.png" width="50%"/>
     </figure>
     </li>
     <li>
