@@ -43,5 +43,6 @@
   <xi:include href="sec-desc_iv.ptx" />
   <xi:include href="sec-desc_v.ptx" />
   <xi:include href="sec-desc_vi.ptx" />
+  <xi:include href="sec-desc_vii.ptx" />
  
 </chapter>

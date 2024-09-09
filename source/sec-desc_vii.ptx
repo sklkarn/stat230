@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-desc_vii" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Correlation Coeffient, r</title>
+<introduction>
+ 
+<p>
+ Correlation analysis deals with association between two or more variables. 
+ The degree of relationship between the variables under consideration is 
+ measured through the correlation analysis. The measure of correlatoin called the 
+ 'correlation coefficient' or 'correlation index'. Correlation coefficient, <m>r</m> lies between -1 and +1.
+ If <m>r=-1</m>, the correlation is strong negative (i.e., if one variable is increasing then 
+ the second variable must be decreasing), if <m>r=0</m> then there is no correlation, and if <m>r=+1</m> 
+ then correlation is stron positive (i.e., if one variable is increasing then 
+ the second variable must also be increasing or vice a versa). 
+ For example: height and weight of infent kids are strongly positve correlation. 
+ Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.
+</p>
+
+<p>
+  There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson's 
+  product moment method: 
+  <men xml:id="eqn-kcoeff1">
+    r = \frac{n\, \sum xy - \sum x\sum y}{\sqrt{n\sum x^2 - (\sum x)^2} \sqrt{n\sum y^2 - (\sum y)^2}}
+  </men>
+  here, <m>n</m> is number of pair of observations.
+  </p>
+
+  <example>
+    <statement>
+      <p>
+      Find the correlation coefficient of the following data.  
+ <me>
+  \begin{array}{c|c} 
+  x &amp; y \\ \hline 
+  9 &amp; 15 \\
+  8 &amp; 16 \\ 
+   7 &amp; 14 \\ 
+   6 &amp; 13 \\ 
+   5 &amp; 11 \\
+   4 &amp; 12 \\ 
+   3 &amp; 10 \\ 
+   2 &amp; 8 \\
+   1 &amp; 9 \\ \hline 
+ \end{array}
+</me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \begin{array}{c|c|c|c|c} 
+          x &amp; y &amp; x^2 &amp; y^2 &amp; xy\\ \hline 
+          9 &amp; 15 &amp; 81 &amp; 225 &amp; 135 \\
+          9 &amp; 16 &amp; 64 &amp; 256 &amp; 128 \\
+          9 &amp; 14 &amp; 49 &amp; 196 &amp; 98 \\
+           6 &amp; 13 &amp; 36 &amp; 169 &amp; 78 \\ 
+           5 &amp; 11 &amp; 25 &amp; 121 &amp; 55 \\
+           4 &amp; 12 &amp; 16 &amp; 144 &amp; 60 \\ 
+           3 &amp; 10 &amp; 9 &amp; 100 &amp; 30 \\ 
+           2 &amp; 8 &amp; 4 &amp; 64 &amp; 16 \\
+           1 &amp; 9 &amp; 1 &amp; 81 &amp; 9 \\ \hline 
+           \sum x = 45 &amp; \sum y =108 &amp; \sum x^2= 285 &amp; \sum y^2=1356 &amp; \sum xy=597 \\ \hline 
+         \end{array}
+        </me>
+        Now, using <xref ref="eqn-kcoeff1"/>
+        <me>
+          r = \frac{9(597) - 45\times 108}{\sqrt{9\times 285- (45)^2} \sqrt{9\times 1356 - (108)^2}} = 0.95
+        </me>
+        Hence, the correlation is strong positive.
+      </p>
+    </solution>
+  </example>
+ 
+</introduction>
+
+
+
+  <subsection xml:id="subsec-lreg">
+    <title>Linear Regression</title>
+    <p>
+      Linear regression shows the relation between two variables. 
+      The least square regression line is given by 
+      <men xml:id="eqn-lreg1">
+        \hat{y} = b_1 x + b_o
+      </men>
+      where 
+      <men xml:id="eqn-lreg2">
+        b_1= slope = \frac{n\sum xy-\sum x \sum y}{n \sum x^2 -(\sum x)^2} = \frac{SS_{xy}}{SS_{xx}}
+      </men>
+      or, 
+      <men xml:id="eqn-lreg3">
+        b_1= r \frac{S_{y}}{S_{x}}
+      </men>
+      Here <m>S_y</m> is sample standard deviation of y and <m>S_x</m> is sample standard deviation of x, 
+      and 
+      <men xml:id="eqn-lreg4">
+        b_o = intercept = \frac{\sum y-b_1 \sum x}{n} = \bar{y} -b_1\bar{x}
+      </men>
+      
+    </p>
+  </subsection>
+
+</section>
