@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Frequency Table</title>
+<title>Correlation Coeffient, r</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -106,7 +106,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-desc_i.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-desc_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-desc_iii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-desc_vi.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-desc_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-prob.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -171,7 +171,7 @@ window.MathJax = {
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_i.html#subsec-rel_mmm" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Relation between Mean, Median, and Mode:</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-desc_ii.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Frequency Table</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_ii.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Frequency Table</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-desc_iii.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Dispersion (Spread, Variability)</span></a></div>
 <ul class="structural toc-item-list">
@@ -212,7 +212,7 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Crosstabulation</span></a></div></li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Correlation Coeffient, r</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
 </li>
@@ -267,54 +267,95 @@ window.MathJax = {
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-desc_ii"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Frequency Table</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-desc_vii"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.7</span><span class="space"> </span><span class="title">Correlation Coeffient, r</span>
 </h2>
-<div class="para logical" id="sec-desc_ii-2">
-<div class="para">
-<dfn class="terminology">Frequency:</dfn> It is the number of times a value of data occurs. It is useful to analyse categorical variables. <dfn class="terminology">Relative frequency:</dfn> percentage or portion of the data value present in complete dataset.</div>
-<div class="displaymath process-math" id="eqn-rlfreq1">
+<section class="introduction" id="sec-desc_vii-2"><div class="para" id="sec-desc_vii-2-1">Correlation analysis deals with association between two or more variables. The degree of relationship between the variables under consideration is measured through the correlation analysis. The measure of correlatoin called the ’correlation coefficient’ or ’correlation index’. Correlation coefficient, <span class="process-math">\(r\)</span> lies between -1 and +1. If <span class="process-math">\(r=-1\text{,}\)</span> the correlation is strong negative (i.e., if one variable is increasing then the second variable must be decreasing), if <span class="process-math">\(r=0\)</span> then there is no correlation, and if <span class="process-math">\(r=+1\)</span> then correlation is stron positive (i.e., if one variable is increasing then the second variable must also be increasing or vice a versa). For example: height and weight of infent kids are strongly positve correlation. Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.</div> <div class="para logical" id="sec-desc_vii-2-2">
+<div class="para">There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson’s product moment method:</div>
+<div class="displaymath process-math" id="eqn-kcoeff1">
 \begin{equation}
-RF = \frac{frequency}{\text{ total number of observation } }\times 100\%\tag{2.2.1}
+r = \frac{n\, \sum xy - \sum x\sum y}{\sqrt{n\sum x^2 - (\sum x)^2} \sqrt{n\sum y^2 - (\sum y)^2}}\tag{2.7.1}
 \end{equation}
 </div>
-<div class="para">For example: <span class="process-math">\(\{1,3,3,2,4,1,2,2,1,2,3,5,4,1,2,1,3,1,4,1\}\)</span>
-</div>
+<div class="para">here, <span class="process-math">\(n\)</span> is number of pair of observations.</div>
+</div> <details id="sec-desc_vii-2-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
+</h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec-desc_vii-2-3-1-1">
+<div class="para">Find the correlation coefficient of the following data.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{array}{c|c|c} 
-\text{ Data value} &amp; Frequency &amp; \text{ Relative Frequency} \\ \hline 
-1 &amp; 7 &amp; 7/20 =0.35  \\ 
-2 &amp; 5 &amp; 5/20 =0.25 \\ 
-3 &amp; 4 &amp; 4/20 =0.20 \\ 
-4 &amp; 3 &amp; 3/20 =0.15 \\ 
-5 &amp; 1 &amp; 1/20 =0.05 \\ \hline 
-&amp; \sum f=20 &amp;   \\  
+\begin{array}{c|c} 
+x &amp; y \\ \hline 
+9 &amp; 15 \\
+8 &amp; 16 \\ 
+7 &amp; 14 \\ 
+6 &amp; 13 \\ 
+5 &amp; 11 \\
+4 &amp; 12 \\ 
+3 &amp; 10 \\ 
+2 &amp; 8 \\
+1 &amp; 9 \\ \hline 
 \end{array}
 \end{equation*}
 </div>
 </div>
-<div class="para" id="sec-desc_ii-3">
-<em class="emphasis">Displaying qualitative data:</em> Imagine that you are picking candy from a bag of candies. You have picked 16 times and pulled out the following colors of candy. Record your results in a frequency distribution table.</div>
-<div class="para" id="sec-desc_ii-4">The sample dataset: red, green, green, green, blue, blue, red, blue, green, green, red, red, blue, green, red, red.</div>
-<div class="para logical" id="sec-desc_ii-5">
-<div class="para"><dfn class="terminology">Frequency Table:</dfn></div>
-<div class="displaymath process-math">
+<div class="solutions"><details id="sec-desc_vii-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-desc_vii-2-3-2-1">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-kcoeff1.html">
 \begin{equation*}
-\begin{array}{c|c|c} 
-Color &amp; Frequency &amp; \text{ Commulative Frequency} \\ \hline 
-Red &amp; 6 &amp; 6  \\ 
-Green &amp; 6 &amp; 12  \\ 
-Blue &amp; 4 &amp; 16  \\ \hline 
-&amp; \sum f=16 &amp;   \\ 
+\begin{array}{c|c|c|c|c} 
+x &amp; y &amp; x^2 &amp; y^2 &amp; xy\\ \hline 
+9 &amp; 15 &amp; 81 &amp; 225 &amp; 135 \\
+9 &amp; 16 &amp; 64 &amp; 256 &amp; 128 \\
+9 &amp; 14 &amp; 49 &amp; 196 &amp; 98 \\
+6 &amp; 13 &amp; 36 &amp; 169 &amp; 78 \\ 
+5 &amp; 11 &amp; 25 &amp; 121 &amp; 55 \\
+4 &amp; 12 &amp; 16 &amp; 144 &amp; 60 \\ 
+3 &amp; 10 &amp; 9 &amp; 100 &amp; 30 \\ 
+2 &amp; 8 &amp; 4 &amp; 64 &amp; 16 \\
+1 &amp; 9 &amp; 1 &amp; 81 &amp; 9 \\ \hline 
+\sum x = 45 &amp; \sum y =108 &amp; \sum x^2= 285 &amp; \sum y^2=1356 &amp; \sum xy=597 \\ \hline 
 \end{array}
 \end{equation*}
 </div>
-<div class="para">
-<dfn class="terminology">Cumulative frequency</dfn> is used to determine the number of observations that lie above (or below) a particular value in a dataset.</div>
-</div></section></div>
+<div class="para">Now, using <a href="sec-desc_vii.html#eqn-kcoeff1" class="xref" data-knowl="./knowl/xref/eqn-kcoeff1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.7.1">(2.7.1)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-kcoeff1.html">
+\begin{equation*}
+r = \frac{9(597) - 45\times 108}{\sqrt{9\times 285- (45)^2} \sqrt{9\times 1356 - (108)^2}} = 0.95
+\end{equation*}
+</div>
+<div class="para">Hence, the correlation is strong positive.</div>
+</div></div></details></div></article></details></section><section class="subsection" id="subsec-lreg"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="space"> </span><span class="title">Linear Regression</span>
+</h3>
+<div class="para logical" id="subsec-lreg-2">
+<div class="para">Linear regression shows the relation between two variables. The least square regression line is given by</div>
+<div class="displaymath process-math" id="eqn-lreg1">
+\begin{equation}
+\hat{y} = b_1 x + b_o\tag{2.7.2}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" id="eqn-lreg2">
+\begin{equation}
+b_1= slope = \frac{n\sum xy-\sum x \sum y}{n \sum x^2 -(\sum x)^2} = \frac{SS_{xy}}{SS_{xx}}\tag{2.7.3}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" id="eqn-lreg3">
+\begin{equation}
+b_1= r \frac{S_{y}}{S_{x}}\tag{2.7.4}
+\end{equation}
+</div>
+<div class="para">Here <span class="process-math">\(S_y\)</span> is sample standard deviation of y and <span class="process-math">\(S_x\)</span> is sample standard deviation of x, and</div>
+<div class="displaymath process-math" id="eqn-lreg4">
+\begin{equation}
+b_o = intercept = \frac{\sum y-b_1 \sum x}{n} = \bar{y} -b_1\bar{x}\tag{2.7.5}
+\end{equation}
+</div>
+</div></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-desc_i.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-desc_iii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-desc_vi.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-prob.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

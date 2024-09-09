@@ -631,6 +631,24 @@ var ptx_lunr_docs = [
   "body": "marginals "
 },
 {
+  "id": "sec-desc_vii",
+  "level": "1",
+  "url": "sec-desc_vii.html",
+  "type": "Section",
+  "number": "2.7",
+  "title": "Correlation Coeffient, r",
+  "body": " Correlation Coeffient, r   Correlation analysis deals with association between two or more variables. The degree of relationship between the variables under consideration is measured through the correlation analysis. The measure of correlatoin called the 'correlation coefficient' or 'correlation index'. Correlation coefficient, lies between -1 and +1. If , the correlation is strong negative (i.e., if one variable is increasing then the second variable must be decreasing), if then there is no correlation, and if then correlation is stron positive (i.e., if one variable is increasing then the second variable must also be increasing or vice a versa). For example: height and weight of infent kids are strongly positve correlation. Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.  There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson's product moment method: here, is number of pair of observations.    Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.      Linear Regression  Linear regression shows the relation between two variables. The least square regression line is given by where or, Here is sample standard deviation of y and is sample standard deviation of x, and    "
+},
+{
+  "id": "sec-desc_vii-2-3",
+  "level": "2",
+  "url": "sec-desc_vii.html#sec-desc_vii-2-3",
+  "type": "Example",
+  "number": "2.7.1",
+  "title": "",
+  "body": "  Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.   "
+},
+{
   "id": "sec-prob_i",
   "level": "1",
   "url": "sec-prob_i.html",
