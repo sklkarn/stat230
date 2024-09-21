@@ -88,17 +88,17 @@
       <men xml:id="eqn-lreg2">
         b_1= slope = \frac{n\sum xy-\sum x \sum y}{n \sum x^2 -(\sum x)^2} = \frac{SS_{xy}}{SS_{xx}}
       </men>
-      or, 
+      Where <m>SS_{xy}</m> is the sum of cross-deviations of y and x and <m>SS_{xx}</m> is the squared-deviations of x.
+      Or, 
       <men xml:id="eqn-lreg3">
         b_1= r \frac{S_{y}}{S_{x}}
       </men>
-      Here <m>S_y</m> is sample standard deviation of y and <m>S_x</m> is sample standard deviation of x, 
-      and 
+      Here <m>S_y</m> is sample standard deviation of y and <m>S_x</m> is sample standard deviation of x.  
+      And 
       <men xml:id="eqn-lreg4">
         b_o = intercept = \frac{\sum y-b_1 \sum x}{n} = \bar{y} -b_1\bar{x}
       </men>
-      
-    </p>
+       </p>
   </subsection>
 
 </section>
