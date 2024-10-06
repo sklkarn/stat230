@@ -88,6 +88,182 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-intr_stat-2-2-1 { counter-set: ch-intr_stat-2-2-1 0; }
+#ch-intr_stat-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1,decimal)"."; }
+#ch-intr_stat-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1; }
+#ch-intr_stat-2-2-1-2-2-1 { counter-set: ch-intr_stat-2-2-1-2-2-1 0; }
+#ch-intr_stat-2-2-1-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-2-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1-2-2-1; }
+#ch-intr_stat-2-2-1-3-3-1 { counter-set: ch-intr_stat-2-2-1-3-3-1 0; }
+#ch-intr_stat-2-2-1-3-3-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-3-3-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-3-3-1 > li { counter-increment: ch-intr_stat-2-2-1-3-3-1; }
+#ch-intr_stat-2-2-1-4-2-1 { counter-set: ch-intr_stat-2-2-1-4-2-1 0; }
+#ch-intr_stat-2-2-1-4-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-4-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-4-2-1 > li { counter-increment: ch-intr_stat-2-2-1-4-2-1; }
+#ch-intr_stat-2-2-1-5-4-2 { counter-set: ch-intr_stat-2-2-1-5-4-2 0; }
+#ch-intr_stat-2-2-1-5-4-2 > li::marker { content: ""counter(ch-intr_stat-2-2-1-5-4-2,lower-roman)""; }
+#ch-intr_stat-2-2-1-5-4-2 > li { counter-increment: ch-intr_stat-2-2-1-5-4-2; }
+#ch-intr_stat-2-2-1-6-2-1 { counter-set: ch-intr_stat-2-2-1-6-2-1 0; }
+#ch-intr_stat-2-2-1-6-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-6-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-6-2-1 > li { counter-increment: ch-intr_stat-2-2-1-6-2-1; }
+#subsec-sample_method-2-3 { counter-set: subsec-sample_method-2-3 0; }
+#subsec-sample_method-2-3 > li::marker { content: ""counter(subsec-sample_method-2-3,upper-roman)""; }
+#subsec-sample_method-2-3 > li { counter-increment: subsec-sample_method-2-3; }
+#subsec-sample_bias-3-1 { counter-set: subsec-sample_bias-3-1 0; }
+#subsec-sample_bias-3-1 > li::marker { content: ""counter(subsec-sample_bias-3-1,lower-roman)""; }
+#subsec-sample_bias-3-1 > li { counter-increment: subsec-sample_bias-3-1; }
+#sec-intr_ii-2-3-1 { counter-set: sec-intr_ii-2-3-1 0; }
+#sec-intr_ii-2-3-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1,decimal)"."; }
+#sec-intr_ii-2-3-1 > li { counter-increment: sec-intr_ii-2-3-1; }
+#sec-intr_ii-2-3-1-1-1-1 { counter-set: sec-intr_ii-2-3-1-1-1-1 0; }
+#sec-intr_ii-2-3-1-1-1-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1-1-1-1,lower-roman)""; }
+#sec-intr_ii-2-3-1-1-1-1 > li { counter-increment: sec-intr_ii-2-3-1-1-1-1; }
+#sec-intr_iii-3-1 { counter-set: sec-intr_iii-3-1 0; }
+#sec-intr_iii-3-1 > li::marker { content: ""counter(sec-intr_iii-3-1,lower-roman)""; }
+#sec-intr_iii-3-1 > li { counter-increment: sec-intr_iii-3-1; }
+#ch-desc_stat-2-2-1 { counter-set: ch-desc_stat-2-2-1 0; }
+#ch-desc_stat-2-2-1 > li::marker { content: ""counter(ch-desc_stat-2-2-1,decimal)"."; }
+#ch-desc_stat-2-2-1 > li { counter-increment: ch-desc_stat-2-2-1; }
+#sec-desc_i-2-2-2 { counter-set: sec-desc_i-2-2-2 0; }
+#sec-desc_i-2-2-2 > li::marker { content: ""counter(sec-desc_i-2-2-2,decimal)"."; }
+#sec-desc_i-2-2-2 > li { counter-increment: sec-desc_i-2-2-2; }
+#sec-desc_i-2-2-2-1-1-1 { counter-set: sec-desc_i-2-2-2-1-1-1 0; }
+#sec-desc_i-2-2-2-1-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-1-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-1-1-1 > li { counter-increment: sec-desc_i-2-2-2-1-1-1; }
+#sec-desc_i-2-2-2-2-1-1 { counter-set: sec-desc_i-2-2-2-2-1-1 0; }
+#sec-desc_i-2-2-2-2-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-2-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-2-1-1 > li { counter-increment: sec-desc_i-2-2-2-2-1-1; }
+#subsec-mean-2-5-3 { counter-set: subsec-mean-2-5-3 0; }
+#subsec-mean-2-5-3 > li::marker { content: ""counter(subsec-mean-2-5-3,upper-roman)""; }
+#subsec-mean-2-5-3 > li { counter-increment: subsec-mean-2-5-3; }
+#subsec-mean-2-6-1 { counter-set: subsec-mean-2-6-1 0; }
+#subsec-mean-2-6-1 > li::marker { content: ""counter(subsec-mean-2-6-1,lower-roman)""; }
+#subsec-mean-2-6-1 > li { counter-increment: subsec-mean-2-6-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec-desc_iv-2-2-1 { counter-set: sec-desc_iv-2-2-1 0; }
+#sec-desc_iv-2-2-1 > li::marker { content: ""counter(sec-desc_iv-2-2-1,lower-roman)""; }
+#sec-desc_iv-2-2-1 > li { counter-increment: sec-desc_iv-2-2-1; }
+#ch-prob-2-2-1 { counter-set: ch-prob-2-2-1 0; }
+#ch-prob-2-2-1 > li::marker { content: ""counter(ch-prob-2-2-1,decimal)"."; }
+#ch-prob-2-2-1 > li { counter-increment: ch-prob-2-2-1; }
+#ch-prob-2-2-1-6-1-1 { counter-set: ch-prob-2-2-1-6-1-1 0; }
+#ch-prob-2-2-1-6-1-1 > li::marker { content: ""counter(ch-prob-2-2-1-6-1-1,lower-alpha)""; }
+#ch-prob-2-2-1-6-1-1 > li { counter-increment: ch-prob-2-2-1-6-1-1; }
+#sec-prob_i-2-3-1 { counter-set: sec-prob_i-2-3-1 0; }
+#sec-prob_i-2-3-1 > li::marker { content: ""counter(sec-prob_i-2-3-1,decimal)"."; }
+#sec-prob_i-2-3-1 > li { counter-increment: sec-prob_i-2-3-1; }
+#sec-prob_i-2-4-2 { counter-set: sec-prob_i-2-4-2 0; }
+#sec-prob_i-2-4-2 > li::marker { content: ""counter(sec-prob_i-2-4-2,decimal)"."; }
+#sec-prob_i-2-4-2 > li { counter-increment: sec-prob_i-2-4-2; }
+#sec-prob_i-2-4-2-3-2-1 { counter-set: sec-prob_i-2-4-2-3-2-1 0; }
+#sec-prob_i-2-4-2-3-2-1 > li::marker { content: ""counter(sec-prob_i-2-4-2-3-2-1,upper-roman)""; }
+#sec-prob_i-2-4-2-3-2-1 > li { counter-increment: sec-prob_i-2-4-2-3-2-1; }
+#subsec--2-4-1-2-1 { counter-set: subsec--2-4-1-2-1 0; }
+#subsec--2-4-1-2-1 > li::marker { content: ""counter(subsec--2-4-1-2-1,lower-roman)""; }
+#subsec--2-4-1-2-1 > li { counter-increment: subsec--2-4-1-2-1; }
+#subsec--2-4-2-3-1 { counter-set: subsec--2-4-2-3-1 0; }
+#subsec--2-4-2-3-1 > li::marker { content: ""counter(subsec--2-4-2-3-1,lower-roman)""; }
+#subsec--2-4-2-3-1 > li { counter-increment: subsec--2-4-2-3-1; }
+#subsec--2-4-2-4-2 { counter-set: subsec--2-4-2-4-2 0; }
+#subsec--2-4-2-4-2 > li::marker { content: ""counter(subsec--2-4-2-4-2,lower-roman)""; }
+#subsec--2-4-2-4-2 > li { counter-increment: subsec--2-4-2-4-2; }
+#subsec--2-5-2 { counter-set: subsec--2-5-2 0; }
+#subsec--2-5-2 > li::marker { content: ""counter(subsec--2-5-2,lower-roman)""; }
+#subsec--2-5-2 > li { counter-increment: subsec--2-5-2; }
+#sec-prob_ii-2-1-1 { counter-set: sec-prob_ii-2-1-1 0; }
+#sec-prob_ii-2-1-1 > li::marker { content: ""counter(sec-prob_ii-2-1-1,upper-roman)""; }
+#sec-prob_ii-2-1-1 > li { counter-increment: sec-prob_ii-2-1-1; }
+#sec-prob_ii-2-1-1-1-1-4 { counter-set: sec-prob_ii-2-1-1-1-1-4 0; }
+#sec-prob_ii-2-1-1-1-1-4 > li::marker { content: ""counter(sec-prob_ii-2-1-1-1-1-4,lower-roman)""; }
+#sec-prob_ii-2-1-1-1-1-4 > li { counter-increment: sec-prob_ii-2-1-1-1-1-4; }
+#sec-prob_ii-2-1-1-2-1-2 { counter-set: sec-prob_ii-2-1-1-2-1-2 0; }
+#sec-prob_ii-2-1-1-2-1-2 > li::marker { content: ""counter(sec-prob_ii-2-1-1-2-1-2,lower-roman)""; }
+#sec-prob_ii-2-1-1-2-1-2 > li { counter-increment: sec-prob_ii-2-1-1-2-1-2; }
+#ch-infr_stat-2-1-1 { counter-set: ch-infr_stat-2-1-1 0; }
+#ch-infr_stat-2-1-1 > li::marker { content: ""counter(ch-infr_stat-2-1-1,decimal)"."; }
+#ch-infr_stat-2-1-1 > li { counter-increment: ch-infr_stat-2-1-1; }
+#sec-infr_i-2-4-1 { counter-set: sec-infr_i-2-4-1 0; }
+#sec-infr_i-2-4-1 > li::marker { content: ""counter(sec-infr_i-2-4-1,lower-roman)""; }
+#sec-infr_i-2-4-1 > li { counter-increment: sec-infr_i-2-4-1; }
+#subsec-hyp_test-2-5-2 { counter-set: subsec-hyp_test-2-5-2 0; }
+#subsec-hyp_test-2-5-2 > li::marker { content: ""counter(subsec-hyp_test-2-5-2,decimal)"."; }
+#subsec-hyp_test-2-5-2 > li { counter-increment: subsec-hyp_test-2-5-2; }
+#subsec-hyp_test-2-6-2 { counter-set: subsec-hyp_test-2-6-2 0; }
+#subsec-hyp_test-2-6-2 > li::marker { content: ""counter(subsec-hyp_test-2-6-2,decimal)"."; }
+#subsec-hyp_test-2-6-2 > li { counter-increment: subsec-hyp_test-2-6-2; }
+#subsec-hyp_test-2-7-2 { counter-set: subsec-hyp_test-2-7-2 0; }
+#subsec-hyp_test-2-7-2 > li::marker { content: ""counter(subsec-hyp_test-2-7-2,decimal)"."; }
+#subsec-hyp_test-2-7-2 > li { counter-increment: subsec-hyp_test-2-7-2; }
+#sec-infr_ii-2-4-2 { counter-set: sec-infr_ii-2-4-2 0; }
+#sec-infr_ii-2-4-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2,lower-roman)""; }
+#sec-infr_ii-2-4-2 > li { counter-increment: sec-infr_ii-2-4-2; }
+#sec-infr_ii-2-4-2-1-3-2 { counter-set: sec-infr_ii-2-4-2-1-3-2 0; }
+#sec-infr_ii-2-4-2-1-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-1-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-1-3-2 > li { counter-increment: sec-infr_ii-2-4-2-1-3-2; }
+#sec-infr_ii-2-4-2-2-3-2 { counter-set: sec-infr_ii-2-4-2-2-3-2 0; }
+#sec-infr_ii-2-4-2-2-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-2-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-2-3-2 > li { counter-increment: sec-infr_ii-2-4-2-2-3-2; }
+#sec-infr_ii-2-8-1-1-2 { counter-set: sec-infr_ii-2-8-1-1-2 0; }
+#sec-infr_ii-2-8-1-1-2 > li::marker { content: ""counter(sec-infr_ii-2-8-1-1-2,lower-alpha)""; }
+#sec-infr_ii-2-8-1-1-2 > li { counter-increment: sec-infr_ii-2-8-1-1-2; }
+#sec-infr_iii-2-1-1 { counter-set: sec-infr_iii-2-1-1 0; }
+#sec-infr_iii-2-1-1 > li::marker { content: ""counter(sec-infr_iii-2-1-1,lower-roman)""; }
+#sec-infr_iii-2-1-1 > li { counter-increment: sec-infr_iii-2-1-1; }
+#subsec-t_steps-2-1 { counter-set: subsec-t_steps-2-1 0; }
+#subsec-t_steps-2-1 > li::marker { content: ""counter(subsec-t_steps-2-1,lower-roman)""; }
+#subsec-t_steps-2-1 > li { counter-increment: subsec-t_steps-2-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -210,11 +386,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-desc_iv.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Graphical Representation</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_iv.html#subsec-outliers" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Outliers</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Crosstabulation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Crosstabulation</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Correlation Coeffient, r</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Correlation Coeffient, r</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -237,25 +412,26 @@ window.MathJax = {
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-infr_stat.html" class="internal"><span class="codenumber">4</span> <span class="title">Inferential Statistics</span></a></div>
 <ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Hypothesis Testing</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Hypothesis Testing</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Test Selection</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Test Selection</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.1.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.1.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
 </ul>
 </li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Z Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Z Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">T Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.4</span> <span class="title">T Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Type I and Type II errors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Type I and Type II errors</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -270,8 +446,9 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-desc_iii"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Dispersion (Spread, Variability)</span>
 </h2>
-<section class="introduction" id="sec-desc_iii-2"><div class="para" id="sec-desc_iii-2-1">It is a measure of the extent to which the observations vary from some central value (mean, median, mode). It shows how the data are spread out (dispersed) from the central value. In simple terms, it shows how squeezed or scattered the variable is. It is a measure of degree of variation in the data. The following images show two data with same mean but different spread.</div> <figure class="figure figure-like" id="sec-desc_iii-2-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/spread.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.1<span class="period">.</span></span><span class="space"> </span>Data Spread</figcaption></figure> <div class="para logical" id="sec-desc_iii-2-3">
+<section class="introduction" id="sec-desc_iii-2"><div class="para" id="sec-desc_iii-2-1">It is a measure of the extent to which the observations vary from some central value (mean, median, mode). It shows how the data are spread out (dispersed) from the central value. In simple terms, it shows how squeezed or scattered the variable is. It is a measure of degree of variation in the data. The following images show two data with same mean but different spread.</div>
+<figure class="figure figure-like" id="sec-desc_iii-2-2"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/spread.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.1<span class="period">.</span></span><span class="space"> </span>Data Spread</figcaption></figure><div class="para logical" id="sec-desc_iii-2-3">
 <div class="para">For example: the mean of <span class="process-math">\(2,4,9\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -279,7 +456,8 @@ mean=\frac{\sum x}{n} = \frac{2+4+9}{3} =5.
 \end{equation*}
 </div>
 <div class="para">Here, the dispersion shows how far are the observations from the mean (central value). The difference in each data point from the central value is represents deviation of the data.</div>
-</div> <div class="para logical" id="sec-desc_iii-2-4">
+</div>
+<div class="para logical" id="sec-desc_iii-2-4">
 <div class="para">Suppose I have the three data set as shown below:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -302,11 +480,11 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 </h3>
 <div class="para" id="subsec-disp_msr-2">Dispersion can be measured using two different approaches.</div>
 <div class="para logical" id="subsec-disp_msr-3">
-<ol class="decimal">
+<ol class="decimal" id="subsec-disp_msr-3-1">
 <li id="subsec-disp_msr-3-1-1">
 <span class="heading"><span class="title">Absolute Measure (same unit).</span></span><div class="para logical" id="subsec-disp_msr-3-1-1-2">
 <div class="para">Absolute measures of dispersion use the original units of data, and are most useful on understanding the dispersion within the context of your experiment and measurements.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-disp_msr-3-1-1-2-1">
 <li id="subsec-disp_msr-3-1-1-2-1-1"><div class="para" id="subsec-disp_msr-3-1-1-2-1-1-1">Range</div></li>
 <li id="subsec-disp_msr-3-1-1-2-1-2"><div class="para" id="subsec-disp_msr-3-1-1-2-1-2-1">Quartile Deviation</div></li>
 <li id="subsec-disp_msr-3-1-1-2-1-3"><div class="para" id="subsec-disp_msr-3-1-1-2-1-3-1">Mean Deviation</div></li>
@@ -318,7 +496,7 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 <li id="subsec-disp_msr-3-1-2">
 <span class="heading"><span class="title">Relative Measure (unit free).</span></span><div class="para logical" id="subsec-disp_msr-3-1-2-2">
 <div class="para">In order to compare separate data sets or different experiments that might use different units and the difference in their central values are very high, we use relative measures.</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-disp_msr-3-1-2-2-1">
 <li id="subsec-disp_msr-3-1-2-2-1-1"><div class="para" id="subsec-disp_msr-3-1-2-2-1-1-1">Coefficient of Range</div></li>
 <li id="subsec-disp_msr-3-1-2-2-1-2"><div class="para" id="subsec-disp_msr-3-1-2-2-1-2-1">Coefficient of Quartile Deviation</div></li>
 <li id="subsec-disp_msr-3-1-2-2-1-3"><div class="para" id="subsec-disp_msr-3-1-2-2-1-3-1">Coefficient of Mean Deviation</div></li>
@@ -333,19 +511,23 @@ Dispersion &amp;  No &amp; Less   &amp; High \\  \hline
 </div></section><section class="subsection" id="subsec-range"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="space"> </span><span class="title">Range</span>
 </h3>
-<section class="introduction" id="subsec-range-2"><div class="para" id="subsec-range-2-1">Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.</div> <div class="para logical" id="subsec-range-2-2"><div class="displaymath process-math" id="eqn-range1">
+<section class="introduction" id="subsec-range-2"><div class="para" id="subsec-range-2-1">Range is the difference between the highest and the lowest value of observations for a given frequency distribution. The coefficient of range on the other hand is the ratio of difference between the highest and lowest value of observations to the sum of highest and lowest value of observations.</div>
+<div class="para logical" id="subsec-range-2-2"><div class="displaymath process-math" id="eqn-range1">
 \begin{equation}
 Range = L - S \tag{2.3.1}
 \end{equation}
-</div></div> <div class="para logical" id="subsec-range-2-3">
+</div></div>
+<div class="para logical" id="subsec-range-2-3">
 <div class="displaymath process-math" id="eqn-co_range1">
 \begin{equation}
 \text{Coefficient of Range} = \left(\frac{L-S}{L+S}\right) \times 100\%\tag{2.3.2}
 \end{equation}
 </div>
 <div class="para">Here, <span class="process-math">\(L = \)</span> largest observation, and <span class="process-math">\(S = \)</span> smallest observation.</div>
-</div> <div class="para" id="subsec-range-2-4">Range is sensitive to extreme value but cannot give any information if there are extreme values in the data. It does not consider the distribution but suitable for small dataset. For the data  <span class="process-math">\(\{1,2,3,4\}.\)</span> Range = <span class="process-math">\(4-1=3.\)</span>
-</div> <div class="para" id="subsec-range-2-5">For the data  <span class="process-math">\(\{1,2,3,4,50\}.\)</span> Range = <span class="process-math">\(50-1=49.\)</span>
+</div>
+<div class="para" id="subsec-range-2-4">Range is sensitive to extreme value but cannot give any information if there are extreme values in the data. It does not consider the distribution but suitable for small dataset. For the data  <span class="process-math">\(\{1,2,3,4\}.\)</span> Range = <span class="process-math">\(4-1=3.\)</span>
+</div>
+<div class="para" id="subsec-range-2-5">For the data  <span class="process-math">\(\{1,2,3,4,50\}.\)</span> Range = <span class="process-math">\(50-1=49.\)</span>
 </div></section><section class="subsubsection" id="subsubsec-rng_is"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.2.1</span><span class="space"> </span><span class="title">Individual Series</span>
 </h4>
@@ -442,7 +624,7 @@ Range = 180-40=140.
 </div></div></details></div></article></details></section><section class="subsubsection" id="subsubsec-rng_cs"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.2.3</span><span class="space"> </span><span class="title">Continuous Series</span>
 </h4>
-<div class="para logical" id="subsubsec-rng_cs-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_cs-2"><ol class="decimal" id="subsubsec-rng_cs-2-1">
 <li id="subsubsec-rng_cs-2-1-1">
 <div class="para" id="subsubsec-rng_cs-2-1-1-1">Exclusive Series</div>
 <div class="para logical" id="subsubsec-rng_cs-2-1-1-2">
@@ -513,13 +695,13 @@ Range = 44.5-19.5=25.
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_merit"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.2.4</span><span class="space"> </span><span class="title">Merits of Range:</span>
 </h4>
-<div class="para logical" id="subsubsec-rng_merit-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_merit-2"><ol class="decimal" id="subsubsec-rng_merit-2-1">
 <li id="subsubsec-rng_merit-2-1-1"><div class="para" id="subsubsec-rng_merit-2-1-1-1">Among all the methods of studing dispersion range is the simplest to understand and easiest to compare.</div></li>
 <li id="subsubsec-rng_merit-2-1-2"><div class="para" id="subsubsec-rng_merit-2-1-2-1">Range is quickest measure of dispersion.</div></li>
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_limit"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.2.5</span><span class="space"> </span><span class="title">Limits of Range:</span>
 </h4>
-<div class="para logical" id="subsubsec-rng_limit-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_limit-2"><ol class="decimal" id="subsubsec-rng_limit-2-1">
 <li id="subsubsec-rng_limit-2-1-1"><div class="para" id="subsubsec-rng_limit-2-1-1-1">Range is not based on each and every observation of series.</div></li>
 <li id="subsubsec-rng_limit-2-1-2"><div class="para" id="subsubsec-rng_limit-2-1-2-1">It is most affected by sampling fluctuations.</div></li>
 <li id="subsubsec-rng_limit-2-1-3"><div class="para" id="subsubsec-rng_limit-2-1-3-1">Range is most unreliable as a guide of the dispersion.</div></li>
@@ -527,7 +709,7 @@ Range = 44.5-19.5=25.
 </ol></div></section><section class="subsubsection" id="subsubsec-rng_use"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.3.2.6</span><span class="space"> </span><span class="title">Uses of Range</span>
 </h4>
-<div class="para logical" id="subsubsec-rng_use-2"><ol class="decimal">
+<div class="para logical" id="subsubsec-rng_use-2"><ol class="decimal" id="subsubsec-rng_use-2-1">
 <li id="subsubsec-rng_use-2-1-1"><div class="para" id="subsubsec-rng_use-2-1-1-1">Quality control</div></li>
 <li id="subsubsec-rng_use-2-1-2"><div class="para" id="subsubsec-rng_use-2-1-2-1">Fluctuations in the share prices</div></li>
 <li id="subsubsec-rng_use-2-1-3"><div class="para" id="subsubsec-rng_use-2-1-3-1">Weather forecast</div></li>
@@ -536,14 +718,17 @@ Range = 44.5-19.5=25.
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="space"> </span><span class="title">Quartiles</span>
 </h3>
 <section class="introduction" id="subsec-qrt_dev-2"><figure class="figure figure-like" id="subsec-qrt_dev-2-1"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/c.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.6<span class="period">.</span></span><span class="space"> </span>Quartiles</figcaption></figure> <div class="para" id="subsec-qrt_dev-2-2">Quartiles divide the data into four equal parts. Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the <dfn class="terminology">semi interquartile range</dfn> and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by <span class="process-math">\(Q_1\)</span> is defined as the <span class="process-math">\(25^{th}\)</span> percentile, the second quartile (<span class="process-math">\(Q_2\)</span>) is defined as the <span class="process-math">\(50^{th}\)</span> percentile (median), and the third quartile (<span class="process-math">\(Q_3\)</span>) is defined as the <span class="process-math">\(75^{th}\)</span> percentile.</div> <div class="para logical" id="subsec-qrt_dev-2-3">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.6<span class="period">.</span></span><span class="space"> </span>Quartiles</figcaption></figure><div class="para" id="subsec-qrt_dev-2-2">Quartiles divide the data into four equal parts. Quartile deviation is a statistic that measures the deviation in the middle of the data. Quartile deviation is also referred to as the <dfn class="terminology">semi interquartile range</dfn> and is half of the difference between the third quartile and the first quartile value. Quartiles divide a group of observations into four equal parts. The first quartile, denoted by <span class="process-math">\(Q_1\)</span> is defined as the <span class="process-math">\(25^{th}\)</span> percentile, the second quartile (<span class="process-math">\(Q_2\)</span>) is defined as the <span class="process-math">\(50^{th}\)</span> percentile (median), and the third quartile (<span class="process-math">\(Q_3\)</span>) is defined as the <span class="process-math">\(75^{th}\)</span> percentile.</div>
+<div class="para logical" id="subsec-qrt_dev-2-3">
 <div class="para">The formula for quartile deviation of the data is</div>
 <div class="displaymath process-math" id="eqn-qd1">
 \begin{equation}
 Q.D = \frac{Q_3 - Q_1}{2}.\tag{2.3.3}
 \end{equation}
 </div>
-</div> <div class="para" id="subsec-qrt_dev-2-4">The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.</div> <div class="para logical" id="subsec-qrt_dev-2-5">
+</div>
+<div class="para" id="subsec-qrt_dev-2-4">The coefficient of quartile deviation is a measure of dispersion, which is used to describe the spread or distribution of data.</div>
+<div class="para logical" id="subsec-qrt_dev-2-5">
 <div class="para">Coefficient of quartile deviation,</div>
 <div class="displaymath process-math" id="eqn-cqd1">
 \begin{equation}
@@ -570,7 +755,8 @@ Q_3 = [3(n+1)/4]^{th} \text{ item }
 \end{equation*}
 </div>
 <div class="para">Where <span class="process-math">\(n\)</span> represents the total number of observations in the given data set.</div>
-</div> <div class="para logical" id="subsec-qrt_dev-2-6">
+</div>
+<div class="para logical" id="subsec-qrt_dev-2-6">
 <div class="para">For the data <span class="process-math">\(\{4,6,7,8,10,23,24\}\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -578,7 +764,8 @@ Q_3 = [3(n+1)/4]^{th} \text{ item }
 Q_1 = \frac{7+1}{4} = 2^{nd} \text{ item} = 6.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsec-qrt_dev-2-7">
+</div>
+<div class="para logical" id="subsec-qrt_dev-2-7">
 <div class="para">
 <dfn class="terminology">Percentiles:</dfn> It divide the data into 100 parts.</div>
 <div class="displaymath process-math">
@@ -596,7 +783,8 @@ percentile = \frac{p}{100}\times (n+1)^{th} \text{ term}.
 50^{th} percentile = \frac{50}{100}\times (n+1)^{th} \text{ term} = \frac{n+1}{2} \text{ item}.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsec-qrt_dev-2-8">
+</div>
+<div class="para logical" id="subsec-qrt_dev-2-8">
 <div class="para"><dfn class="terminology">Inter Quartile Range (IQR):</dfn></div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -641,7 +829,8 @@ IQR = Q_3-Q_1 = 50\% \text{ of the data}.
 </div>
 <div class="para">Number of data values = <span class="process-math">\(n = 16\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-2">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-2">
 <div class="para">Median of the even number data set using <a href="sec-desc_i.html#eqn-median2" class="xref" data-knowl="./knowl/xref/eqn-median2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.8">(2.1.8)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-median2.html" id="subsubsec-qd_is-3-2-2-2">
 \begin{align*}
@@ -650,7 +839,8 @@ Q_2  \amp = \frac{1}{2}\{\left( \frac{n}{2}\right)^{th} term + \left( \frac{n}{2
 \therefore Q_2 \amp = \frac{10+14}{2} = 12. 
 \end{align*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-3">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-3">
 <div class="para">Now, lower half of the data is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -668,7 +858,8 @@ Q_1 = \text{ Median of lower half of the data }
 = (1/2)[4^{th} \text{ term }   + 5^{th} \text{ term}] = \frac{7+8}{2} =7.5.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-4">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-4">
 <div class="para">Also, the upper half of the data is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -686,7 +877,8 @@ Q_3 = \text{ Median of upper half of the data }
 = (1/2)[4^{th} \text{ term } + 5^{th} \text{ term}]= \frac{18+24}{2} =21.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-5">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-5">
 <div class="para">Therefore the Quartile deviation,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qd1.html">
 \begin{equation*}
@@ -694,7 +886,8 @@ QD = \frac{1}{2}(Q_3-Q_1) = \frac{21-7.5}{2}=6.75.
 \end{equation*}
 </div>
 <div class="para">using equation <a href="sec-desc_iii.html#eqn-qd1" class="xref" data-knowl="./knowl/xref/eqn-qd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.3">(2.3.3)</a>.</div>
-</div> <div class="para logical" id="subsubsec-qd_is-3-2-6">
+</div>
+<div class="para logical" id="subsubsec-qd_is-3-2-6">
 <div class="para">and the coefficient of Quartile deviation using <a href="sec-desc_iii.html#eqn-cqd1" class="xref" data-knowl="./knowl/xref/eqn-cqd1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.4">(2.3.4)</a>,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-cqd1.html">
 \begin{equation*}
@@ -1056,9 +1249,11 @@ and, \quad CQD = \frac{81.16-57.35}{81.16+57.35}\times 100 =17.19\%.
 </div></section></section><section class="subsection" id="subsec-st_dev"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="space"> </span><span class="title">Standard Deviation, <span class="process-math">\(\sigma\)</span> and Variance, <span class="process-math">\(\sigma^2\)</span></span>
 </h3>
-<section class="introduction" id="subsec-st_dev-2"><div class="para" id="subsec-st_dev-2-1">Standard deviation tells how far a group of numbers (observation) is from the mean.</div> <div class="para" id="subsec-st_dev-2-2">Variance is the average of the squared differences of a group of numbers (observation) from the mean.</div> <div class="para logical" id="subsec-st_dev-2-3">
+<section class="introduction" id="subsec-st_dev-2"><div class="para" id="subsec-st_dev-2-1">Standard deviation tells how far a group of numbers (observation) is from the mean.</div>
+<div class="para" id="subsec-st_dev-2-2">Variance is the average of the squared differences of a group of numbers (observation) from the mean.</div>
+<div class="para logical" id="subsec-st_dev-2-3">
 <div class="para">Standard deviation is the square root of the variance. It is also called <em class="emphasis">root mean square deviation.</em> Standard deviation, Variance and their coefficients can be calculated using the following formulae:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="subsec-st_dev-2-3-2">
 <li id="subsec-st_dev-2-3-2-1">
 <span class="heading"><span class="title">Actual Mean Method.</span></span><div class="para logical" id="subsec-st_dev-2-3-2-1-2">
 <div class="para">For a population standard deviation:</div>
@@ -1108,7 +1303,8 @@ CV = \frac{\sigma}{\bar{x}}\times 100\%\tag{2.3.10}
 </h4>
 <div class="para" id="subsubsec-sd_is-2">The standard deviation of the data below: <span class="process-math">\(10,12,13,15,20\)</span>
 </div>
-<section class="paragraphs" id="subsubsec-sd_is-3"><h5 class="heading"><span class="title">Actual Mean Method (direct method).</span></h5> <div class="para logical" id="subsubsec-sd_is-3-2">
+<section class="paragraphs" id="subsubsec-sd_is-3"><h5 class="heading"><span class="title">Actual Mean Method (direct method).</span></h5>
+<div class="para logical" id="subsubsec-sd_is-3-2">
 <div class="para">from equation <a href="sec-desc_i.html#eqn-mean1" class="xref" data-knowl="./knowl/xref/eqn-mean1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.3">(2.1.3)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-mean1.html ./knowl/xref/eqn-sd1a.html ./knowl/xref/eqn-csd1.html ./knowl/xref/eqn-var1.html ./knowl/xref/eqn-cv1.html">
@@ -1163,12 +1359,13 @@ CV =\frac{\sigma}{\bar{x}}\times 100 = 24.28/%.
 </h3>
 <section class="introduction" id="subsec-mean_dev-2"><div class="para logical" id="subsec-mean_dev-2-1">
 <div class="para">The mean deviation is the average deviation from the mean value of the given data set. The mean deviation of the data values can be easily calculated using the procedure below.</div>
-<ol class="decimal">
+<ol class="decimal" id="subsec-mean_dev-2-1-1">
 <li id="subsec-mean_dev-2-1-1-1"><div class="para" id="subsec-mean_dev-2-1-1-1-1">Step 1: Find the mean value for the given data values</div></li>
 <li id="subsec-mean_dev-2-1-1-2"><div class="para" id="subsec-mean_dev-2-1-1-2-1">Step 2: Now, subtract the mean value from each of the data values given (Note: Ignore the minus symbol)</div></li>
 <li id="subsec-mean_dev-2-1-1-3"><div class="para" id="subsec-mean_dev-2-1-1-3-1">Step 3: Now, find the mean of those values obtained in step 2.</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-mean_dev-2-2">
+</div>
+<div class="para logical" id="subsec-mean_dev-2-2">
 <div class="para">The formula to calculate the mean deviation is given below.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1294,7 +1491,8 @@ P_3 = \text{ size of 3 } \left[ \frac{n+1}{100}\right]^{th} term.\tag{2.3.19}
 </div>
 <div class="para">Number of item, <span class="process-math">\(n = 11.\)</span>
 </div>
-</div> <div class="para logical" id="subsec-QDP-5-2-2">
+</div>
+<div class="para logical" id="subsec-QDP-5-2-2">
 <div class="para">Using <a href="sec-desc_iii.html#eqn-qrt3" class="xref" data-knowl="./knowl/xref/eqn-qrt3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.13">(2.3.13)</a>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-qrt3.html" id="subsec-QDP-5-2-2-2">
@@ -1305,7 +1503,8 @@ Q_3  \amp = \text{ size of 3 } \left[ \frac{n+1}{4}\right]^{th} \text{ item} \\
 \amp  = \text{ size of } 9^{th} \text{ item} = 27. 
 \end{align*}
 </div>
-</div> <div class="para logical" id="subsec-QDP-5-2-3"><div class="displaymath process-math" id="subsec-QDP-5-2-3-1">
+</div>
+<div class="para logical" id="subsec-QDP-5-2-3"><div class="displaymath process-math" id="subsec-QDP-5-2-3-1">
 \begin{align*}
 D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} \\
 \amp  = \text{ size of 6 } \left[ \frac{11+1}{10}\right]^{th} \text{ item} \\
@@ -1316,7 +1515,8 @@ D_6  \amp = \text{ size of 6 } \left[ \frac{n+1}{10}\right]^{th} \text{ item} \\
 \amp  = 25 + 0.2\times  1 \\
 \amp  = 25.2 
 \end{align*}
-</div></div> <div class="para logical" id="subsec-QDP-5-2-4"><div class="displaymath process-math" id="subsec-QDP-5-2-4-1">
+</div></div>
+<div class="para logical" id="subsec-QDP-5-2-4"><div class="displaymath process-math" id="subsec-QDP-5-2-4-1">
 \begin{align*}
 P_{70}  \amp = \text{ size of 70 } \left[ \frac{n+1}{100}\right]^{th} \text{ item} \\
 \amp  = \text{ size of 70 } \left[ \frac{11+1}{100}\right]^{th} \text{ item} \\

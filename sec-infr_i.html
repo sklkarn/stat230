@@ -88,6 +88,182 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-intr_stat-2-2-1 { counter-set: ch-intr_stat-2-2-1 0; }
+#ch-intr_stat-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1,decimal)"."; }
+#ch-intr_stat-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1; }
+#ch-intr_stat-2-2-1-2-2-1 { counter-set: ch-intr_stat-2-2-1-2-2-1 0; }
+#ch-intr_stat-2-2-1-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-2-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1-2-2-1; }
+#ch-intr_stat-2-2-1-3-3-1 { counter-set: ch-intr_stat-2-2-1-3-3-1 0; }
+#ch-intr_stat-2-2-1-3-3-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-3-3-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-3-3-1 > li { counter-increment: ch-intr_stat-2-2-1-3-3-1; }
+#ch-intr_stat-2-2-1-4-2-1 { counter-set: ch-intr_stat-2-2-1-4-2-1 0; }
+#ch-intr_stat-2-2-1-4-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-4-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-4-2-1 > li { counter-increment: ch-intr_stat-2-2-1-4-2-1; }
+#ch-intr_stat-2-2-1-5-4-2 { counter-set: ch-intr_stat-2-2-1-5-4-2 0; }
+#ch-intr_stat-2-2-1-5-4-2 > li::marker { content: ""counter(ch-intr_stat-2-2-1-5-4-2,lower-roman)""; }
+#ch-intr_stat-2-2-1-5-4-2 > li { counter-increment: ch-intr_stat-2-2-1-5-4-2; }
+#ch-intr_stat-2-2-1-6-2-1 { counter-set: ch-intr_stat-2-2-1-6-2-1 0; }
+#ch-intr_stat-2-2-1-6-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-6-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-6-2-1 > li { counter-increment: ch-intr_stat-2-2-1-6-2-1; }
+#subsec-sample_method-2-3 { counter-set: subsec-sample_method-2-3 0; }
+#subsec-sample_method-2-3 > li::marker { content: ""counter(subsec-sample_method-2-3,upper-roman)""; }
+#subsec-sample_method-2-3 > li { counter-increment: subsec-sample_method-2-3; }
+#subsec-sample_bias-3-1 { counter-set: subsec-sample_bias-3-1 0; }
+#subsec-sample_bias-3-1 > li::marker { content: ""counter(subsec-sample_bias-3-1,lower-roman)""; }
+#subsec-sample_bias-3-1 > li { counter-increment: subsec-sample_bias-3-1; }
+#sec-intr_ii-2-3-1 { counter-set: sec-intr_ii-2-3-1 0; }
+#sec-intr_ii-2-3-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1,decimal)"."; }
+#sec-intr_ii-2-3-1 > li { counter-increment: sec-intr_ii-2-3-1; }
+#sec-intr_ii-2-3-1-1-1-1 { counter-set: sec-intr_ii-2-3-1-1-1-1 0; }
+#sec-intr_ii-2-3-1-1-1-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1-1-1-1,lower-roman)""; }
+#sec-intr_ii-2-3-1-1-1-1 > li { counter-increment: sec-intr_ii-2-3-1-1-1-1; }
+#sec-intr_iii-3-1 { counter-set: sec-intr_iii-3-1 0; }
+#sec-intr_iii-3-1 > li::marker { content: ""counter(sec-intr_iii-3-1,lower-roman)""; }
+#sec-intr_iii-3-1 > li { counter-increment: sec-intr_iii-3-1; }
+#ch-desc_stat-2-2-1 { counter-set: ch-desc_stat-2-2-1 0; }
+#ch-desc_stat-2-2-1 > li::marker { content: ""counter(ch-desc_stat-2-2-1,decimal)"."; }
+#ch-desc_stat-2-2-1 > li { counter-increment: ch-desc_stat-2-2-1; }
+#sec-desc_i-2-2-2 { counter-set: sec-desc_i-2-2-2 0; }
+#sec-desc_i-2-2-2 > li::marker { content: ""counter(sec-desc_i-2-2-2,decimal)"."; }
+#sec-desc_i-2-2-2 > li { counter-increment: sec-desc_i-2-2-2; }
+#sec-desc_i-2-2-2-1-1-1 { counter-set: sec-desc_i-2-2-2-1-1-1 0; }
+#sec-desc_i-2-2-2-1-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-1-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-1-1-1 > li { counter-increment: sec-desc_i-2-2-2-1-1-1; }
+#sec-desc_i-2-2-2-2-1-1 { counter-set: sec-desc_i-2-2-2-2-1-1 0; }
+#sec-desc_i-2-2-2-2-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-2-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-2-1-1 > li { counter-increment: sec-desc_i-2-2-2-2-1-1; }
+#subsec-mean-2-5-3 { counter-set: subsec-mean-2-5-3 0; }
+#subsec-mean-2-5-3 > li::marker { content: ""counter(subsec-mean-2-5-3,upper-roman)""; }
+#subsec-mean-2-5-3 > li { counter-increment: subsec-mean-2-5-3; }
+#subsec-mean-2-6-1 { counter-set: subsec-mean-2-6-1 0; }
+#subsec-mean-2-6-1 > li::marker { content: ""counter(subsec-mean-2-6-1,lower-roman)""; }
+#subsec-mean-2-6-1 > li { counter-increment: subsec-mean-2-6-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec-desc_iv-2-2-1 { counter-set: sec-desc_iv-2-2-1 0; }
+#sec-desc_iv-2-2-1 > li::marker { content: ""counter(sec-desc_iv-2-2-1,lower-roman)""; }
+#sec-desc_iv-2-2-1 > li { counter-increment: sec-desc_iv-2-2-1; }
+#ch-prob-2-2-1 { counter-set: ch-prob-2-2-1 0; }
+#ch-prob-2-2-1 > li::marker { content: ""counter(ch-prob-2-2-1,decimal)"."; }
+#ch-prob-2-2-1 > li { counter-increment: ch-prob-2-2-1; }
+#ch-prob-2-2-1-6-1-1 { counter-set: ch-prob-2-2-1-6-1-1 0; }
+#ch-prob-2-2-1-6-1-1 > li::marker { content: ""counter(ch-prob-2-2-1-6-1-1,lower-alpha)""; }
+#ch-prob-2-2-1-6-1-1 > li { counter-increment: ch-prob-2-2-1-6-1-1; }
+#sec-prob_i-2-3-1 { counter-set: sec-prob_i-2-3-1 0; }
+#sec-prob_i-2-3-1 > li::marker { content: ""counter(sec-prob_i-2-3-1,decimal)"."; }
+#sec-prob_i-2-3-1 > li { counter-increment: sec-prob_i-2-3-1; }
+#sec-prob_i-2-4-2 { counter-set: sec-prob_i-2-4-2 0; }
+#sec-prob_i-2-4-2 > li::marker { content: ""counter(sec-prob_i-2-4-2,decimal)"."; }
+#sec-prob_i-2-4-2 > li { counter-increment: sec-prob_i-2-4-2; }
+#sec-prob_i-2-4-2-3-2-1 { counter-set: sec-prob_i-2-4-2-3-2-1 0; }
+#sec-prob_i-2-4-2-3-2-1 > li::marker { content: ""counter(sec-prob_i-2-4-2-3-2-1,upper-roman)""; }
+#sec-prob_i-2-4-2-3-2-1 > li { counter-increment: sec-prob_i-2-4-2-3-2-1; }
+#subsec--2-4-1-2-1 { counter-set: subsec--2-4-1-2-1 0; }
+#subsec--2-4-1-2-1 > li::marker { content: ""counter(subsec--2-4-1-2-1,lower-roman)""; }
+#subsec--2-4-1-2-1 > li { counter-increment: subsec--2-4-1-2-1; }
+#subsec--2-4-2-3-1 { counter-set: subsec--2-4-2-3-1 0; }
+#subsec--2-4-2-3-1 > li::marker { content: ""counter(subsec--2-4-2-3-1,lower-roman)""; }
+#subsec--2-4-2-3-1 > li { counter-increment: subsec--2-4-2-3-1; }
+#subsec--2-4-2-4-2 { counter-set: subsec--2-4-2-4-2 0; }
+#subsec--2-4-2-4-2 > li::marker { content: ""counter(subsec--2-4-2-4-2,lower-roman)""; }
+#subsec--2-4-2-4-2 > li { counter-increment: subsec--2-4-2-4-2; }
+#subsec--2-5-2 { counter-set: subsec--2-5-2 0; }
+#subsec--2-5-2 > li::marker { content: ""counter(subsec--2-5-2,lower-roman)""; }
+#subsec--2-5-2 > li { counter-increment: subsec--2-5-2; }
+#sec-prob_ii-2-1-1 { counter-set: sec-prob_ii-2-1-1 0; }
+#sec-prob_ii-2-1-1 > li::marker { content: ""counter(sec-prob_ii-2-1-1,upper-roman)""; }
+#sec-prob_ii-2-1-1 > li { counter-increment: sec-prob_ii-2-1-1; }
+#sec-prob_ii-2-1-1-1-1-4 { counter-set: sec-prob_ii-2-1-1-1-1-4 0; }
+#sec-prob_ii-2-1-1-1-1-4 > li::marker { content: ""counter(sec-prob_ii-2-1-1-1-1-4,lower-roman)""; }
+#sec-prob_ii-2-1-1-1-1-4 > li { counter-increment: sec-prob_ii-2-1-1-1-1-4; }
+#sec-prob_ii-2-1-1-2-1-2 { counter-set: sec-prob_ii-2-1-1-2-1-2 0; }
+#sec-prob_ii-2-1-1-2-1-2 > li::marker { content: ""counter(sec-prob_ii-2-1-1-2-1-2,lower-roman)""; }
+#sec-prob_ii-2-1-1-2-1-2 > li { counter-increment: sec-prob_ii-2-1-1-2-1-2; }
+#ch-infr_stat-2-1-1 { counter-set: ch-infr_stat-2-1-1 0; }
+#ch-infr_stat-2-1-1 > li::marker { content: ""counter(ch-infr_stat-2-1-1,decimal)"."; }
+#ch-infr_stat-2-1-1 > li { counter-increment: ch-infr_stat-2-1-1; }
+#sec-infr_i-2-4-1 { counter-set: sec-infr_i-2-4-1 0; }
+#sec-infr_i-2-4-1 > li::marker { content: ""counter(sec-infr_i-2-4-1,lower-roman)""; }
+#sec-infr_i-2-4-1 > li { counter-increment: sec-infr_i-2-4-1; }
+#subsec-hyp_test-2-5-2 { counter-set: subsec-hyp_test-2-5-2 0; }
+#subsec-hyp_test-2-5-2 > li::marker { content: ""counter(subsec-hyp_test-2-5-2,decimal)"."; }
+#subsec-hyp_test-2-5-2 > li { counter-increment: subsec-hyp_test-2-5-2; }
+#subsec-hyp_test-2-6-2 { counter-set: subsec-hyp_test-2-6-2 0; }
+#subsec-hyp_test-2-6-2 > li::marker { content: ""counter(subsec-hyp_test-2-6-2,decimal)"."; }
+#subsec-hyp_test-2-6-2 > li { counter-increment: subsec-hyp_test-2-6-2; }
+#subsec-hyp_test-2-7-2 { counter-set: subsec-hyp_test-2-7-2 0; }
+#subsec-hyp_test-2-7-2 > li::marker { content: ""counter(subsec-hyp_test-2-7-2,decimal)"."; }
+#subsec-hyp_test-2-7-2 > li { counter-increment: subsec-hyp_test-2-7-2; }
+#sec-infr_ii-2-4-2 { counter-set: sec-infr_ii-2-4-2 0; }
+#sec-infr_ii-2-4-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2,lower-roman)""; }
+#sec-infr_ii-2-4-2 > li { counter-increment: sec-infr_ii-2-4-2; }
+#sec-infr_ii-2-4-2-1-3-2 { counter-set: sec-infr_ii-2-4-2-1-3-2 0; }
+#sec-infr_ii-2-4-2-1-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-1-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-1-3-2 > li { counter-increment: sec-infr_ii-2-4-2-1-3-2; }
+#sec-infr_ii-2-4-2-2-3-2 { counter-set: sec-infr_ii-2-4-2-2-3-2 0; }
+#sec-infr_ii-2-4-2-2-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-2-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-2-3-2 > li { counter-increment: sec-infr_ii-2-4-2-2-3-2; }
+#sec-infr_ii-2-8-1-1-2 { counter-set: sec-infr_ii-2-8-1-1-2 0; }
+#sec-infr_ii-2-8-1-1-2 > li::marker { content: ""counter(sec-infr_ii-2-8-1-1-2,lower-alpha)""; }
+#sec-infr_ii-2-8-1-1-2 > li { counter-increment: sec-infr_ii-2-8-1-1-2; }
+#sec-infr_iii-2-1-1 { counter-set: sec-infr_iii-2-1-1 0; }
+#sec-infr_iii-2-1-1 > li::marker { content: ""counter(sec-infr_iii-2-1-1,lower-roman)""; }
+#sec-infr_iii-2-1-1 > li { counter-increment: sec-infr_iii-2-1-1; }
+#subsec-t_steps-2-1 { counter-set: subsec-t_steps-2-1 0; }
+#subsec-t_steps-2-1 > li::marker { content: ""counter(subsec-t_steps-2-1,lower-roman)""; }
+#subsec-t_steps-2-1 > li { counter-increment: subsec-t_steps-2-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -106,7 +282,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-infr_stat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infr_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-infr_ii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-desc_v.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-infr_stat.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-infr_ii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
 \newcommand{\R}{\mathbb R}
@@ -210,11 +386,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-desc_iv.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Graphical Representation</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_iv.html#subsec-outliers" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Outliers</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Crosstabulation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Crosstabulation</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Correlation Coeffient, r</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Correlation Coeffient, r</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -237,25 +412,26 @@ window.MathJax = {
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-infr_stat.html" class="internal"><span class="codenumber">4</span> <span class="title">Inferential Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
 <li class="toc-item toc-section active">
-<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Hypothesis Testing</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Hypothesis Testing</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Test Selection</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Test Selection</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.1.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.1.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
 </ul>
 </li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Z Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Z Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">T Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.4</span> <span class="title">T Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Type I and Type II errors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Type I and Type II errors</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -268,11 +444,14 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-infr_i"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.1</span><span class="space"> </span><span class="title">Hypothesis Testing</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Hypothesis Testing</span>
 </h2>
-<section class="introduction" id="sec-infr_i-2"><div class="para" id="sec-infr_i-2-1">Hypothesis testing is a statistical method to draw conclusions (or make inferences) about a population based on sample data. It involves making an assumption (the hypothesis) and then using statistical techniques to determine the likelihood that this assumption is true. There are two categories of hypothesis testing: parametric and non-parametric. <em class="emphasis">Parametric test</em> gives generalization of generating records regarding the mean of the population. It is based on the assumption that the population data are normally distributed. Z-test, t-test, Annova tests are usually used in parametric test. <em class="emphasis">Non-parametric test</em> does not require any population distributin and are used when parametric test assumptions cannot be satisfied. <span class="process-math">\(\chi^2\)</span> test, Kruskal-Wallis test, Wilcoxon Signed-Rank test, Mann-Whitney U test, etc.</div> <div class="para" id="sec-infr_i-2-2">Use Parametric Tests When: The sample size is large enough (often <span class="process-math">\(n \gt 30\)</span>) to rely on the Central Limit Theorem, which implies that the sample mean will be approximately normally distributed. The data is normally distributed, or you have sufficient evidence to assume normality.</div> <div class="para" id="sec-infr_i-2-3">Use Non-Parametric Tests When: The data does not meet the assumptions required for parametric tests, such as normality. The sample size is small, making it difficult to assess or rely on the assumption of normality. You are dealing with ordinal data or ranked data instead of interval or ratio data. The data includes outliers or is skewed, which could affect the results of parametric tests.</div> <div class="para logical" id="sec-infr_i-2-4">
+<section class="introduction" id="sec-infr_i-2"><div class="para" id="sec-infr_i-2-1">Hypothesis testing is a statistical method to draw conclusions (or make inferences) about a population based on sample data. It involves making an assumption (the hypothesis) and then using statistical techniques to determine the likelihood that this assumption is true. There are two categories of hypothesis testing: parametric and non-parametric. <em class="emphasis">Parametric test</em> gives generalization of generating records regarding the mean of the population. It is based on the assumption that the population data are normally distributed. Z-test, t-test, Annova tests are usually used in parametric test. <em class="emphasis">Non-parametric test</em> does not require any population distributin and are used when parametric test assumptions cannot be satisfied. <span class="process-math">\(\chi^2\)</span> test, Kruskal-Wallis test, Wilcoxon Signed-Rank test, Mann-Whitney U test, etc.</div>
+<div class="para" id="sec-infr_i-2-2">Use Parametric Tests When: The sample size is large enough (often <span class="process-math">\(n \gt 30\)</span>) to rely on the Central Limit Theorem, which implies that the sample mean will be approximately normally distributed. The data is normally distributed, or you have sufficient evidence to assume normality.</div>
+<div class="para" id="sec-infr_i-2-3">Use Non-Parametric Tests When: The data does not meet the assumptions required for parametric tests, such as normality. The sample size is small, making it difficult to assess or rely on the assumption of normality. You are dealing with ordinal data or ranked data instead of interval or ratio data. The data includes outliers or is skewed, which could affect the results of parametric tests.</div>
+<div class="para logical" id="sec-infr_i-2-4">
 <div class="para">Here’s a basic outline of the hypothesis test process:</div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-infr_i-2-4-1">
 <li id="sec-infr_i-2-4-1-1"><div class="para" id="sec-infr_i-2-4-1-1-1">
 <em class="emphasis">Formulate Hypotheses:</em> Null Hypothesis <span class="process-math">\((H_0)\text{:}\)</span> This is a statement of no effect or no difference. It represents the status quo or a baseline assumption. It assumes that there is no significant difference between the sample and population mean. Alternative Hypothesis <span class="process-math">\((H_1 or H_a)\text{:}\)</span> This is a statement that indicates the presence of an effect or a difference. It represents what you are trying to prove.</div></li>
 <li id="sec-infr_i-2-4-1-2"><div class="para" id="sec-infr_i-2-4-1-2-1">
@@ -289,34 +468,39 @@ window.MathJax = {
 <em class="emphasis">Draw a Conclusion:</em> Based on the comparison, conclude whether there is sufficient evidence to support the alternative hypothesis.</div></li>
 </ol>
 </div></section><section class="subsection" id="subsec-hyp_test"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="space"> </span><span class="title">Test Selection</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Test Selection</span>
 </h3>
-<section class="introduction" id="subsec-hyp_test-2"><div class="para" id="subsec-hyp_test-2-1">The choice between using a chi-square test, ANOVA, or F-test or others depends on the type of data you have and the hypotheses you are testing. Here’s a brief overview to help you decide which test to use:</div> <div class="para" id="subsec-hyp_test-2-2">
-<dfn class="terminology">Z or T test:</dfn> If population standard deviation is not known and the sample size is relatively small (typically <span class="process-math">\(n \lt 30\)</span>), then t-test is used instead of the Z-test. The t-test is more appropriate in these situations because it accounts for the additional variability introduced by estimating the population standard deviation from the sample.</div> <figure class="figure figure-like" id="fig-test_tree"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/test_tree.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.1<span class="period">.</span></span><span class="space"> </span>z-test vs. t-test</figcaption></figure> <div class="para" id="subsec-hyp_test-2-4">z-test: <span class="process-math">\(n \geq 30.\)</span> and t-test: <span class="process-math">\(n \lt 30.\)</span>
-</div> <div class="para logical" id="subsec-hyp_test-2-5">
+<section class="introduction" id="subsec-hyp_test-2"><div class="para" id="subsec-hyp_test-2-1">The choice between using a chi-square test, ANOVA, or F-test or others depends on the type of data you have and the hypotheses you are testing. Here’s a brief overview to help you decide which test to use:</div>
+<div class="para" id="subsec-hyp_test-2-2">
+<dfn class="terminology">Z or T test:</dfn> If population standard deviation is not known and the sample size is relatively small (typically <span class="process-math">\(n \lt 30\)</span>), then t-test is used instead of the Z-test. The t-test is more appropriate in these situations because it accounts for the additional variability introduced by estimating the population standard deviation from the sample.</div>
+<figure class="figure figure-like" id="fig-test_tree"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/test_tree.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span>z-test vs. t-test</figcaption></figure><div class="para" id="subsec-hyp_test-2-4">z-test: <span class="process-math">\(n \geq 30.\)</span> and t-test: <span class="process-math">\(n \lt 30.\)</span>
+</div>
+<div class="para logical" id="subsec-hyp_test-2-5">
 <div class="para">
 <dfn class="terminology">Chi-square test:</dfn> The chi-square test is used for categorical data to test relationships between variables or the goodness of fit of observed data to an expected distribution.</div>
-<ol class="decimal">
+<ol class="decimal" id="subsec-hyp_test-2-5-2">
 <li id="subsec-hyp_test-2-5-2-1"><div class="para" id="subsec-hyp_test-2-5-2-1-1">Chi-Square Test for Independence:  Used to determine if there is a significant association between two categorical variables. Example: Testing if there is a relationship between gender (male, female) and voting preference (yes, no).</div></li>
 <li id="subsec-hyp_test-2-5-2-2"><div class="para" id="subsec-hyp_test-2-5-2-2-1">Chi-Square Goodness of Fit Test: Used to determine if a sample data matches a population with a specific distribution. Example: Testing if the distribution of colors of M &amp; Ms in a bag matches the company’s stated proportions.</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-hyp_test-2-6">
+</div>
+<div class="para logical" id="subsec-hyp_test-2-6">
 <div class="para">
 <dfn class="terminology">ANOVA (Analysis of Variance):</dfn> ANOVA is used for comparing the means of three or more groups to see if at least one group mean is significantly different from the others.</div>
-<ol class="decimal">
+<ol class="decimal" id="subsec-hyp_test-2-6-2">
 <li id="subsec-hyp_test-2-6-2-1"><div class="para" id="subsec-hyp_test-2-6-2-1-1">One-Way ANOVA: Used when comparing the means of three or more independent groups based on one factor. Example: Testing if the average exam scores differ among students taught by three different teaching methods.</div></li>
 <li id="subsec-hyp_test-2-6-2-2"><div class="para" id="subsec-hyp_test-2-6-2-2-1">Two-Way ANOVA: Used when comparing means based on two factors and their interaction. Example: Testing if exam scores are affected by both teaching method and type of school (public, private).</div></li>
 </ol>
-</div> <div class="para logical" id="subsec-hyp_test-2-7">
+</div>
+<div class="para logical" id="subsec-hyp_test-2-7">
 <div class="para">
 <dfn class="terminology">F-Test:</dfn> The F-test is used to compare variances or test hypotheses that involve variances.</div>
-<ol class="decimal">
+<ol class="decimal" id="subsec-hyp_test-2-7-2">
 <li id="subsec-hyp_test-2-7-2-1"><div class="para" id="subsec-hyp_test-2-7-2-1-1">F-test for Variances: Used to compare the variances of two populations to see if they are significantly different. Example: Testing if the variance in test scores between two classes is different.</div></li>
 <li id="subsec-hyp_test-2-7-2-2"><div class="para" id="subsec-hyp_test-2-7-2-2-1">F-statistic in ANOVA: The F-statistic is used within the ANOVA framework to determine if there are significant differences between group means. Example: As part of one-way or two-way ANOVA to compare group means.</div></li>
 </ol>
 </div></section><section class="subsubsection" id="subsubsec-test_selctii"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.1.1.1</span><span class="space"> </span><span class="title">One sample and two sample test.</span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.2.1.1</span><span class="space"> </span><span class="title">One sample and two sample test.</span>
 </h4>
 <div class="para logical" id="subsubsec-test_selctii-2"><div class="displaymath process-math">
 \begin{equation*}
@@ -343,9 +527,9 @@ Continuous &amp; \text{ logistic regression} &amp; Correlation \\
 \end{equation*}
 </div>
 </div>
-<div class="para logical" id="subsubsec-test_selctii-4"><ul class="disc">
+<div class="para logical" id="subsubsec-test_selctii-4"><ul class="disc" id="subsubsec-test_selctii-4-1">
 <li id="subsubsec-test_selctii-4-1-1">
-<div class="para" id="subsubsec-test_selctii-4-1-1-1">On analysis of one variable test (or one sample test): <details class="ptx-footnote" aria-live="polite" id="subsubsec-test_selctii-4-1-1-1-1"><summary class="ptx-footnote__number" title="Footnote 4.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsubsec-test_selctii-4-1-1-1-1">Continuous variables are counted or measured.</div></details> <details class="ptx-footnote" aria-live="polite" id="subsubsec-test_selctii-4-1-1-1-2"><summary class="ptx-footnote__number" title="Footnote 4.1.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsubsec-test_selctii-4-1-1-1-2">Categorical variables cannot be counted.</div></details>
+<div class="para" id="subsubsec-test_selctii-4-1-1-1">On analysis of one variable test (or one sample test): <details class="ptx-footnote" aria-live="polite" id="subsubsec-test_selctii-4-1-1-1-1"><summary class="ptx-footnote__number" title="Footnote 4.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsubsec-test_selctii-4-1-1-1-1">Continuous variables are counted or measured.</div></details> <details class="ptx-footnote" aria-live="polite" id="subsubsec-test_selctii-4-1-1-1-2"><summary class="ptx-footnote__number" title="Footnote 4.2.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsubsec-test_selctii-4-1-1-1-2">Categorical variables cannot be counted.</div></details>
 </div>
 <div class="para" id="subsubsec-test_selctii-4-1-1-2">For one sample continuous variable, we use one sample t -test or z-test.</div>
 <div class="para" id="subsubsec-test_selctii-4-1-1-3">For one sample categorical variable, we use one sample proportion test.</div>
@@ -359,18 +543,18 @@ Continuous &amp; \text{ logistic regression} &amp; Correlation \\
 <li id="subsubsec-test_selctii-4-1-4"><div class="para" id="subsubsec-test_selctii-4-1-4-1">For two categorical variables, we use chi-square test.</div></li>
 <li id="subsubsec-test_selctii-4-1-5"><div class="para" id="subsubsec-test_selctii-4-1-5-1">For one categorical and one continuous variables but the target is categorical variable, then we go to logistic regression.</div></li>
 </ul></div></section><section class="subsubsection" id="subsubsec-I_II"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.1.1.2</span><span class="space"> </span><span class="title">One-tail and two-tail Test</span>
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">4.2.1.2</span><span class="space"> </span><span class="title">One-tail and two-tail Test</span>
 </h4>
 <div class="para logical" id="subsubsec-I_II-2">
 <div class="para">Technique to identify one-tailed and two-tailed test:</div>
-<ul class="disc">
+<ul class="disc" id="subsubsec-I_II-2-1">
 <li id="subsubsec-I_II-2-1-1"><div class="para" id="subsubsec-I_II-2-1-1-1">If the statement of questions uses the comparative degree: less than, more than, smaller than, larger than, taller than, superior, inferior, increase, decrease, at least, at most, only improved, then use <dfn class="terminology">one-tailed test</dfn>.</div></li>
 <li id="subsubsec-I_II-2-1-2"><div class="para" id="subsubsec-I_II-2-1-2-1">Otherwise, use <dfn class="terminology">two -tailed test</dfn>.</div></li>
 </ul>
 </div>
 <div class="para" id="subsubsec-I_II-3">Note: If <span class="process-math">\(\mu \lt \mu_o\)</span> use Left-Tailed test, if <span class="process-math">\(\mu \gt \mu_o\)</span> then use right-tailed test, and if <span class="process-math">\(\mu \neq \mu_o\)</span> then use two-tailed test.</div></section></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-infr_stat.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-infr_ii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-desc_v.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-infr_ii.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

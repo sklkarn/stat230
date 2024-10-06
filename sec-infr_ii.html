@@ -88,6 +88,182 @@ window.MathJax = {
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<style>
+#ch-intr_stat-2-2-1 { counter-set: ch-intr_stat-2-2-1 0; }
+#ch-intr_stat-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1,decimal)"."; }
+#ch-intr_stat-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1; }
+#ch-intr_stat-2-2-1-2-2-1 { counter-set: ch-intr_stat-2-2-1-2-2-1 0; }
+#ch-intr_stat-2-2-1-2-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-2-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-2-2-1 > li { counter-increment: ch-intr_stat-2-2-1-2-2-1; }
+#ch-intr_stat-2-2-1-3-3-1 { counter-set: ch-intr_stat-2-2-1-3-3-1 0; }
+#ch-intr_stat-2-2-1-3-3-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-3-3-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-3-3-1 > li { counter-increment: ch-intr_stat-2-2-1-3-3-1; }
+#ch-intr_stat-2-2-1-4-2-1 { counter-set: ch-intr_stat-2-2-1-4-2-1 0; }
+#ch-intr_stat-2-2-1-4-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-4-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-4-2-1 > li { counter-increment: ch-intr_stat-2-2-1-4-2-1; }
+#ch-intr_stat-2-2-1-5-4-2 { counter-set: ch-intr_stat-2-2-1-5-4-2 0; }
+#ch-intr_stat-2-2-1-5-4-2 > li::marker { content: ""counter(ch-intr_stat-2-2-1-5-4-2,lower-roman)""; }
+#ch-intr_stat-2-2-1-5-4-2 > li { counter-increment: ch-intr_stat-2-2-1-5-4-2; }
+#ch-intr_stat-2-2-1-6-2-1 { counter-set: ch-intr_stat-2-2-1-6-2-1 0; }
+#ch-intr_stat-2-2-1-6-2-1 > li::marker { content: ""counter(ch-intr_stat-2-2-1-6-2-1,lower-roman)""; }
+#ch-intr_stat-2-2-1-6-2-1 > li { counter-increment: ch-intr_stat-2-2-1-6-2-1; }
+#subsec-sample_method-2-3 { counter-set: subsec-sample_method-2-3 0; }
+#subsec-sample_method-2-3 > li::marker { content: ""counter(subsec-sample_method-2-3,upper-roman)""; }
+#subsec-sample_method-2-3 > li { counter-increment: subsec-sample_method-2-3; }
+#subsec-sample_bias-3-1 { counter-set: subsec-sample_bias-3-1 0; }
+#subsec-sample_bias-3-1 > li::marker { content: ""counter(subsec-sample_bias-3-1,lower-roman)""; }
+#subsec-sample_bias-3-1 > li { counter-increment: subsec-sample_bias-3-1; }
+#sec-intr_ii-2-3-1 { counter-set: sec-intr_ii-2-3-1 0; }
+#sec-intr_ii-2-3-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1,decimal)"."; }
+#sec-intr_ii-2-3-1 > li { counter-increment: sec-intr_ii-2-3-1; }
+#sec-intr_ii-2-3-1-1-1-1 { counter-set: sec-intr_ii-2-3-1-1-1-1 0; }
+#sec-intr_ii-2-3-1-1-1-1 > li::marker { content: ""counter(sec-intr_ii-2-3-1-1-1-1,lower-roman)""; }
+#sec-intr_ii-2-3-1-1-1-1 > li { counter-increment: sec-intr_ii-2-3-1-1-1-1; }
+#sec-intr_iii-3-1 { counter-set: sec-intr_iii-3-1 0; }
+#sec-intr_iii-3-1 > li::marker { content: ""counter(sec-intr_iii-3-1,lower-roman)""; }
+#sec-intr_iii-3-1 > li { counter-increment: sec-intr_iii-3-1; }
+#ch-desc_stat-2-2-1 { counter-set: ch-desc_stat-2-2-1 0; }
+#ch-desc_stat-2-2-1 > li::marker { content: ""counter(ch-desc_stat-2-2-1,decimal)"."; }
+#ch-desc_stat-2-2-1 > li { counter-increment: ch-desc_stat-2-2-1; }
+#sec-desc_i-2-2-2 { counter-set: sec-desc_i-2-2-2 0; }
+#sec-desc_i-2-2-2 > li::marker { content: ""counter(sec-desc_i-2-2-2,decimal)"."; }
+#sec-desc_i-2-2-2 > li { counter-increment: sec-desc_i-2-2-2; }
+#sec-desc_i-2-2-2-1-1-1 { counter-set: sec-desc_i-2-2-2-1-1-1 0; }
+#sec-desc_i-2-2-2-1-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-1-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-1-1-1 > li { counter-increment: sec-desc_i-2-2-2-1-1-1; }
+#sec-desc_i-2-2-2-2-1-1 { counter-set: sec-desc_i-2-2-2-2-1-1 0; }
+#sec-desc_i-2-2-2-2-1-1 > li::marker { content: ""counter(sec-desc_i-2-2-2-2-1-1,lower-roman)""; }
+#sec-desc_i-2-2-2-2-1-1 > li { counter-increment: sec-desc_i-2-2-2-2-1-1; }
+#subsec-mean-2-5-3 { counter-set: subsec-mean-2-5-3 0; }
+#subsec-mean-2-5-3 > li::marker { content: ""counter(subsec-mean-2-5-3,upper-roman)""; }
+#subsec-mean-2-5-3 > li { counter-increment: subsec-mean-2-5-3; }
+#subsec-mean-2-6-1 { counter-set: subsec-mean-2-6-1 0; }
+#subsec-mean-2-6-1 > li::marker { content: ""counter(subsec-mean-2-6-1,lower-roman)""; }
+#subsec-mean-2-6-1 > li { counter-increment: subsec-mean-2-6-1; }
+#subsec-discrD-2-1 { counter-set: subsec-discrD-2-1 0; }
+#subsec-discrD-2-1 > li::marker { content: ""counter(subsec-discrD-2-1,lower-roman)""; }
+#subsec-discrD-2-1 > li { counter-increment: subsec-discrD-2-1; }
+#subsec-discrD-3-1 { counter-set: subsec-discrD-3-1 0; }
+#subsec-discrD-3-1 > li::marker { content: ""counter(subsec-discrD-3-1,decimal)"."; }
+#subsec-discrD-3-1 > li { counter-increment: subsec-discrD-3-1; }
+#subsubsec-contS-3-2 { counter-set: subsubsec-contS-3-2 0; }
+#subsubsec-contS-3-2 > li::marker { content: ""counter(subsubsec-contS-3-2,lower-alpha)""; }
+#subsubsec-contS-3-2 > li { counter-increment: subsubsec-contS-3-2; }
+#subsec-combM-3-1-1-1 { counter-set: subsec-combM-3-1-1-1 0; }
+#subsec-combM-3-1-1-1 > li::marker { content: ""counter(subsec-combM-3-1-1-1,lower-alpha)""; }
+#subsec-combM-3-1-1-1 > li { counter-increment: subsec-combM-3-1-1-1; }
+#subsubsec-med_is-2-1 { counter-set: subsubsec-med_is-2-1 0; }
+#subsubsec-med_is-2-1 > li::marker { content: ""counter(subsubsec-med_is-2-1,lower-roman)""; }
+#subsubsec-med_is-2-1 > li { counter-increment: subsubsec-med_is-2-1; }
+#subsubsec-med_is-3-1 { counter-set: subsubsec-med_is-3-1 0; }
+#subsubsec-med_is-3-1 > li::marker { content: ""counter(subsubsec-med_is-3-1,decimal)"."; }
+#subsubsec-med_is-3-1 > li { counter-increment: subsubsec-med_is-3-1; }
+#subsubsec-mod_is-2-1 { counter-set: subsubsec-mod_is-2-1 0; }
+#subsubsec-mod_is-2-1 > li::marker { content: ""counter(subsubsec-mod_is-2-1,lower-roman)""; }
+#subsubsec-mod_is-2-1 > li { counter-increment: subsubsec-mod_is-2-1; }
+#subsubsec-mod_cs-6-2 { counter-set: subsubsec-mod_cs-6-2 0; }
+#subsubsec-mod_cs-6-2 > li::marker { content: ""counter(subsubsec-mod_cs-6-2,lower-roman)""; }
+#subsubsec-mod_cs-6-2 > li { counter-increment: subsubsec-mod_cs-6-2; }
+#subsec-disp_msr-3-1 { counter-set: subsec-disp_msr-3-1 0; }
+#subsec-disp_msr-3-1 > li::marker { content: ""counter(subsec-disp_msr-3-1,decimal)"."; }
+#subsec-disp_msr-3-1 > li { counter-increment: subsec-disp_msr-3-1; }
+#subsec-disp_msr-3-1-1-2-1 { counter-set: subsec-disp_msr-3-1-1-2-1 0; }
+#subsec-disp_msr-3-1-1-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-1-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-1-2-1 > li { counter-increment: subsec-disp_msr-3-1-1-2-1; }
+#subsec-disp_msr-3-1-2-2-1 { counter-set: subsec-disp_msr-3-1-2-2-1 0; }
+#subsec-disp_msr-3-1-2-2-1 > li::marker { content: ""counter(subsec-disp_msr-3-1-2-2-1,lower-roman)""; }
+#subsec-disp_msr-3-1-2-2-1 > li { counter-increment: subsec-disp_msr-3-1-2-2-1; }
+#subsubsec-rng_cs-2-1 { counter-set: subsubsec-rng_cs-2-1 0; }
+#subsubsec-rng_cs-2-1 > li::marker { content: ""counter(subsubsec-rng_cs-2-1,decimal)"."; }
+#subsubsec-rng_cs-2-1 > li { counter-increment: subsubsec-rng_cs-2-1; }
+#subsubsec-rng_merit-2-1 { counter-set: subsubsec-rng_merit-2-1 0; }
+#subsubsec-rng_merit-2-1 > li::marker { content: ""counter(subsubsec-rng_merit-2-1,decimal)"."; }
+#subsubsec-rng_merit-2-1 > li { counter-increment: subsubsec-rng_merit-2-1; }
+#subsubsec-rng_limit-2-1 { counter-set: subsubsec-rng_limit-2-1 0; }
+#subsubsec-rng_limit-2-1 > li::marker { content: ""counter(subsubsec-rng_limit-2-1,decimal)"."; }
+#subsubsec-rng_limit-2-1 > li { counter-increment: subsubsec-rng_limit-2-1; }
+#subsubsec-rng_use-2-1 { counter-set: subsubsec-rng_use-2-1 0; }
+#subsubsec-rng_use-2-1 > li::marker { content: ""counter(subsubsec-rng_use-2-1,decimal)"."; }
+#subsubsec-rng_use-2-1 > li { counter-increment: subsubsec-rng_use-2-1; }
+#subsec-st_dev-2-3-2 { counter-set: subsec-st_dev-2-3-2 0; }
+#subsec-st_dev-2-3-2 > li::marker { content: ""counter(subsec-st_dev-2-3-2,lower-roman)""; }
+#subsec-st_dev-2-3-2 > li { counter-increment: subsec-st_dev-2-3-2; }
+#subsec-mean_dev-2-1-1 { counter-set: subsec-mean_dev-2-1-1 0; }
+#subsec-mean_dev-2-1-1 > li::marker { content: ""counter(subsec-mean_dev-2-1-1,decimal)"."; }
+#subsec-mean_dev-2-1-1 > li { counter-increment: subsec-mean_dev-2-1-1; }
+#sec-desc_iv-2-2-1 { counter-set: sec-desc_iv-2-2-1 0; }
+#sec-desc_iv-2-2-1 > li::marker { content: ""counter(sec-desc_iv-2-2-1,lower-roman)""; }
+#sec-desc_iv-2-2-1 > li { counter-increment: sec-desc_iv-2-2-1; }
+#ch-prob-2-2-1 { counter-set: ch-prob-2-2-1 0; }
+#ch-prob-2-2-1 > li::marker { content: ""counter(ch-prob-2-2-1,decimal)"."; }
+#ch-prob-2-2-1 > li { counter-increment: ch-prob-2-2-1; }
+#ch-prob-2-2-1-6-1-1 { counter-set: ch-prob-2-2-1-6-1-1 0; }
+#ch-prob-2-2-1-6-1-1 > li::marker { content: ""counter(ch-prob-2-2-1-6-1-1,lower-alpha)""; }
+#ch-prob-2-2-1-6-1-1 > li { counter-increment: ch-prob-2-2-1-6-1-1; }
+#sec-prob_i-2-3-1 { counter-set: sec-prob_i-2-3-1 0; }
+#sec-prob_i-2-3-1 > li::marker { content: ""counter(sec-prob_i-2-3-1,decimal)"."; }
+#sec-prob_i-2-3-1 > li { counter-increment: sec-prob_i-2-3-1; }
+#sec-prob_i-2-4-2 { counter-set: sec-prob_i-2-4-2 0; }
+#sec-prob_i-2-4-2 > li::marker { content: ""counter(sec-prob_i-2-4-2,decimal)"."; }
+#sec-prob_i-2-4-2 > li { counter-increment: sec-prob_i-2-4-2; }
+#sec-prob_i-2-4-2-3-2-1 { counter-set: sec-prob_i-2-4-2-3-2-1 0; }
+#sec-prob_i-2-4-2-3-2-1 > li::marker { content: ""counter(sec-prob_i-2-4-2-3-2-1,upper-roman)""; }
+#sec-prob_i-2-4-2-3-2-1 > li { counter-increment: sec-prob_i-2-4-2-3-2-1; }
+#subsec--2-4-1-2-1 { counter-set: subsec--2-4-1-2-1 0; }
+#subsec--2-4-1-2-1 > li::marker { content: ""counter(subsec--2-4-1-2-1,lower-roman)""; }
+#subsec--2-4-1-2-1 > li { counter-increment: subsec--2-4-1-2-1; }
+#subsec--2-4-2-3-1 { counter-set: subsec--2-4-2-3-1 0; }
+#subsec--2-4-2-3-1 > li::marker { content: ""counter(subsec--2-4-2-3-1,lower-roman)""; }
+#subsec--2-4-2-3-1 > li { counter-increment: subsec--2-4-2-3-1; }
+#subsec--2-4-2-4-2 { counter-set: subsec--2-4-2-4-2 0; }
+#subsec--2-4-2-4-2 > li::marker { content: ""counter(subsec--2-4-2-4-2,lower-roman)""; }
+#subsec--2-4-2-4-2 > li { counter-increment: subsec--2-4-2-4-2; }
+#subsec--2-5-2 { counter-set: subsec--2-5-2 0; }
+#subsec--2-5-2 > li::marker { content: ""counter(subsec--2-5-2,lower-roman)""; }
+#subsec--2-5-2 > li { counter-increment: subsec--2-5-2; }
+#sec-prob_ii-2-1-1 { counter-set: sec-prob_ii-2-1-1 0; }
+#sec-prob_ii-2-1-1 > li::marker { content: ""counter(sec-prob_ii-2-1-1,upper-roman)""; }
+#sec-prob_ii-2-1-1 > li { counter-increment: sec-prob_ii-2-1-1; }
+#sec-prob_ii-2-1-1-1-1-4 { counter-set: sec-prob_ii-2-1-1-1-1-4 0; }
+#sec-prob_ii-2-1-1-1-1-4 > li::marker { content: ""counter(sec-prob_ii-2-1-1-1-1-4,lower-roman)""; }
+#sec-prob_ii-2-1-1-1-1-4 > li { counter-increment: sec-prob_ii-2-1-1-1-1-4; }
+#sec-prob_ii-2-1-1-2-1-2 { counter-set: sec-prob_ii-2-1-1-2-1-2 0; }
+#sec-prob_ii-2-1-1-2-1-2 > li::marker { content: ""counter(sec-prob_ii-2-1-1-2-1-2,lower-roman)""; }
+#sec-prob_ii-2-1-1-2-1-2 > li { counter-increment: sec-prob_ii-2-1-1-2-1-2; }
+#ch-infr_stat-2-1-1 { counter-set: ch-infr_stat-2-1-1 0; }
+#ch-infr_stat-2-1-1 > li::marker { content: ""counter(ch-infr_stat-2-1-1,decimal)"."; }
+#ch-infr_stat-2-1-1 > li { counter-increment: ch-infr_stat-2-1-1; }
+#sec-infr_i-2-4-1 { counter-set: sec-infr_i-2-4-1 0; }
+#sec-infr_i-2-4-1 > li::marker { content: ""counter(sec-infr_i-2-4-1,lower-roman)""; }
+#sec-infr_i-2-4-1 > li { counter-increment: sec-infr_i-2-4-1; }
+#subsec-hyp_test-2-5-2 { counter-set: subsec-hyp_test-2-5-2 0; }
+#subsec-hyp_test-2-5-2 > li::marker { content: ""counter(subsec-hyp_test-2-5-2,decimal)"."; }
+#subsec-hyp_test-2-5-2 > li { counter-increment: subsec-hyp_test-2-5-2; }
+#subsec-hyp_test-2-6-2 { counter-set: subsec-hyp_test-2-6-2 0; }
+#subsec-hyp_test-2-6-2 > li::marker { content: ""counter(subsec-hyp_test-2-6-2,decimal)"."; }
+#subsec-hyp_test-2-6-2 > li { counter-increment: subsec-hyp_test-2-6-2; }
+#subsec-hyp_test-2-7-2 { counter-set: subsec-hyp_test-2-7-2 0; }
+#subsec-hyp_test-2-7-2 > li::marker { content: ""counter(subsec-hyp_test-2-7-2,decimal)"."; }
+#subsec-hyp_test-2-7-2 > li { counter-increment: subsec-hyp_test-2-7-2; }
+#sec-infr_ii-2-4-2 { counter-set: sec-infr_ii-2-4-2 0; }
+#sec-infr_ii-2-4-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2,lower-roman)""; }
+#sec-infr_ii-2-4-2 > li { counter-increment: sec-infr_ii-2-4-2; }
+#sec-infr_ii-2-4-2-1-3-2 { counter-set: sec-infr_ii-2-4-2-1-3-2 0; }
+#sec-infr_ii-2-4-2-1-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-1-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-1-3-2 > li { counter-increment: sec-infr_ii-2-4-2-1-3-2; }
+#sec-infr_ii-2-4-2-2-3-2 { counter-set: sec-infr_ii-2-4-2-2-3-2 0; }
+#sec-infr_ii-2-4-2-2-3-2 > li::marker { content: ""counter(sec-infr_ii-2-4-2-2-3-2,lower-alpha)""; }
+#sec-infr_ii-2-4-2-2-3-2 > li { counter-increment: sec-infr_ii-2-4-2-2-3-2; }
+#sec-infr_ii-2-8-1-1-2 { counter-set: sec-infr_ii-2-8-1-1-2 0; }
+#sec-infr_ii-2-8-1-1-2 > li::marker { content: ""counter(sec-infr_ii-2-8-1-1-2,lower-alpha)""; }
+#sec-infr_ii-2-8-1-1-2 > li { counter-increment: sec-infr_ii-2-8-1-1-2; }
+#sec-infr_iii-2-1-1 { counter-set: sec-infr_iii-2-1-1 0; }
+#sec-infr_iii-2-1-1 > li::marker { content: ""counter(sec-infr_iii-2-1-1,lower-roman)""; }
+#sec-infr_iii-2-1-1 > li { counter-increment: sec-infr_iii-2-1-1; }
+#subsec-t_steps-2-1 { counter-set: subsec-t_steps-2-1 0; }
+#subsec-t_steps-2-1 > li::marker { content: ""counter(subsec-t_steps-2-1,lower-roman)""; }
+#subsec-t_steps-2-1 > li { counter-increment: subsec-t_steps-2-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -210,11 +386,10 @@ window.MathJax = {
 <div class="toc-title-box"><a href="sec-desc_iv.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Graphical Representation</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_iv.html#subsec-outliers" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Outliers</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Crosstabulation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_vi.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Crosstabulation</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Correlation Coeffient, r</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-desc_vii.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Correlation Coeffient, r</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-desc_vii.html#subsec-lreg" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Linear Regression</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -237,25 +412,26 @@ window.MathJax = {
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-infr_stat.html" class="internal"><span class="codenumber">4</span> <span class="title">Inferential Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-desc_v.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Central Limit Theorem (CLT)</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Hypothesis Testing</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Hypothesis Testing</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Test Selection</span></a></div>
+<div class="toc-title-box"><a href="sec-infr_i.html#subsec-hyp_test" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Test Selection</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.1.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.1.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-test_selctii" class="internal"><span class="codenumber">4.2.1.1</span> <span class="title">One sample and two sample test.</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-infr_i.html#subsubsec-I_II" class="internal"><span class="codenumber">4.2.1.2</span> <span class="title">One-tail and two-tail Test</span></a></div></li>
 </ul>
 </li></ul>
 </li>
 <li class="toc-item toc-section active">
-<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Z Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_ii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Z Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_ii.html#subsubsec-z_tab" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.3</span> <span class="title">T Test</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-infr_iii.html" class="internal"><span class="codenumber">4.4</span> <span class="title">T Test</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-infr_iii.html#subsec-t_steps" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Steps to Perform a t-test</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Type I and Type II errors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-infr_iv.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Type I and Type II errors</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter">
@@ -268,17 +444,19 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-infr_ii"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Z Test</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Z Test</span>
 </h2>
-<section class="introduction" id="sec-infr_ii-2"><div class="para" id="sec-infr_ii-2-1">The z-test is used to determine whether there is a significant difference between sample and population means or between the means of two samples, assuming the data is normally distributed and the variances are known (or the sample size is large enough to use the Central Limit Theorem).</div> <figure class="figure figure-like" id="fig-z3"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/z3.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.2.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure> <div class="para" id="sec-infr_ii-2-3">The above distribution shows the rejection regions and fail to rejection region (acceptance region) of Null hypothesis test in z test with the 95% confidence inetrval (or 5% significance level) in two tailed test.</div> <div class="para logical" id="sec-infr_ii-2-4">
+<section class="introduction" id="sec-infr_ii-2"><div class="para" id="sec-infr_ii-2-1">The z-test is used to determine whether there is a significant difference between sample and population means or between the means of two samples, assuming the data is normally distributed and the variances are known (or the sample size is large enough to use the Central Limit Theorem).</div>
+<figure class="figure figure-like" id="fig-z3"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/z3.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="sec-infr_ii-2-3">The above distribution shows the rejection regions and fail to rejection region (acceptance region) of Null hypothesis test in z test with the 95% confidence inetrval (or 5% significance level) in two tailed test.</div>
+<div class="para logical" id="sec-infr_ii-2-4">
 <div class="para"><dfn class="terminology">Types of Z-tests:</dfn></div>
-<ol class="lower-roman">
+<ol class="lower-roman" id="sec-infr_ii-2-4-2">
 <li id="sec-infr_ii-2-4-2-1">
 <div class="para" id="sec-infr_ii-2-4-2-1-1">One-Sample z-test: Tests whether the mean of a single sample is different from a known population mean.</div>
 <div class="para logical" id="sec-infr_ii-2-4-2-1-2">
 <div class="para"><em class="emphasis">Hypotheses:</em></div>
-<ul class="disc">
+<ul class="disc" id="sec-infr_ii-2-4-2-1-2-2">
 <li id="sec-infr_ii-2-4-2-1-2-2-1"><div class="para" id="sec-infr_ii-2-4-2-1-2-2-1-1">Null Hypothesis <span class="process-math">\((H_o)\text{:}\)</span> The sample mean is equal to the population mean <span class="process-math">\((μ = μ_o)\text{.}\)</span>
 </div></li>
 <li id="sec-infr_ii-2-4-2-1-2-2-2"><div class="para" id="sec-infr_ii-2-4-2-1-2-2-2-1">Alternative Hypothesis <span class="process-math">\((H_1)\text{:}\)</span> The sample mean is not equal to the population mean <span class="process-math">\((μ \neq μ_o)\text{.}\)</span>
@@ -294,7 +472,7 @@ z = \frac{\bar{x}-\mu_o}{\sigma_{\bar{x}}} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{
 </div>
 <div class="para logical" id="sec-infr_ii-2-4-2-1-3">
 <div class="para"><dfn class="terminology">Steps:</dfn></div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-infr_ii-2-4-2-1-3-2">
 <li id="sec-infr_ii-2-4-2-1-3-2-1"><div class="para" id="sec-infr_ii-2-4-2-1-3-2-1-1">State the hypotheses.</div></li>
 <li id="sec-infr_ii-2-4-2-1-3-2-2"><div class="para" id="sec-infr_ii-2-4-2-1-3-2-2-1">Choose the significance level <span class="process-math">\((\alpha)\)</span> =1-Confidence Interval.</div></li>
 <li id="sec-infr_ii-2-4-2-1-3-2-3"><div class="para" id="sec-infr_ii-2-4-2-1-3-2-3-1">Calculate the z statistic using the formula.</div></li>
@@ -314,7 +492,7 @@ z = \frac{\bar{x}-\mu_o}{\sigma_{\bar{x}}} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{
 <div class="para" id="sec-infr_ii-2-4-2-2-1">Two-Sample Z-test: Tests whether the means of two independent samples are different.</div>
 <div class="para logical" id="sec-infr_ii-2-4-2-2-2">
 <div class="para"><em class="emphasis">Hypotheses:</em></div>
-<ul class="disc">
+<ul class="disc" id="sec-infr_ii-2-4-2-2-2-2">
 <li id="sec-infr_ii-2-4-2-2-2-2-1"><div class="para" id="sec-infr_ii-2-4-2-2-2-2-1-1">Null Hypothesis <span class="process-math">\((H_o)\text{:}\)</span> The means of the two samples are equal <span class="process-math">\((μ_1 = μ_2)\text{.}\)</span>
 </div></li>
 <li id="sec-infr_ii-2-4-2-2-2-2-2"><div class="para" id="sec-infr_ii-2-4-2-2-2-2-2-1">Alternative Hypothesis <span class="process-math">\((H_1)\text{:}\)</span> The means of the two samples are not equal <span class="process-math">\((μ_1 \neq μ_2)\text{.}\)</span>
@@ -330,7 +508,7 @@ z = \frac{(\bar{x_1}-\bar{x_2})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\fra
 </div>
 <div class="para logical" id="sec-infr_ii-2-4-2-2-3">
 <div class="para"><dfn class="terminology">Steps:</dfn></div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-infr_ii-2-4-2-2-3-2">
 <li id="sec-infr_ii-2-4-2-2-3-2-1"><div class="para" id="sec-infr_ii-2-4-2-2-3-2-1-1">State the hypotheses.</div></li>
 <li id="sec-infr_ii-2-4-2-2-3-2-2"><div class="para" id="sec-infr_ii-2-4-2-2-3-2-2-1">Choose the significance level <span class="process-math">\((\alpha)\text{.}\)</span>
 </div></li>
@@ -349,7 +527,7 @@ z = \frac{(\bar{x_1}-\bar{x_2})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\fra
 <div class="para" id="sec-infr_ii-2-4-2-3-1">Z-test for Proportions: Tests whether the proportion of a single sample is different from a known population proportion or whether the proportions of two samples are different.</div>
 <div class="para logical" id="sec-infr_ii-2-4-2-3-2">
 <div class="para"><em class="emphasis">Hypotheses:</em></div>
-<ul class="disc">
+<ul class="disc" id="sec-infr_ii-2-4-2-3-2-2">
 <li id="sec-infr_ii-2-4-2-3-2-2-1"><div class="para" id="sec-infr_ii-2-4-2-3-2-2-1-1">Null Hypothesis <span class="process-math">\((H_o)\text{:}\)</span> The proportion of the sample is equal to the population proportion <span class="process-math">\((p = p_o)\text{.}\)</span>
 </div></li>
 <li id="sec-infr_ii-2-4-2-3-2-2-2"><div class="para" id="sec-infr_ii-2-4-2-3-2-2-2-1">Alternative Hypothesis <span class="process-math">\((H_1)\text{:}\)</span> The proportion of the sample is not equal to the population proportion <span class="process-math">\((p \neq p_o)\text{.}\)</span>
@@ -365,29 +543,36 @@ z = \frac{\hat{p} - p_o}{\sqrt{\frac{p_o(1-p_o)}{n}}}
 </div>
 </li>
 </ol>
-</div> <details id="sec-infr_ii-2-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
+</div>
+<details id="sec-infr_ii-2-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-infr_ii-2-5-1-1">A random sample of 50 items gives the mean 6.2 and variance 10.24. Can it be regarded as drawn from a normal population with 5.4 mean at <span class="process-math">\(5\%\)</span> of level of significance?</div>
 <div class="solutions"><details id="sec-infr_ii-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-infr_ii-2-5-2-1">Given: <span class="process-math">\(n=50,\)</span> <span class="process-math">\(\bar{x}=6.2,\)</span> <span class="process-math">\(\sigma^2 =10.24,\)</span> <span class="process-math">\(\mu_o = 5.4.\)</span>
-</div> <div class="para" id="sec-infr_ii-2-5-2-2">Step I: Null hypothesis, <span class="process-math">\(H_o:\)</span> <span class="process-math">\(\mu = 5.4 = \mu_o\)</span> (i.e., normal population mean)</div> <div class="para" id="sec-infr_ii-2-5-2-3">Step II: Alternative hypothesis, <span class="process-math">\(H_a:\)</span> <span class="process-math">\(\mu \neq 5.4\)</span> (two-tailed test, i.e., normal population mean is not 5.4)</div> <div class="para" id="sec-infr_ii-2-5-2-4">
-<dfn class="terminology">Note:</dfn> In alternative hypothesis: Use one tailed test: if <span class="process-math">\(\bar{x} \gt 5.4\)</span> (i.e., pop. mean) do right-tailed test (RTT), if <span class="process-math">\(\bar{x} \lt 5.4\)</span> (i.e., pop. mean) then do left-tailed test (LTT), and if <span class="process-math">\(\mu \neq 5.4\)</span> (i.e., normal population is not 5.4) then do two-tailed test.</div> <div class="para logical" id="sec-infr_ii-2-5-2-5">
+</div>
+<div class="para" id="sec-infr_ii-2-5-2-2">Step I: Null hypothesis, <span class="process-math">\(H_o:\)</span> <span class="process-math">\(\mu = 5.4 = \mu_o\)</span> (i.e., normal population mean)</div>
+<div class="para" id="sec-infr_ii-2-5-2-3">Step II: Alternative hypothesis, <span class="process-math">\(H_a:\)</span> <span class="process-math">\(\mu \neq 5.4\)</span> (two-tailed test, i.e., normal population mean is not 5.4)</div>
+<div class="para" id="sec-infr_ii-2-5-2-4">
+<dfn class="terminology">Note:</dfn> In alternative hypothesis: Use one tailed test: if <span class="process-math">\(\bar{x} \gt 5.4\)</span> (i.e., pop. mean) do right-tailed test (RTT), if <span class="process-math">\(\bar{x} \lt 5.4\)</span> (i.e., pop. mean) then do left-tailed test (LTT), and if <span class="process-math">\(\mu \neq 5.4\)</span> (i.e., normal population is not 5.4) then do two-tailed test.</div>
+<div class="para logical" id="sec-infr_ii-2-5-2-5">
 <div class="para">Step III: Test statistics: <span class="process-math">\(H_o\)</span> test statistics is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 z_{cal} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{\sqrt{n}}} = \frac{6.2-5.4}{\sqrt{10.24/50}} = 1.77.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-5-2-6">
+</div>
+<div class="para logical" id="sec-infr_ii-2-5-2-6">
 <div class="para">Step IV: Level of significance, <span class="process-math">\(\alpha = 0.05: \)</span> Tabulated value of z score at <span class="process-math">\(5\%\)</span> level of significance for two tailed test (z value of 0.025%):</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/fig-z3.html">
 \begin{equation*}
 z_{tab} = 1.96
 \end{equation*}
 </div>
-<div class="para">see <a href="sec-infr_ii.html#fig-z3" class="xref" data-knowl="./knowl/xref/fig-z3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.1">Figure 4.2.1</a>
+<div class="para">see <a href="sec-infr_ii.html#fig-z3" class="xref" data-knowl="./knowl/xref/fig-z3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.1">Figure 4.3.1</a>
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-5-2-7">
+</div>
+<div class="para logical" id="sec-infr_ii-2-5-2-7">
 <div class="para">Step V: Comparision and decesion:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -396,12 +581,13 @@ z_{tab} = 1.96
 </div>
 <div class="para">hence, null hypothesis is failed to reject (i.e., it is not significant) and reject the alternative hypothesis.</div>
 </div>
-</div></details></div></article></details> <details id="sec-infr_ii-2-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
+</div></details></div></article></details><details id="sec-infr_ii-2-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-infr_ii-2-6-1-1">A sample of 64 glass rod is taken from a manufacture under a new process and tested their breaking strength. The mean breaking strength of the sample is found to be 47.8 lbs and standard deviation 10 lbs. Test the claim that the average breaking strength of the rod is at least 50 lbs. [level of significance =5%]</div>
 <div class="solutions"><details id="sec-infr_ii-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-infr_ii-2-6-2-1">Given: <span class="process-math">\(n=64,\)</span> <span class="process-math">\(\bar{x} = 47.8 lbs,\)</span> <span class="process-math">\(\sigma = 10 lbs.\)</span> and <span class="process-math">\(\mu_o = 50 lbs.\)</span>
-</div> <div class="para logical" id="sec-infr_ii-2-6-2-2">
+</div>
+<div class="para logical" id="sec-infr_ii-2-6-2-2">
 <div class="para">Step I: <span class="process-math">\(H_o: \)</span>
 </div>
 <div class="displaymath process-math">
@@ -410,7 +596,8 @@ z_{tab} = 1.96
 \end{equation*}
 </div>
 <div class="para">i.e., average breaking strength of the rod is 50.</div>
-</div> <div class="para logical" id="sec-infr_ii-2-6-2-3">
+</div>
+<div class="para logical" id="sec-infr_ii-2-6-2-3">
 <div class="para">Step II: <span class="process-math">\(H_a: \)</span>
 </div>
 <div class="displaymath process-math">
@@ -420,7 +607,9 @@ z_{tab} = 1.96
 </div>
 <div class="para">i.e., average breaking strength of the rod is not 50. It is a one-tailed test because of the word "at least." Here, <span class="process-math">\(\bar{x} \lt \mu_o\text{.}\)</span>
 </div>
-</div> <div class="para" id="sec-infr_ii-2-6-2-4">Note: if <span class="process-math">\(\bar{x} \lt \mu_o\)</span> use Left-Tailed test and if <span class="process-math">\(\bar{x} \gt \mu_o\)</span> then use right-tailed test.</div> <div class="para logical" id="sec-infr_ii-2-6-2-5">
+</div>
+<div class="para" id="sec-infr_ii-2-6-2-4">Note: if <span class="process-math">\(\bar{x} \lt \mu_o\)</span> use Left-Tailed test and if <span class="process-math">\(\bar{x} \gt \mu_o\)</span> then use right-tailed test.</div>
+<div class="para logical" id="sec-infr_ii-2-6-2-5">
 <div class="para">Step III: Test statistics:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -432,7 +621,8 @@ z_{cal} = \frac{\bar{x}-\mu_o}{\frac{\sigma}{\sqrt{n}}} = \frac{47.8-50}{10/\sqr
 \therefore |z_{cal}| = 1.76
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-6-2-6">
+</div>
+<div class="para logical" id="sec-infr_ii-2-6-2-6">
 <div class="para">Step IV: Level of significance, <span class="process-math">\(\alpha = 5\%. \)</span> This is a left tailed test, hence z score = <span class="process-math">\(\frac{1-0.05-0.05}{2} = 0.45.\)</span>
 </div>
 <div class="displaymath process-math">
@@ -446,7 +636,8 @@ z_{tab} = -1.65
 |z_{tab}| = 1.65
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-6-2-7">
+</div>
+<div class="para logical" id="sec-infr_ii-2-6-2-7">
 <div class="para">Step V: Comparision and decesion:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -455,13 +646,16 @@ z_{tab} = -1.65
 </div>
 <div class="para">hence, null hypothesis is rejected (i.e., it is significant) and we fail to reject alternative hypothesis.</div>
 </div>
-</div></details></div></article></details> <details id="sec-infr_ii-2-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
+</div></details></div></article></details><details id="sec-infr_ii-2-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-infr_ii-2-7-1-1">
 <dfn class="terminology">Z-test for Two mean problem:</dfn> A potential buyer of light bulbs bought 50 bulbs each of two brands. On testing these bulbs he found that brand A had a mean life of 1282 hours with a standard deviation of 80 hours. Whereas brand B  had a mean life of 1208 hours with standard deviation of 94 hours. Can the buyer be quite certain that the two brands do differ in quality.</div>
 <div class="solutions"><details id="sec-infr_ii-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-infr_ii-2-7-2-1">Given: <span class="process-math">\(n=50,\)</span> <span class="process-math">\(\bar{x}_A =1282 hrs.,\)</span> <span class="process-math">\(\bar{x}_B =1208 hrs., \)</span> <span class="process-math">\(\sigma_A =80 hrs., \)</span> and <span class="process-math">\(\sigma_B =94 hrs.\)</span>
-</div> <div class="para" id="sec-infr_ii-2-7-2-2">Step I: Null hypotesis, <span class="process-math">\(H_o: \mu_1 = \mu_2\)</span> [i.e., two brands do not differ in quality.]</div> <div class="para" id="sec-infr_ii-2-7-2-3">Step II: Alternative hypotesis, <span class="process-math">\(H_a: \mu_1 \neq \mu_2\)</span> (two-tailed test) [i.e., brands do differ in quality.]</div> <div class="para logical" id="sec-infr_ii-2-7-2-4">
+</div>
+<div class="para" id="sec-infr_ii-2-7-2-2">Step I: Null hypotesis, <span class="process-math">\(H_o: \mu_1 = \mu_2\)</span> [i.e., two brands do not differ in quality.]</div>
+<div class="para" id="sec-infr_ii-2-7-2-3">Step II: Alternative hypotesis, <span class="process-math">\(H_a: \mu_1 \neq \mu_2\)</span> (two-tailed test) [i.e., brands do differ in quality.]</div>
+<div class="para logical" id="sec-infr_ii-2-7-2-4">
 <div class="para">Step III: Test Statistics:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -473,7 +667,8 @@ z_{cal}= \frac{(\bar{x_1}-\bar{x_2})}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_
 \therefore | z_{cal}| =4.24.
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-7-2-5">
+</div>
+<div class="para logical" id="sec-infr_ii-2-7-2-5">
 <div class="para">Step IV: <span class="process-math">\(\alpha = 5\% =0.05\)</span>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-z2.html">
@@ -481,9 +676,10 @@ z_{cal}= \frac{(\bar{x_1}-\bar{x_2})}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_
 \therefore |z_{tab}|= 1.96.
 \end{equation*}
 </div>
-<div class="para">see <a href="sec-infr_ii.html#subsubsec-z_tab-3-1" class="xref" data-knowl="./knowl/xref/eqn-z2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.2.2">(4.2.2)</a>. For 5% sig. level, <span class="process-math">\(z_{tab} \)</span> can be taken for two tailed test as <span class="process-math">\(\frac{100-5}{2} = 95/2 = 47.5% = 0.475.\)</span>
+<div class="para">see <a href="sec-infr_ii.html#subsubsec-z_tab-3-1" class="xref" data-knowl="./knowl/xref/eqn-z2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.2">(4.3.2)</a>. For 5% sig. level, <span class="process-math">\(z_{tab} \)</span> can be taken for two tailed test as <span class="process-math">\(\frac{100-5}{2} = 95/2 = 47.5% = 0.475.\)</span>
 </div>
-</div> <div class="para logical" id="sec-infr_ii-2-7-2-6">
+</div>
+<div class="para logical" id="sec-infr_ii-2-7-2-6">
 <div class="para">Step V: Comparision and dicesion:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -492,18 +688,20 @@ z_{cal}= \frac{(\bar{x_1}-\bar{x_2})}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_
 </div>
 <div class="para">Hence, it is significant and <span class="process-math">\(H_o\)</span> is rejected but <span class="process-math">\(H_a\)</span> is failed to reject.</div>
 </div>
-</div></details></div></article></details> <details id="sec-infr_ii-2-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span>
+</div></details></div></article></details><details id="sec-infr_ii-2-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="para logical" id="sec-infr_ii-2-8-1-1">
 <div class="para">The average height of all residents in a city is 168 cm with a population standard deviation, <span class="process-math">\(\sigma =3.9.\)</span> A doctor believe that the mean to be different. He measure the height of 36 individual and found the average to be 169.5 cm.</div>
-<ol class="lower-alpha">
+<ol class="lower-alpha" id="sec-infr_ii-2-8-1-1-2">
 <li id="sec-infr_ii-2-8-1-1-2-1"><div class="para" id="sec-infr_ii-2-8-1-1-2-1-1">State null and alternative hypothesis.</div></li>
 <li id="sec-infr_ii-2-8-1-1-2-2"><div class="para" id="sec-infr_ii-2-8-1-1-2-2-1">At a 95% confidence interval, is their enough evidence to reject the null hypothesis?</div></li>
 </ol>
 </div>
 <div class="solutions"><details id="sec-infr_ii-2-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-infr_ii-2-8-2-1">Given: <span class="process-math">\(H_o: \mu = \mu_o = 168 cm., \)</span> <span class="process-math">\(H_1: \mu \neq 168 cm. \)</span> (two tailed test) [<span class="process-math">\(\because \mu =169.5 cm.\)</span>]. Confidence interval, CI =  95% =0.95, <span class="process-math">\(\alpha = 1-CI = 1-0.95 =0.05. \)</span>
-</div> <div class="para" id="sec-infr_ii-2-8-2-2">Decesion boundary: <a href="sec-infr_ii.html#fig-z3" class="xref" data-knowl="./knowl/xref/fig-z3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.2.1">Figure 4.2.1</a> From z-table range =1.0.025 =0.9750. If z-test value falls between -1.96 to + 1.96 then we fail to reject the null hypothesis.</div> <div class="para logical" id="sec-infr_ii-2-8-2-3">
+</div>
+<div class="para" id="sec-infr_ii-2-8-2-2">Decesion boundary: <a href="sec-infr_ii.html#fig-z3" class="xref" data-knowl="./knowl/xref/fig-z3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.1">Figure 4.3.1</a> From z-table range =1.0.025 =0.9750. If z-test value falls between -1.96 to + 1.96 then we fail to reject the null hypothesis.</div>
+<div class="para logical" id="sec-infr_ii-2-8-2-3">
 <div class="para">Statistical Analysis:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -511,18 +709,19 @@ z-test = \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} = \frac{169.5-168}{3.9/\sqrt{36}}=2
 \end{equation*}
 </div>
 <div class="para">here <span class="process-math">\(\sigma/\sqrt{n}\)</span> is a standard error.</div>
-</div> <div class="para" id="sec-infr_ii-2-8-2-4">Conclusion: If z-test is less than - 1.96 or greater than + 1.96, we must reject null hypothesis. i.e., in this case, doctor belief seems right.</div>
+</div>
+<div class="para" id="sec-infr_ii-2-8-2-4">Conclusion: If z-test is less than - 1.96 or greater than + 1.96, we must reject null hypothesis. i.e., in this case, doctor belief seems right.</div>
 </div></details></div></article></details></section><section class="subsection" id="subsubsec-z_tab"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="space"> </span><span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="space"> </span><span class="title">Z tabulated value (<span class="process-math">\(z_{tab})\)</span></span>
 </h3>
 <div class="para" id="subsubsec-z_tab-2">If <span class="process-math">\(\bar{x} \lt \mu_o\)</span> use Left-Tailed test, if <span class="process-math">\(\bar{x} \gt \mu_o\)</span> then use right-tailed test, and if <span class="process-math">\(\mu \neq \mu_o\)</span> then use two-tailed test.</div>
 <div class="para logical" id="subsubsec-z_tab-3">
 <div class="para">For two-tailed test:</div>
 <div class="displaymath process-math" id="subsubsec-z_tab-3-1">
 \begin{align}
-\alpha = \amp 1\%; \quad z_{tab} = +2.56 \tag{4.2.1}\\
-\alpha = \amp 5\%, \quad z_{tab} = +1.96 \tag{4.2.2}\\
-\alpha = \amp 10\%, \quad z_{tab} = +1.65 \tag{4.2.3}
+\alpha = \amp 1\%; \quad z_{tab} = +2.56 \tag{4.3.1}\\
+\alpha = \amp 5\%, \quad z_{tab} = +1.96 \tag{4.3.2}\\
+\alpha = \amp 10\%, \quad z_{tab} = +1.65 \tag{4.3.3}
 \end{align}
 </div>
 </div>
@@ -530,9 +729,9 @@ z-test = \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} = \frac{169.5-168}{3.9/\sqrt{36}}=2
 <div class="para">For right-tailed test:</div>
 <div class="displaymath process-math" id="subsubsec-z_tab-4-1">
 \begin{align}
-\alpha = \amp 1\%; \quad z_{tab} = +2.33 \tag{4.2.4}\\
-\alpha = \amp 5\%, \quad z_{tab} = +1.65 \tag{4.2.5}\\
-\alpha = \amp 10\%, \quad z_{tab} = +1.28 \tag{4.2.6}
+\alpha = \amp 1\%; \quad z_{tab} = +2.33 \tag{4.3.4}\\
+\alpha = \amp 5\%, \quad z_{tab} = +1.65 \tag{4.3.5}\\
+\alpha = \amp 10\%, \quad z_{tab} = +1.28 \tag{4.3.6}
 \end{align}
 </div>
 </div>
@@ -540,9 +739,9 @@ z-test = \frac{\bar{x}-\mu}{\sigma/\sqrt{n}} = \frac{169.5-168}{3.9/\sqrt{36}}=2
 <div class="para">For left-tailed test:</div>
 <div class="displaymath process-math" id="subsubsec-z_tab-5-1">
 \begin{align}
-\alpha = \amp 1\%; \quad z_{tab} = -2.33 \tag{4.2.7}\\
-\alpha = \amp 5\%, \quad z_{tab} = -1.65 \tag{4.2.8}\\
-\alpha = \amp 10\%, \quad z_{tab} = -1.28 \tag{4.2.9}
+\alpha = \amp 1\%; \quad z_{tab} = -2.33 \tag{4.3.7}\\
+\alpha = \amp 5\%, \quad z_{tab} = -1.65 \tag{4.3.8}\\
+\alpha = \amp 10\%, \quad z_{tab} = -1.28 \tag{4.3.9}
 \end{align}
 </div>
 </div></section></section></div>

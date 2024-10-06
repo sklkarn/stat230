@@ -568,47 +568,11 @@ var ptx_lunr_docs = [
   "body": "  A survey was given to a random sample of 20 sophomore college students. They were asked, “how many textbooks do you own?” Their responses, were: 0, 0, 2, 5, 8, 8, 8, 9, 9, 10, 10, 10, 11, 12, 12, 12, 14, 15, 20, and 25.    Arrange the data in ascending order: 0, 0, 2, 5, 8, 8, 8, 9, 9, 10, 10, 10, 11, 12, 12, 12, 14, 15, 20, 25.  Five number summary: 0, 8, 10, 12, 25.  Any scores that are less than 2 or greater than 18 are outliers. Hence, we have 0, 0, 20, and 25 are outliers.   "
 },
 {
-  "id": "sec-desc_v",
-  "level": "1",
-  "url": "sec-desc_v.html",
-  "type": "Section",
-  "number": "2.5",
-  "title": "Central Limit Theorem (CLT)",
-  "body": " Central Limit Theorem (CLT)  It states that the sampling distribution of the sample means approaches a normal distribution as the sample size gets larger. It holds true if the sample size, 30 (population may be normally or skewed distributed). When then it only works for the normally distributed population.  The essential component of the CLT is that average sample means will be the population mean. Relation between the shape of population distribution and the shape of sampling distribution of mean is known as CLT. It helps inference about the population parameters without knowing the shape of frquency of population distribution. As the sample size gets larger, sampling distribution becomes almost normal regardless of the shape of population.   clt    According to CLT normal distribution is the limiting distribution to the sum of independent random variables with finite variance as the number of random variables get indefinitely large.  Since many real processes yield distributions with finite variance, this theorem has a wide range of application in sampling theory and other areas of statistics. If be independently distributed random variables such that and then as , the distribution of the sum of these random variables, namely tends to the normal distribution with mean, and variance where      There are 250 cats at show, when average weight of cat is 12 kg, with standard deviation of 8 kg. If we choose 4 samples, then what is the probability they have an average weight greater than 10 kg and less than 25 kg?    Given: Population size, Sample size, then  and where, = population mean, = population standard deviation, = sample mean, = sample standard deviation, and sample size.  Now, Hence, z-score = and       Using z-table, we have Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, Hence, area under the curve from center = 0.6915-0.5 = 0.1915. Adding these two values we get       A coin is tossed 200 times, find the approximate probability that the number of heads obtained is between 80 and 120.    Let number of heads, Discrete binomial distribution. Since the sample size, is very large, we can apply CLT. From binomial distribution approximation, we have - mean, and variance, here . Now   Now, Hence, and Therefore the required probability =       Use standard normal distribution table, we get - Therefore, Hence,     "
-},
-{
-  "id": "sec-desc_v-4",
-  "level": "2",
-  "url": "sec-desc_v.html#sec-desc_v-4",
-  "type": "Figure",
-  "number": "2.5.1",
-  "title": "",
-  "body": " clt   "
-},
-{
-  "id": "sec-desc_v-7",
-  "level": "2",
-  "url": "sec-desc_v.html#sec-desc_v-7",
-  "type": "Example",
-  "number": "2.5.2",
-  "title": "",
-  "body": "  There are 250 cats at show, when average weight of cat is 12 kg, with standard deviation of 8 kg. If we choose 4 samples, then what is the probability they have an average weight greater than 10 kg and less than 25 kg?    Given: Population size, Sample size, then  and where, = population mean, = population standard deviation, = sample mean, = sample standard deviation, and sample size.  Now, Hence, z-score = and       Using z-table, we have Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, Hence, area under the curve from center = 0.6915-0.5 = 0.1915. Adding these two values we get    "
-},
-{
-  "id": "sec-desc_v-8",
-  "level": "2",
-  "url": "sec-desc_v.html#sec-desc_v-8",
-  "type": "Example",
-  "number": "2.5.4",
-  "title": "",
-  "body": "  A coin is tossed 200 times, find the approximate probability that the number of heads obtained is between 80 and 120.    Let number of heads, Discrete binomial distribution. Since the sample size, is very large, we can apply CLT. From binomial distribution approximation, we have - mean, and variance, here . Now   Now, Hence, and Therefore the required probability =       Use standard normal distribution table, we get - Therefore, Hence,    "
-},
-{
   "id": "sec-desc_vi",
   "level": "1",
   "url": "sec-desc_vi.html",
   "type": "Section",
-  "number": "2.6",
+  "number": "2.5",
   "title": "Crosstabulation",
   "body": " Crosstabulation  Crosstabulation (cross-tab) is a table summary for two categorical vaiables It is used to understand patterns between the variables. It is also useful in hypothesis testing such as chi-square test and annova test. To know the relationship between two nominal variables like class and unemployment, gender and drug use we use hypothesis testing. Categorical data are separated into different categories that are mutually exclusive (independent) from one another. For example: eye color (blue, brown, green). It is impossible for eye color to belong to more than one color.  Cross-tab is used for nominal\/ordinal variables. It is a tool to descriptively examine variables and identify the relationship between two variables. The size of the crosstab is the number of categories of one variable multiplied by the number of categories of the second variable. Cross tab presents joint frequencies, hence it is alos clalled a ' joint contingency table '. Each cell is an intersection of the two categories at that point. Table below shows a sample layout of a crosstab. Analyzing large datasets can be difficult. Finding relevant, actionable insights within large amounts of data is even more complicated. Crosstabs simplify and divide data into subgroups for ease of interpretation—they show percentages and frequencies that may change when contrasted with variables in other categories. By making datasets more manageable at scale, fewer errors will result.   Cross tabulation is typically used when you have information that can be divided into mutually exclusive groups, also known as categorical variables. It allows you to examine relationships within the data that may not be readily apparent. A crosstab report can show the connection between two or more survey questions from the study in market research studies. A Chi-square test is used to test data in a cross-tabulation table to determine whether or not the data is statistically significant. The results are statistically significant if the two categorical variables are independent (unrelated). Basically, the Chi-square test is a correlation test for categorical variables.  cross tab may have additional information such as row and column marginals (i.e., total). The cell of the last row and the last column is called grand total. Here 68 is the grand total. Table can also reflect percentages. To find the percentage divide each cell value by the grand total and multiply them by 100. For example:   "
 },
@@ -635,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-desc_vii.html",
   "type": "Section",
-  "number": "2.7",
+  "number": "2.6",
   "title": "Correlation Coeffient, r",
   "body": " Correlation Coeffient, r   Correlation analysis deals with association between two or more variables. The degree of relationship between the variables under consideration is measured through the correlation analysis. The measure of correlatoin called the 'correlation coefficient' or 'correlation index'. Correlation coefficient, lies between -1 and +1. If , the correlation is strong negative (i.e., if one variable is increasing then the second variable must be decreasing), if then there is no correlation, and if then correlation is stron positive (i.e., if one variable is increasing then the second variable must also be increasing or vice a versa). For example: height and weight of infent kids are strongly positve correlation. Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.  There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson's product moment method: here, is number of pair of observations.    Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.      Linear Regression  Linear regression shows the relation between two variables. The least square regression line is given by where Where is the sum of cross-deviations of y and x and is the squared-deviations of x. Or, Here is sample standard deviation of y and is sample standard deviation of x. And    "
 },
@@ -644,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-desc_vii.html#sec-desc_vii-2-3",
   "type": "Example",
-  "number": "2.7.1",
+  "number": "2.6.1",
   "title": "",
   "body": "  Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.   "
 },
@@ -820,11 +784,47 @@ var ptx_lunr_docs = [
   "body": "given "
 },
 {
+  "id": "sec-desc_v",
+  "level": "1",
+  "url": "sec-desc_v.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Central Limit Theorem (CLT)",
+  "body": " Central Limit Theorem (CLT)  It states that the sampling distribution of the sample means approaches a normal distribution as the sample size gets larger. It holds true if the sample size, 30 (population may be normally or skewed distributed). When then it only works for the normally distributed population.  The essential component of the CLT is that average sample means will be the population mean. Relation between the shape of population distribution and the shape of sampling distribution of mean is known as CLT. It helps inference about the population parameters without knowing the shape of frquency of population distribution. As the sample size gets larger, sampling distribution becomes almost normal regardless of the shape of population.   clt    According to CLT normal distribution is the limiting distribution to the sum of independent random variables with finite variance as the number of random variables get indefinitely large.  Since many real processes yield distributions with finite variance, this theorem has a wide range of application in sampling theory and other areas of statistics. If be independently distributed random variables such that and then as , the distribution of the sum of these random variables, namely tends to the normal distribution with mean, and variance where      There are 250 cats at show, when average weight of cat is 12 kg, with standard deviation of 8 kg. If we choose 4 samples, then what is the probability they have an average weight greater than 10 kg and less than 25 kg?    Given: Population size, Sample size, then  and where, = population mean, = population standard deviation, = sample mean, = sample standard deviation, and sample size.  Now, Hence, z-score = and       Using z-table, we have Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, Hence, area under the curve from center = 0.6915-0.5 = 0.1915. Adding these two values we get       A coin is tossed 200 times, find the approximate probability that the number of heads obtained is between 80 and 120.    Let number of heads, Discrete binomial distribution. Since the sample size, is very large, we can apply CLT. From binomial distribution approximation, we have - mean, and variance, here . Now   Now, Hence, and Therefore the required probability =       Use standard normal distribution table, we get - Therefore, Hence,     "
+},
+{
+  "id": "sec-desc_v-4",
+  "level": "2",
+  "url": "sec-desc_v.html#sec-desc_v-4",
+  "type": "Figure",
+  "number": "4.1.1",
+  "title": "",
+  "body": " clt   "
+},
+{
+  "id": "sec-desc_v-7",
+  "level": "2",
+  "url": "sec-desc_v.html#sec-desc_v-7",
+  "type": "Example",
+  "number": "4.1.2",
+  "title": "",
+  "body": "  There are 250 cats at show, when average weight of cat is 12 kg, with standard deviation of 8 kg. If we choose 4 samples, then what is the probability they have an average weight greater than 10 kg and less than 25 kg?    Given: Population size, Sample size, then  and where, = population mean, = population standard deviation, = sample mean, = sample standard deviation, and sample size.  Now, Hence, z-score = and       Using z-table, we have Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, Hence, area under the curve from center = 0.6915-0.5 = 0.1915. Adding these two values we get    "
+},
+{
+  "id": "sec-desc_v-8",
+  "level": "2",
+  "url": "sec-desc_v.html#sec-desc_v-8",
+  "type": "Example",
+  "number": "4.1.4",
+  "title": "",
+  "body": "  A coin is tossed 200 times, find the approximate probability that the number of heads obtained is between 80 and 120.    Let number of heads, Discrete binomial distribution. Since the sample size, is very large, we can apply CLT. From binomial distribution approximation, we have - mean, and variance, here . Now   Now, Hence, and Therefore the required probability =       Use standard normal distribution table, we get - Therefore, Hence,    "
+},
+{
   "id": "sec-infr_i",
   "level": "1",
   "url": "sec-infr_i.html",
   "type": "Section",
-  "number": "4.1",
+  "number": "4.2",
   "title": "Hypothesis Testing",
   "body": " Hypothesis Testing   Hypothesis testing is a statistical method to draw conclusions (or make inferences) about a population based on sample data. It involves making an assumption (the hypothesis) and then using statistical techniques to determine the likelihood that this assumption is true. There are two categories of hypothesis testing: parametric and non-parametric. Parametric test gives generalization of generating records regarding the mean of the population. It is based on the assumption that the population data are normally distributed. Z-test, t-test, Annova tests are usually used in parametric test. Non-parametric test does not require any population distributin and are used when parametric test assumptions cannot be satisfied. test, Kruskal-Wallis test, Wilcoxon Signed-Rank test, Mann-Whitney U test, etc.  Use Parametric Tests When: The sample size is large enough (often ) to rely on the Central Limit Theorem, which implies that the sample mean will be approximately normally distributed. The data is normally distributed, or you have sufficient evidence to assume normality.  Use Non-Parametric Tests When: The data does not meet the assumptions required for parametric tests, such as normality. The sample size is small, making it difficult to assess or rely on the assumption of normality. You are dealing with ordinal data or ranked data instead of interval or ratio data. The data includes outliers or is skewed, which could affect the results of parametric tests.  Here's a basic outline of the hypothesis test process:    Formulate Hypotheses: Null Hypothesis : This is a statement of no effect or no difference. It represents the status quo or a baseline assumption. It assumes that there is no significant difference between the sample and population mean. Alternative Hypothesis : This is a statement that indicates the presence of an effect or a difference. It represents what you are trying to prove.     Choose the Significance Level  : The significance level is the probability of rejecting the null hypothesis when it is actually true. Common values for are 0.05, 0.01, and 0.10.     Select the Appropriate Test: The choice of test depends on the type of data and the hypothesis. Common tests include t-tests, chi-square ( ) tests, ANOVA test, F-test, and regression analysis.     Calculate the Test Statistic: This involves computing a value (test statistic) from the sample data that is used to evaluate the hypotheses.     Determine the P-value: The p-value is the probability of observing the test statistic or something more extreme if the null hypothesis is true. It helps in deciding whether to reject the null hypothesis.     Compare the P-value with the Significance Level: If the p-value is less than or equal to , reject the null hypothesis in favor of the alternative hypothesis. If the p-value is greater than , fail to reject the null hypothesis.     Draw a Conclusion: Based on the comparison, conclude whether there is sufficient evidence to support the alternative hypothesis.       Test Selection   The choice between using a chi-square test, ANOVA, or F-test or others depends on the type of data you have and the hypotheses you are testing. Here's a brief overview to help you decide which test to use:   Z or T test: If population standard deviation is not known and the sample size is relatively small (typically ), then t-test is used instead of the Z-test. The t-test is more appropriate in these situations because it accounts for the additional variability introduced by estimating the population standard deviation from the sample.   z-test vs. t-test    z-test: and t-test:    Chi-square test: The chi-square test is used for categorical data to test relationships between variables or the goodness of fit of observed data to an expected distribution.   Chi-Square Test for Independence: Used to determine if there is a significant association between two categorical variables. Example: Testing if there is a relationship between gender (male, female) and voting preference (yes, no).    Chi-Square Goodness of Fit Test: Used to determine if a sample data matches a population with a specific distribution. Example: Testing if the distribution of colors of M & Ms in a bag matches the company's stated proportions.      ANOVA (Analysis of Variance): ANOVA is used for comparing the means of three or more groups to see if at least one group mean is significantly different from the others.   One-Way ANOVA: Used when comparing the means of three or more independent groups based on one factor. Example: Testing if the average exam scores differ among students taught by three different teaching methods.    Two-Way ANOVA: Used when comparing means based on two factors and their interaction. Example: Testing if exam scores are affected by both teaching method and type of school (public, private).      F-Test: The F-test is used to compare variances or test hypotheses that involve variances.   F-test for Variances: Used to compare the variances of two populations to see if they are significantly different. Example: Testing if the variance in test scores between two classes is different.    F-statistic in ANOVA: The F-statistic is used within the ANOVA framework to determine if there are significant differences between group means. Example: As part of one-way or two-way ANOVA to compare group means.       One sample and two sample test.     When to use which test?      On analysis of one variable test (or one sample test): Continuous variables are counted or measured.  Categorical variables cannot be counted.   For one sample continuous variable, we use one sample t -test or z-test.  For one sample categorical variable, we use one sample proportion test.    For two sample continuous to continuous variables, we find correlation.    For one sample categorical and one continuous variable:  if there are only two classes in categorical variables, we use two-sample t-test or z-test.  if there are more than two classes in categorical variable, we use Annova test.    For two categorical variables, we use chi-square test.    For one categorical and one continuous variables but the target is categorical variable, then we go to logistic regression.       One-tail and two-tail Test  Technique to identify one-tailed and two-tailed test:   If the statement of questions uses the comparative degree: less than, more than, smaller than, larger than, taller than, superior, inferior, increase, decrease, at least, at most, only improved, then use one-tailed test .    Otherwise, use two -tailed test .     Note: If use Left-Tailed test, if then use right-tailed test, and if then use two-tailed test.    "
 },
@@ -842,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_i.html#fig-test_tree",
   "type": "Figure",
-  "number": "4.1.1",
+  "number": "4.2.1",
   "title": "",
   "body": " z-test vs. t-test   "
 },
@@ -887,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-infr_ii.html",
   "type": "Section",
-  "number": "4.2",
+  "number": "4.3",
   "title": "Z Test",
   "body": " Z Test   The z-test is used to determine whether there is a significant difference between sample and population means or between the means of two samples, assuming the data is normally distributed and the variances are known (or the sample size is large enough to use the Central Limit Theorem).      The above distribution shows the rejection regions and fail to rejection region (acceptance region) of Null hypothesis test in z test with the 95% confidence inetrval (or 5% significance level) in two tailed test.   Types of Z-tests:    One-Sample z-test: Tests whether the mean of a single sample is different from a known population mean.   Hypotheses:    Null Hypothesis : The sample mean is equal to the population mean .    Alternative Hypothesis : The sample mean is not equal to the population mean .   Formula: where: is the sample mean, is the population mean, is the population standard deviation, is the sample size.   Steps:    State the hypotheses.    Choose the significance level =1-Confidence Interval.    Calculate the z statistic using the formula.    Determine the p-value corresponding to the z statistic.    Compare the p-value to :  If , reject the null hypothesis.  If , fail to reject the null hypothesis.      Note: if use Left-Tailed test and if then use right-tailed test.    Two-Sample Z-test: Tests whether the means of two independent samples are different.   Hypotheses:    Null Hypothesis : The means of the two samples are equal .    Alternative Hypothesis : The means of the two samples are not equal .   Formula: where: are the sample means, are the population means, are the population standard deviations, are the sample sizes.   Steps:    State the hypotheses.    Choose the significance level .    Calculate the z statistic using the formula.    Determine the p-value corresponding to the z statistic.    Compare the p-value to :  If , reject the null hypothesis.  If , fail to reject the null hypothesis.       Z-test for Proportions: Tests whether the proportion of a single sample is different from a known population proportion or whether the proportions of two samples are different.   Hypotheses:    Null Hypothesis : The proportion of the sample is equal to the population proportion .    Alternative Hypothesis : The proportion of the sample is not equal to the population proportion .   Formula: where: is the sample proportion, is the population proportion, is the sample size.       A random sample of 50 items gives the mean 6.2 and variance 10.24. Can it be regarded as drawn from a normal population with 5.4 mean at of level of significance?    Given:      Step I: Null hypothesis,  (i.e., normal population mean)  Step II: Alternative hypothesis,  (two-tailed test, i.e., normal population mean is not 5.4)   Note: In alternative hypothesis: Use one tailed test: if (i.e., pop. mean) do right-tailed test (RTT), if (i.e., pop. mean) then do left-tailed test (LTT), and if (i.e., normal population is not 5.4) then do two-tailed test.  Step III: Test statistics: test statistics is given by   Step IV: Level of significance, Tabulated value of z score at level of significance for two tailed test (z value of 0.025%): see   Step V: Comparision and decesion: hence, null hypothesis is failed to reject (i.e., it is not significant) and reject the alternative hypothesis.      A sample of 64 glass rod is taken from a manufacture under a new process and tested their breaking strength. The mean breaking strength of the sample is found to be 47.8 lbs and standard deviation 10 lbs. Test the claim that the average breaking strength of the rod is at least 50 lbs. [level of significance =5%]    Given:   and   Step I:  i.e., average breaking strength of the rod is 50.  Step II:  i.e., average breaking strength of the rod is not 50. It is a one-tailed test because of the word \"at least.\" Here, .  Note: if use Left-Tailed test and if then use right-tailed test.  Step III: Test statistics:    Step IV: Level of significance, This is a left tailed test, hence z score =  or,   Step V: Comparision and decesion: hence, null hypothesis is rejected (i.e., it is significant) and we fail to reject alternative hypothesis.       Z-test for Two mean problem: A potential buyer of light bulbs bought 50 bulbs each of two brands. On testing these bulbs he found that brand A had a mean life of 1282 hours with a standard deviation of 80 hours. Whereas brand B had a mean life of 1208 hours with standard deviation of 94 hours. Can the buyer be quite certain that the two brands do differ in quality.    Given:    and   Step I: Null hypotesis, [i.e., two brands do not differ in quality.]  Step II: Alternative hypotesis, (two-tailed test) [i.e., brands do differ in quality.]  Step III: Test Statistics:    Step IV:  see . For 5% sig. level, can be taken for two tailed test as   Step V: Comparision and dicesion: Hence, it is significant and is rejected but is failed to reject.      The average height of all residents in a city is 168 cm with a population standard deviation, A doctor believe that the mean to be different. He measure the height of 36 individual and found the average to be 169.5 cm.   State null and alternative hypothesis.    At a 95% confidence interval, is their enough evidence to reject the null hypothesis?       Given:  (two tailed test) [ ]. Confidence interval, CI = 95% =0.95,   Decesion boundary: From z-table range =1.0.025 =0.9750. If z-test value falls between -1.96 to + 1.96 then we fail to reject the null hypothesis.  Statistical Analysis: here is a standard error.  Conclusion: If z-test is less than - 1.96 or greater than + 1.96, we must reject null hypothesis. i.e., in this case, doctor belief seems right.      Z tabulated value (  If use Left-Tailed test, if then use right-tailed test, and if then use two-tailed test.  For two-tailed test:   For right-tailed test:   For left-tailed test:    "
 },
@@ -896,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_ii.html#fig-z3",
   "type": "Figure",
-  "number": "4.2.1",
+  "number": "4.3.1",
   "title": "",
   "body": "   "
 },
@@ -914,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_ii.html#sec-infr_ii-2-5",
   "type": "Example",
-  "number": "4.2.2",
+  "number": "4.3.2",
   "title": "",
   "body": "  A random sample of 50 items gives the mean 6.2 and variance 10.24. Can it be regarded as drawn from a normal population with 5.4 mean at of level of significance?    Given:      Step I: Null hypothesis,  (i.e., normal population mean)  Step II: Alternative hypothesis,  (two-tailed test, i.e., normal population mean is not 5.4)   Note: In alternative hypothesis: Use one tailed test: if (i.e., pop. mean) do right-tailed test (RTT), if (i.e., pop. mean) then do left-tailed test (LTT), and if (i.e., normal population is not 5.4) then do two-tailed test.  Step III: Test statistics: test statistics is given by   Step IV: Level of significance, Tabulated value of z score at level of significance for two tailed test (z value of 0.025%): see   Step V: Comparision and decesion: hence, null hypothesis is failed to reject (i.e., it is not significant) and reject the alternative hypothesis.   "
 },
@@ -923,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_ii.html#sec-infr_ii-2-6",
   "type": "Example",
-  "number": "4.2.3",
+  "number": "4.3.3",
   "title": "",
   "body": "  A sample of 64 glass rod is taken from a manufacture under a new process and tested their breaking strength. The mean breaking strength of the sample is found to be 47.8 lbs and standard deviation 10 lbs. Test the claim that the average breaking strength of the rod is at least 50 lbs. [level of significance =5%]    Given:   and   Step I:  i.e., average breaking strength of the rod is 50.  Step II:  i.e., average breaking strength of the rod is not 50. It is a one-tailed test because of the word \"at least.\" Here, .  Note: if use Left-Tailed test and if then use right-tailed test.  Step III: Test statistics:    Step IV: Level of significance, This is a left tailed test, hence z score =  or,   Step V: Comparision and decesion: hence, null hypothesis is rejected (i.e., it is significant) and we fail to reject alternative hypothesis.   "
 },
@@ -932,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_ii.html#sec-infr_ii-2-7",
   "type": "Example",
-  "number": "4.2.4",
+  "number": "4.3.4",
   "title": "",
   "body": "   Z-test for Two mean problem: A potential buyer of light bulbs bought 50 bulbs each of two brands. On testing these bulbs he found that brand A had a mean life of 1282 hours with a standard deviation of 80 hours. Whereas brand B had a mean life of 1208 hours with standard deviation of 94 hours. Can the buyer be quite certain that the two brands do differ in quality.    Given:    and   Step I: Null hypotesis, [i.e., two brands do not differ in quality.]  Step II: Alternative hypotesis, (two-tailed test) [i.e., brands do differ in quality.]  Step III: Test Statistics:    Step IV:  see . For 5% sig. level, can be taken for two tailed test as   Step V: Comparision and dicesion: Hence, it is significant and is rejected but is failed to reject.   "
 },
@@ -941,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_ii.html#sec-infr_ii-2-8",
   "type": "Example",
-  "number": "4.2.5",
+  "number": "4.3.5",
   "title": "",
   "body": "  The average height of all residents in a city is 168 cm with a population standard deviation, A doctor believe that the mean to be different. He measure the height of 36 individual and found the average to be 169.5 cm.   State null and alternative hypothesis.    At a 95% confidence interval, is their enough evidence to reject the null hypothesis?       Given:  (two tailed test) [ ]. Confidence interval, CI = 95% =0.95,   Decesion boundary: From z-table range =1.0.025 =0.9750. If z-test value falls between -1.96 to + 1.96 then we fail to reject the null hypothesis.  Statistical Analysis: here is a standard error.  Conclusion: If z-test is less than - 1.96 or greater than + 1.96, we must reject null hypothesis. i.e., in this case, doctor belief seems right.   "
 },
@@ -950,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-infr_iii.html",
   "type": "Section",
-  "number": "4.3",
+  "number": "4.4",
   "title": "T Test",
   "body": " T Test   A t-test is used to compare the means of two groups and determine if the differences between them are statistically significant. It's commonly used when dealing with small sample sizes and when the population standard deviation is unknown. There are different types of t-tests, including:    One-sample t-test: Compares the mean of a single group against a known mean (or a hypothesized mean).     Independent two-sample t-test: Compares the means of two independent groups to see if they are significantly different from each other.     Paired sample t-test: Compares means from the same group at different times (e.g., before and after a treatment) or from matched pairs.       Steps to Perform a t-test      Formulate the Hypotheses:    Null Hypothesis (H0): Assumes no difference between the groups.    Alternative Hypothesis (H1): Assumes a significant difference between the groups.       Choose the Significance Level : Commonly used values are 0.05 or 0.01, representing a 5% or 1% risk of concluding that a difference exists when there is no actual difference.    Calculate the Test Statistic:   For a one-sample t-test:     For an independent two-sample t-test:     For a paired sample t-test: Here, is the sample mean, is the population mean, is the sample standard deviation, is the sample size, is the mean difference in paired samples, and ​ is the standard deviation of the differences.       Determine the Degrees of Freedom (df):   For a one-sample t-test:     For an independent two-sample t-test:     For a paired sample t-test:        Find the Critical t-value: Using t-distribution tables or software, find the critical value for the given degrees of freedom and significance level.    Compare the Test Statistic to the Critical Value:   If the calculated t-value is greater than the critical value, reject the null hypothesis.    Otherwise, fail to reject the null hypothesis.           One sample t -test: In the population, the average IQ is 100. A team of researcher want to test a new medication to see if it has either a positive or negative effect on intelligence or no effect at all. A sample of 30 participants who have taken the medication has a mean of 140 with a standard deviation of 20. Did the medication effect intelligence? [CI=95%]    Given:   Null hypothesis,   Alternative hypothesis, [two-tail test]  Significance value,   Degree of freedon,       Decision boundary: Use t table to find . If t-test or is less than -2.045 or greater than +2.045, reject null hupothesis.  Calculate t-test statistics,   Conclusion: Decision rule: If or t-test is less than -2.045 or greater than +2.045, reject null hupothesis. Here, We must reject null hypothesis. i.e., medication has positive effect on intelligence.      A random sample of size 20 from a normal population gives a sample mean of 42 and sample standard deviation of 6. Test the hypothesis that the population mean is 44.    Given:   Step I: Null hypothesis, (population mean is same as sample mean.)  Step II: Alternative hypothesis, (two tail test) (no wording for comparision)  Step III: Test Statistics:    Step IV: Level of significance,  use t table to determine the value of   Step V: Comparision and Decision: Hence, it is not significant, therefore, we fail to reject null hypothesis.     "
 },
@@ -959,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_iii.html#subsec-t_steps-3",
   "type": "Example",
-  "number": "4.3.1",
+  "number": "4.4.1",
   "title": "",
   "body": "   One sample t -test: In the population, the average IQ is 100. A team of researcher want to test a new medication to see if it has either a positive or negative effect on intelligence or no effect at all. A sample of 30 participants who have taken the medication has a mean of 140 with a standard deviation of 20. Did the medication effect intelligence? [CI=95%]    Given:   Null hypothesis,   Alternative hypothesis, [two-tail test]  Significance value,   Degree of freedon,       Decision boundary: Use t table to find . If t-test or is less than -2.045 or greater than +2.045, reject null hupothesis.  Calculate t-test statistics,   Conclusion: Decision rule: If or t-test is less than -2.045 or greater than +2.045, reject null hupothesis. Here, We must reject null hypothesis. i.e., medication has positive effect on intelligence.   "
 },
@@ -968,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-infr_iii.html#subsec-t_steps-4",
   "type": "Example",
-  "number": "4.3.3",
+  "number": "4.4.3",
   "title": "",
   "body": "  A random sample of size 20 from a normal population gives a sample mean of 42 and sample standard deviation of 6. Test the hypothesis that the population mean is 44.    Given:   Step I: Null hypothesis, (population mean is same as sample mean.)  Step II: Alternative hypothesis, (two tail test) (no wording for comparision)  Step III: Test Statistics:    Step IV: Level of significance,  use t table to determine the value of   Step V: Comparision and Decision: Hence, it is not significant, therefore, we fail to reject null hypothesis.   "
 },
@@ -977,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-infr_iv.html",
   "type": "Section",
-  "number": "4.4",
+  "number": "4.5",
   "title": "Type I and Type II errors",
   "body": " Type I and Type II errors   Power of a Test: The power of a test is a concept in hypothesis testing. It measures the test's ability to correctly reject a false null hypothesis. It is the probability that the test correctly rejects the null hypothesis when a specific alternative hypothesis is true.  When testing a null hypothesis, against alternative hypothesis, then there are four possibilities arise      is accepted when is true. (Correct)     is rejected when is true. ( Type I error ) or error.        is accepted when is false. ( Type II error ) or error.        is rejected when is false. (Correct)     "
 },
