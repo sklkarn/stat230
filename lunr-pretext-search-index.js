@@ -784,6 +784,483 @@ var ptx_lunr_docs = [
   "body": "given "
 },
 {
+  "id": "sec-prob_exampleA",
+  "level": "1",
+  "url": "sec-prob_exampleA.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Example A",
+  "body": " Example A    A die is rolled. Let E be the event \"die shows 4\" and F be the event \"die shows evern number\". Are E and F mutually exclusive event?     Therefore E and F are not mutually exclusive events.      A dice is thrown. Describe the following events:   A: a number less than 7    B: a number greater than 7    C: a multiple of 3    D: a number less than 4    E: an even number greater than 4.              An experiment involving rolling a pair of die and recording the numbers that come up. Describe the following events:   A: the sum greater than 8.    B: 2 occurs on either die    C: the sum is at least 7 and a multiple of 3.   Which pairs of these events are mutually exclusive?     A and B are mutually exclusive as       Three coins are tossed once. Let A denote the event 'three heads up', B denote the event 'two heads and one tail up', C denote the event 'three tails up', and D denote the event 'a head up on the first coin'. Which events are   Mutually exclusive?    Simple?    Compound?       Number of total outcomes =       MEE = AB, AC, CD.    A and C.    B and D.         A coin is tossed twice, what is the probability that at least one tail occurs?    Total outcomes =    using       A card is selected from a deck of 52 cards.   How many points are there in a sample space?    Calculate the probability that the card is an Ace of Spade?    Calculate the probability that the card is an   Ace.    Black card.             52.     only one Ace of Spade in a deck of cards.                         A fair coin with marked on one face and on the other face and a fair die are both tossed. Find the probability that the sum of numbers that turn up is                    Note: Total outcomes in a die = and in a coin = Here is either number of tosses or number of coins or dies. Hence total outcomes = .                      Find the probability of getting 3 on rolling a die.    Sample Space =   Total number of outcomes =   Let A be the event of getting 3. Then, Number of favourable outcomes = .   Probability,   Hence, P(getting 3 on rolling a die) = 1\/6.      Draw a random card from a pack of cards. What is the probability that the card drawn is a face card?    Let be the event of drawing a face card.  Number of favourable events = (considered Jack, Queen and King only)  Probability, P = Number of Favourable Outcomes\/Total Number of Outcomes     P(the card drawn is a face card) = 3\/13.      There are 6 pillows in a bed, 3 are red, 2 are yellow and 1 is blue. What is the probability of picking a yellow pillow?           There is a container full of coloured bottles, red, blue, green and orange. Some of the bottles are picked out and displaced. Dan did this 1000 times and got the following results:  No. of blue bottles picked out: 300  No. of red bottles: 200  No. of green bottles: 450  No. of orange bottles: 50     What is the probability that Dan will pick a green bottle?    If there are 100 bottles in the container, how many of them are likely to be green?                using          A vessel contains 4 blue balls, 5 red balls, and 11 white balls. If three balls are drawn from the vessel at random, what is the probability that the first ball is red, the second ball is blue, and the third ball is white?    4B, 5R, 11W, total balls = 20.  3 balls selected, one at each time.       Two dice are rolled, find the probability that the sum is: equal to 1, equal to 4, and less than 13.      The sample space,  The sum of outcomes of two dices are always .  The sample space, Three sample points = no. of favorable events.   The sample space,        An urn contains 6 white and 9 black balls. Two successive draws of 4 balls are made without replacement. Find the probability that the first draw gives all white balls and the second draw gives all black balls.    6W, 9B balls, total = 15 balls. 4 selection without replacement. Hence, Total number of ways Required favourable outcomes = here all the events are equally likely.  therefore, the probability,       Two integers and are chosen with replacement from the set . Find the probability when          Total ways =   Favourable events =   sample space,   For favourable outcomes, set , then , that is, set , then , that is, set , then , that is, set , then , that is, set , then , that is,  should not be equal to 5 otherwise is greater than 10.  no. of favourable outcomes = 15 for for positive part and for negative part      for          There are four men and six women on the city council. If one concil member is selected for a committee at random, how likely is it that it is a woman?    There are 4M, 6W so total outcomes = 10. Selecting 1 woman. No. of favorable outcome        A fair coin is tossed four times and a person win $1 for each head and loss $1.50 for each tail that turns up. From the sample space calculate how many different amounts of money you can have after four tosses and the probability of having each of these amounts.    Totaol outcomes =   To right all the possible permutations of these 16 outcomes, we put and in the vertical column, then in the second columns we put , , , and , in the third column , in succession, and finally , alternatly in the entire column as shown in below.     Now collect all the outcomes from row, as shown below.   Now for he wins +$4.0, for he wind +$1.50, for he losses -$1.0, for he losses -$3.50, for he losses -$6.0.             Given and . Find , if and are mutually exclusive events.           If E and F are events such that , , and . Find                                  Events and are such that state weather and are mutually exclusive.     not mutually exclusive.      In a class of students study Mathematics, study Biology, and of them study both Mathematics and Biology. If a student is selected at random from the class, find the probability that he will be studying Mathematics or Biology.           The probability that a student will pass the final exam in both English and Spanish is 0.5 and the probability of passing neither is 0.1. If the probability of passing the English exam is 0.75, what is the probability of passing the Spanish exam?     Now,       In a class of 60 students, 30 opted for english (E), 32 opted for spanish (S), and 24 opted for both E and S. If one of these students is selected at random, find the probability that   The student opted for the E or S.    The student has opted neither E nor S.    The student has opted S but not E.    The student has opted only for S.          P(E or S)     neither E nor S     P (S but not E) or P (only for E)     P (only for S)          In a lottery, a person chose six different natural numbers at random from 1 to 20, and if these six numbers match with the six numbers already fixed by the lottery committee, he wins the prize. What is the probability of winning the prize in the game?    Total outcomes =   Favourable outcome = 1.  if the numbers match without order   if the numbers match in order       A box contains 10 red marbles, 20 blue marbles, and 30 green marbles. If 5 marbles are drawn from the box, what is the probability that   all will be blue    at least one will be green?                         In a certain lottery, 10000 tickets are sold and 10 equal prizes are awarded. What is the probability of not getting a proze if you buy   one ticket    two tickets    ten tickets.           Favourable outcome = .                   Out of 100 studnets, two sections of 40 and 60 are formed. If you and your friend are among 100 students, what is the probability that   you both enter the same section?    you both enter the different sections?          P(both enter same section )     P(both enter different sections )          If 4-digit numbers greater than 5000 are randomly formed from the digits 0,1,3,5, and 7. What is the probability of forming a number divisible by 5 when   the digits are repeated.    the repetition of digits is not allowed.          Total outcome =   2 choices only for thousand place and 1 less because numbers must be greater than 5000. Here in outcomes 1 number is also 5000 which needs to be subtracted.  favourable outcome =   2 choices only for thousand place and 2 choices for unit place be. 1 less because numbers must be greater than 5000. Here in outcomes 1 number is also 5000 which needs to be subtracted.       Total outcomes =   favourable outcome = case I when number starts with 5 =   favourable outcome = case II when number starts with 7 =   Therefore total option =          P speaks the truth 75% of the cases and Q speaks the truth in 80% of the cases. In what percentage of cases are they likely to contradiction each other in narrating the same incident?       Contradict =       The probability of A winning the prize in a contest is , while the probability of B winning the prize is , find the probability that both winning the prizes?       Both winning the prize =       The probability of team A participates in a game is 25%, while the probability of team B participating is 30%. What is the chances of neither of them taking part?       Neither participate,       Find the probability of getting 53 Mondays in a leap year.    In a leap year total number of days = 366 days = 52 weaks + 2 days. Hence, the probablity of getting 53 Mondays is       Three students try to solve a problem independetly with a probability of solving it as 1\/3, 2\/5, and 5\/12 respectively. What is the probability that the problem is solved?    Probability that the problem cannot be solved is Hence, the probability of problem solved is       Two dies are thrown simultaneously, and the sum of the numbers obtained is found to be 7. What is the probability that the number 3 has appeared at least once?    Use conditional probability.       "
+},
+{
+  "id": "sec-prob_exampleA-2",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-2",
+  "type": "Example",
+  "number": "3.3.1",
+  "title": "",
+  "body": "  A die is rolled. Let E be the event \"die shows 4\" and F be the event \"die shows evern number\". Are E and F mutually exclusive event?     Therefore E and F are not mutually exclusive events.   "
+},
+{
+  "id": "sec-prob_exampleA-3",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-3",
+  "type": "Example",
+  "number": "3.3.2",
+  "title": "",
+  "body": "  A dice is thrown. Describe the following events:   A: a number less than 7    B: a number greater than 7    C: a multiple of 3    D: a number less than 4    E: an even number greater than 4.           "
+},
+{
+  "id": "sec-prob_exampleA-4",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-4",
+  "type": "Example",
+  "number": "3.3.3",
+  "title": "",
+  "body": "  An experiment involving rolling a pair of die and recording the numbers that come up. Describe the following events:   A: the sum greater than 8.    B: 2 occurs on either die    C: the sum is at least 7 and a multiple of 3.   Which pairs of these events are mutually exclusive?     A and B are mutually exclusive as    "
+},
+{
+  "id": "sec-prob_exampleA-5",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-5",
+  "type": "Example",
+  "number": "3.3.4",
+  "title": "",
+  "body": "  Three coins are tossed once. Let A denote the event 'three heads up', B denote the event 'two heads and one tail up', C denote the event 'three tails up', and D denote the event 'a head up on the first coin'. Which events are   Mutually exclusive?    Simple?    Compound?       Number of total outcomes =       MEE = AB, AC, CD.    A and C.    B and D.      "
+},
+{
+  "id": "sec-prob_exampleA-6",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-6",
+  "type": "Example",
+  "number": "3.3.5",
+  "title": "",
+  "body": "  A coin is tossed twice, what is the probability that at least one tail occurs?    Total outcomes =    using    "
+},
+{
+  "id": "sec-prob_exampleA-7",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-7",
+  "type": "Example",
+  "number": "3.3.6",
+  "title": "",
+  "body": "  A card is selected from a deck of 52 cards.   How many points are there in a sample space?    Calculate the probability that the card is an Ace of Spade?    Calculate the probability that the card is an   Ace.    Black card.             52.     only one Ace of Spade in a deck of cards.                      "
+},
+{
+  "id": "sec-prob_exampleA-8",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-8",
+  "type": "Example",
+  "number": "3.3.7",
+  "title": "",
+  "body": "  A fair coin with marked on one face and on the other face and a fair die are both tossed. Find the probability that the sum of numbers that turn up is                    Note: Total outcomes in a die = and in a coin = Here is either number of tosses or number of coins or dies. Hence total outcomes = .                   "
+},
+{
+  "id": "sec-prob_exampleA-9",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-9",
+  "type": "Example",
+  "number": "3.3.8",
+  "title": "",
+  "body": "  Find the probability of getting 3 on rolling a die.    Sample Space =   Total number of outcomes =   Let A be the event of getting 3. Then, Number of favourable outcomes = .   Probability,   Hence, P(getting 3 on rolling a die) = 1\/6.   "
+},
+{
+  "id": "sec-prob_exampleA-10",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-10",
+  "type": "Example",
+  "number": "3.3.9",
+  "title": "",
+  "body": "  Draw a random card from a pack of cards. What is the probability that the card drawn is a face card?    Let be the event of drawing a face card.  Number of favourable events = (considered Jack, Queen and King only)  Probability, P = Number of Favourable Outcomes\/Total Number of Outcomes     P(the card drawn is a face card) = 3\/13.   "
+},
+{
+  "id": "sec-prob_exampleA-11",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-11",
+  "type": "Example",
+  "number": "3.3.10",
+  "title": "",
+  "body": "  There are 6 pillows in a bed, 3 are red, 2 are yellow and 1 is blue. What is the probability of picking a yellow pillow?        "
+},
+{
+  "id": "sec-prob_exampleA-12",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-12",
+  "type": "Example",
+  "number": "3.3.11",
+  "title": "",
+  "body": "  There is a container full of coloured bottles, red, blue, green and orange. Some of the bottles are picked out and displaced. Dan did this 1000 times and got the following results:  No. of blue bottles picked out: 300  No. of red bottles: 200  No. of green bottles: 450  No. of orange bottles: 50     What is the probability that Dan will pick a green bottle?    If there are 100 bottles in the container, how many of them are likely to be green?                using       "
+},
+{
+  "id": "sec-prob_exampleA-13",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-13",
+  "type": "Example",
+  "number": "3.3.12",
+  "title": "",
+  "body": "  A vessel contains 4 blue balls, 5 red balls, and 11 white balls. If three balls are drawn from the vessel at random, what is the probability that the first ball is red, the second ball is blue, and the third ball is white?    4B, 5R, 11W, total balls = 20.  3 balls selected, one at each time.    "
+},
+{
+  "id": "sec-prob_exampleA-14",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-14",
+  "type": "Example",
+  "number": "3.3.13",
+  "title": "",
+  "body": "  Two dice are rolled, find the probability that the sum is: equal to 1, equal to 4, and less than 13.      The sample space,  The sum of outcomes of two dices are always .  The sample space, Three sample points = no. of favorable events.   The sample space,     "
+},
+{
+  "id": "sec-prob_exampleA-15",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-15",
+  "type": "Example",
+  "number": "3.3.14",
+  "title": "",
+  "body": "  An urn contains 6 white and 9 black balls. Two successive draws of 4 balls are made without replacement. Find the probability that the first draw gives all white balls and the second draw gives all black balls.    6W, 9B balls, total = 15 balls. 4 selection without replacement. Hence, Total number of ways Required favourable outcomes = here all the events are equally likely.  therefore, the probability,    "
+},
+{
+  "id": "sec-prob_exampleA-16",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-16",
+  "type": "Example",
+  "number": "3.3.15",
+  "title": "",
+  "body": "  Two integers and are chosen with replacement from the set . Find the probability when          Total ways =   Favourable events =   sample space,   For favourable outcomes, set , then , that is, set , then , that is, set , then , that is, set , then , that is, set , then , that is,  should not be equal to 5 otherwise is greater than 10.  no. of favourable outcomes = 15 for for positive part and for negative part      for       "
+},
+{
+  "id": "sec-prob_exampleA-17",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-17",
+  "type": "Example",
+  "number": "3.3.16",
+  "title": "",
+  "body": "  There are four men and six women on the city council. If one concil member is selected for a committee at random, how likely is it that it is a woman?    There are 4M, 6W so total outcomes = 10. Selecting 1 woman. No. of favorable outcome     "
+},
+{
+  "id": "sec-prob_exampleA-18",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-18",
+  "type": "Example",
+  "number": "3.3.17",
+  "title": "",
+  "body": "  A fair coin is tossed four times and a person win $1 for each head and loss $1.50 for each tail that turns up. From the sample space calculate how many different amounts of money you can have after four tosses and the probability of having each of these amounts.    Totaol outcomes =   To right all the possible permutations of these 16 outcomes, we put and in the vertical column, then in the second columns we put , , , and , in the third column , in succession, and finally , alternatly in the entire column as shown in below.     Now collect all the outcomes from row, as shown below.   Now for he wins +$4.0, for he wind +$1.50, for he losses -$1.0, for he losses -$3.50, for he losses -$6.0.          "
+},
+{
+  "id": "sec-prob_exampleA-19",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-19",
+  "type": "Example",
+  "number": "3.3.18",
+  "title": "",
+  "body": "  Given and . Find , if and are mutually exclusive events.        "
+},
+{
+  "id": "sec-prob_exampleA-20",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-20",
+  "type": "Example",
+  "number": "3.3.19",
+  "title": "",
+  "body": "  If E and F are events such that , , and . Find                               "
+},
+{
+  "id": "sec-prob_exampleA-21",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-21",
+  "type": "Example",
+  "number": "3.3.20",
+  "title": "",
+  "body": "  Events and are such that state weather and are mutually exclusive.     not mutually exclusive.   "
+},
+{
+  "id": "sec-prob_exampleA-22",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-22",
+  "type": "Example",
+  "number": "3.3.21",
+  "title": "",
+  "body": "  In a class of students study Mathematics, study Biology, and of them study both Mathematics and Biology. If a student is selected at random from the class, find the probability that he will be studying Mathematics or Biology.        "
+},
+{
+  "id": "sec-prob_exampleA-23",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-23",
+  "type": "Example",
+  "number": "3.3.22",
+  "title": "",
+  "body": "  The probability that a student will pass the final exam in both English and Spanish is 0.5 and the probability of passing neither is 0.1. If the probability of passing the English exam is 0.75, what is the probability of passing the Spanish exam?     Now,    "
+},
+{
+  "id": "sec-prob_exampleA-24",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-24",
+  "type": "Example",
+  "number": "3.3.23",
+  "title": "",
+  "body": "  In a class of 60 students, 30 opted for english (E), 32 opted for spanish (S), and 24 opted for both E and S. If one of these students is selected at random, find the probability that   The student opted for the E or S.    The student has opted neither E nor S.    The student has opted S but not E.    The student has opted only for S.          P(E or S)     neither E nor S     P (S but not E) or P (only for E)     P (only for S)       "
+},
+{
+  "id": "sec-prob_exampleA-25",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-25",
+  "type": "Example",
+  "number": "3.3.24",
+  "title": "",
+  "body": "  In a lottery, a person chose six different natural numbers at random from 1 to 20, and if these six numbers match with the six numbers already fixed by the lottery committee, he wins the prize. What is the probability of winning the prize in the game?    Total outcomes =   Favourable outcome = 1.  if the numbers match without order   if the numbers match in order    "
+},
+{
+  "id": "sec-prob_exampleA-26",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-26",
+  "type": "Example",
+  "number": "3.3.25",
+  "title": "",
+  "body": "  A box contains 10 red marbles, 20 blue marbles, and 30 green marbles. If 5 marbles are drawn from the box, what is the probability that   all will be blue    at least one will be green?                      "
+},
+{
+  "id": "sec-prob_exampleA-27",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-27",
+  "type": "Example",
+  "number": "3.3.26",
+  "title": "",
+  "body": "  In a certain lottery, 10000 tickets are sold and 10 equal prizes are awarded. What is the probability of not getting a proze if you buy   one ticket    two tickets    ten tickets.           Favourable outcome = .                "
+},
+{
+  "id": "sec-prob_exampleA-28",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-28",
+  "type": "Example",
+  "number": "3.3.27",
+  "title": "",
+  "body": "  Out of 100 studnets, two sections of 40 and 60 are formed. If you and your friend are among 100 students, what is the probability that   you both enter the same section?    you both enter the different sections?          P(both enter same section )     P(both enter different sections )       "
+},
+{
+  "id": "sec-prob_exampleA-29",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-29",
+  "type": "Example",
+  "number": "3.3.28",
+  "title": "",
+  "body": "  If 4-digit numbers greater than 5000 are randomly formed from the digits 0,1,3,5, and 7. What is the probability of forming a number divisible by 5 when   the digits are repeated.    the repetition of digits is not allowed.          Total outcome =   2 choices only for thousand place and 1 less because numbers must be greater than 5000. Here in outcomes 1 number is also 5000 which needs to be subtracted.  favourable outcome =   2 choices only for thousand place and 2 choices for unit place be. 1 less because numbers must be greater than 5000. Here in outcomes 1 number is also 5000 which needs to be subtracted.       Total outcomes =   favourable outcome = case I when number starts with 5 =   favourable outcome = case II when number starts with 7 =   Therefore total option =       "
+},
+{
+  "id": "sec-prob_exampleA-30",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-30",
+  "type": "Example",
+  "number": "3.3.29",
+  "title": "",
+  "body": "  P speaks the truth 75% of the cases and Q speaks the truth in 80% of the cases. In what percentage of cases are they likely to contradiction each other in narrating the same incident?       Contradict =    "
+},
+{
+  "id": "sec-prob_exampleA-31",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-31",
+  "type": "Example",
+  "number": "3.3.30",
+  "title": "",
+  "body": "  The probability of A winning the prize in a contest is , while the probability of B winning the prize is , find the probability that both winning the prizes?       Both winning the prize =    "
+},
+{
+  "id": "sec-prob_exampleA-32",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-32",
+  "type": "Example",
+  "number": "3.3.31",
+  "title": "",
+  "body": "  The probability of team A participates in a game is 25%, while the probability of team B participating is 30%. What is the chances of neither of them taking part?       Neither participate,    "
+},
+{
+  "id": "sec-prob_exampleA-33",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-33",
+  "type": "Example",
+  "number": "3.3.32",
+  "title": "",
+  "body": "  Find the probability of getting 53 Mondays in a leap year.    In a leap year total number of days = 366 days = 52 weaks + 2 days. Hence, the probablity of getting 53 Mondays is    "
+},
+{
+  "id": "sec-prob_exampleA-34",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-34",
+  "type": "Example",
+  "number": "3.3.33",
+  "title": "",
+  "body": "  Three students try to solve a problem independetly with a probability of solving it as 1\/3, 2\/5, and 5\/12 respectively. What is the probability that the problem is solved?    Probability that the problem cannot be solved is Hence, the probability of problem solved is    "
+},
+{
+  "id": "sec-prob_exampleA-35",
+  "level": "2",
+  "url": "sec-prob_exampleA.html#sec-prob_exampleA-35",
+  "type": "Example",
+  "number": "3.3.34",
+  "title": "",
+  "body": "  Two dies are thrown simultaneously, and the sum of the numbers obtained is found to be 7. What is the probability that the number 3 has appeared at least once?    Use conditional probability.      "
+},
+{
+  "id": "ex_fifth",
+  "level": "1",
+  "url": "ex_fifth.html",
+  "type": "Exercises",
+  "number": "3.4",
+  "title": "Exercise",
+  "body": "  Exercise   Which of the following cannot be valid assignment of probabilities for outcomes of sample space.       only A nad B are possible assignments. Total probabilities sum up to 1.    Two dice are thrown together. Find the probability that the product of the numbers on the top of the dice is:   6    12    7       A bag contains 10 red, 5 blue and 7 green balls. A ball is drawn at random. Find the probability of this ball being a   red ball    green ball    not a blue ball       All the jacks, queens and kings are removed from a deck of 52 playing cards. The remaining cards are well shuffled and then one card is drawn at random. Giving ace a value 1 similar value for other cards, find the probability that the card has a value   7    greater than 7    less than 7       A die has its six faces marked 0, 1, 1, 1, 6, 6. Two such dice are thrown together and the total score is recorded.   How many different scores are possible?    What is the probability of getting a total of 7?       Two cards are drawn from a pack of 52 cards. What is the probability of given conditions:   Both cards will be Face cards?    Exactly one card should be Queen?    No any card is honor-cards?    No any card is digit cards?    One card is King and the other is Queen?       Four cards are drawn from a well-suffled deck of 52 cards. What is the probability of obtaining 3 diamonds and one spade?    A box contains 4 red, 5 green, and 6 white balls. A ball is drawn at random from the box, what is the probability that the ball drawn is   either red or green?    neither red nor green?      (a) 9\/15 (b)     A basket contains 5 red, 4 blue, and 3 green balls. If 2 balls are drawn at random from the basket, what is the probability that both ball are blue?        An urn contains 6 red, 4 blue, 2 green, and 3 yellow pens. If 2 pens are picked up at random, what is the probability that either both are green or both are yellow?        A basket contains 6 blue, 2 red, 4 green, and 3 yellow balls. If 4 balls are picked up at random, what is the probability that 2 are red or 2 are green?        A basket contains 4 red, 5 blue, and 3 green marbles. If 3 marbles are picked up at random, what is the probability that at least one is blue?   Find probability of being no blue marbles, then probability of at least one blue.        An urn contains 2 red, 3 green, and 3 blue balls. If 2 pens are drawn at random, find the probability no ball is blue.        There are 6 boys and 4 girls in a class. If any 4 students are chosen at random, what is the probability that they must have at least one girl?   Find the prob. of all boy, then prob. of being one girl is     A speaks the truth 75% of the cases and B speaks the truth in 60% of the cases. Find the probability of contradiction between them.   45%    Two players Dan and Marcia play a tennis match. It is known that the probability of Marcia winning the match is 0.62. What is the probability of Dan winning the match?   prob. of Marcia winning, P(M)= 0.62  Hence, prob. of Dan winning the match,     Find the probability of getting 53 Mondays in a no leap year.   In no year total number of days = 365 days = 52 weaks + 1 day. Hence, the probablity of getting 53 Mondays is    "
+},
+{
+  "id": "ex_fifth-2",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-2",
+  "type": "Exercise",
+  "number": "3.4.1",
+  "title": "",
+  "body": " Which of the following cannot be valid assignment of probabilities for outcomes of sample space.       only A nad B are possible assignments. Total probabilities sum up to 1.  "
+},
+{
+  "id": "ex_fifth-3",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-3",
+  "type": "Exercise",
+  "number": "3.4.2",
+  "title": "",
+  "body": " Two dice are thrown together. Find the probability that the product of the numbers on the top of the dice is:   6    12    7     "
+},
+{
+  "id": "ex_fifth-4",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-4",
+  "type": "Exercise",
+  "number": "3.4.3",
+  "title": "",
+  "body": " A bag contains 10 red, 5 blue and 7 green balls. A ball is drawn at random. Find the probability of this ball being a   red ball    green ball    not a blue ball     "
+},
+{
+  "id": "ex_fifth-5",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-5",
+  "type": "Exercise",
+  "number": "3.4.4",
+  "title": "",
+  "body": " All the jacks, queens and kings are removed from a deck of 52 playing cards. The remaining cards are well shuffled and then one card is drawn at random. Giving ace a value 1 similar value for other cards, find the probability that the card has a value   7    greater than 7    less than 7     "
+},
+{
+  "id": "ex_fifth-6",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-6",
+  "type": "Exercise",
+  "number": "3.4.5",
+  "title": "",
+  "body": " A die has its six faces marked 0, 1, 1, 1, 6, 6. Two such dice are thrown together and the total score is recorded.   How many different scores are possible?    What is the probability of getting a total of 7?     "
+},
+{
+  "id": "ex_fifth-7",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-7",
+  "type": "Exercise",
+  "number": "3.4.6",
+  "title": "",
+  "body": " Two cards are drawn from a pack of 52 cards. What is the probability of given conditions:   Both cards will be Face cards?    Exactly one card should be Queen?    No any card is honor-cards?    No any card is digit cards?    One card is King and the other is Queen?     "
+},
+{
+  "id": "ex_fifth-8",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-8",
+  "type": "Exercise",
+  "number": "3.4.7",
+  "title": "",
+  "body": " Four cards are drawn from a well-suffled deck of 52 cards. What is the probability of obtaining 3 diamonds and one spade?  "
+},
+{
+  "id": "ex_fifth-9",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-9",
+  "type": "Exercise",
+  "number": "3.4.8",
+  "title": "",
+  "body": " A box contains 4 red, 5 green, and 6 white balls. A ball is drawn at random from the box, what is the probability that the ball drawn is   either red or green?    neither red nor green?      (a) 9\/15 (b)   "
+},
+{
+  "id": "ex_fifth-10",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-10",
+  "type": "Exercise",
+  "number": "3.4.9",
+  "title": "",
+  "body": " A basket contains 5 red, 4 blue, and 3 green balls. If 2 balls are drawn at random from the basket, what is the probability that both ball are blue?      "
+},
+{
+  "id": "ex_fifth-11",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-11",
+  "type": "Exercise",
+  "number": "3.4.10",
+  "title": "",
+  "body": " An urn contains 6 red, 4 blue, 2 green, and 3 yellow pens. If 2 pens are picked up at random, what is the probability that either both are green or both are yellow?      "
+},
+{
+  "id": "ex_fifth-12",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-12",
+  "type": "Exercise",
+  "number": "3.4.11",
+  "title": "",
+  "body": " A basket contains 6 blue, 2 red, 4 green, and 3 yellow balls. If 4 balls are picked up at random, what is the probability that 2 are red or 2 are green?      "
+},
+{
+  "id": "ex_fifth-13",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-13",
+  "type": "Exercise",
+  "number": "3.4.12",
+  "title": "",
+  "body": " A basket contains 4 red, 5 blue, and 3 green marbles. If 3 marbles are picked up at random, what is the probability that at least one is blue?   Find probability of being no blue marbles, then probability of at least one blue.      "
+},
+{
+  "id": "ex_fifth-14",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-14",
+  "type": "Exercise",
+  "number": "3.4.13",
+  "title": "",
+  "body": " An urn contains 2 red, 3 green, and 3 blue balls. If 2 pens are drawn at random, find the probability no ball is blue.      "
+},
+{
+  "id": "ex_fifth-15",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-15",
+  "type": "Exercise",
+  "number": "3.4.14",
+  "title": "",
+  "body": " There are 6 boys and 4 girls in a class. If any 4 students are chosen at random, what is the probability that they must have at least one girl?   Find the prob. of all boy, then prob. of being one girl is   "
+},
+{
+  "id": "ex_fifth-16",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-16",
+  "type": "Exercise",
+  "number": "3.4.15",
+  "title": "",
+  "body": " A speaks the truth 75% of the cases and B speaks the truth in 60% of the cases. Find the probability of contradiction between them.   45%  "
+},
+{
+  "id": "ex_fifth-17",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-17",
+  "type": "Exercise",
+  "number": "3.4.16",
+  "title": "",
+  "body": " Two players Dan and Marcia play a tennis match. It is known that the probability of Marcia winning the match is 0.62. What is the probability of Dan winning the match?   prob. of Marcia winning, P(M)= 0.62  Hence, prob. of Dan winning the match,   "
+},
+{
+  "id": "ex_fifth-18",
+  "level": "2",
+  "url": "ex_fifth.html#ex_fifth-18",
+  "type": "Exercise",
+  "number": "3.4.17",
+  "title": "",
+  "body": " Find the probability of getting 53 Mondays in a no leap year.   In no year total number of days = 365 days = 52 weaks + 1 day. Hence, the probablity of getting 53 Mondays is   "
+},
+{
   "id": "sec-desc_v",
   "level": "1",
   "url": "sec-desc_v.html",
