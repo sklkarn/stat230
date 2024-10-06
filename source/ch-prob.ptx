@@ -93,5 +93,7 @@
   <!-- include sections -->
   <xi:include href="sec-prob_i.ptx" />
   <xi:include href="sec-prob_ii.ptx" />
+  <xi:include href="sec-prob_exampleA.ptx" />
+  <xi:include href="ex_fifth.ptx" />
 
 </chapter>
