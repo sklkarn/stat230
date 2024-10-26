@@ -260,8 +260,9 @@
         </ul>
       </p>
       <p>
-        Note: If <m>\mu \lt \mu_o</m> use Left-Tailed test, if <m>\mu \gt \mu_o</m> then use right-tailed test, 
-        and if <m>\mu \neq \mu_o</m> then use two-tailed test.
+        Note: In an alternative hypothesis, if <m>\mu \lt \mu_o</m> use <term>Left-Tailed test</term>, 
+        if <m>\mu \gt \mu_o</m> then use <term>Right-tailed test</term>, 
+        and if <m>\mu \neq \mu_o</m> then use <term>Two-tailed test</term>.
        </p>
      </subsubsection>
 </subsection>
