@@ -230,6 +230,12 @@ window.MathJax = {
 #sec-prob_ii-2-1-1-2-1-2 { counter-set: sec-prob_ii-2-1-1-2-1-2 0; }
 #sec-prob_ii-2-1-1-2-1-2 > li::marker { content: ""counter(sec-prob_ii-2-1-1-2-1-2,lower-roman)""; }
 #sec-prob_ii-2-1-1-2-1-2 > li { counter-increment: sec-prob_ii-2-1-1-2-1-2; }
+#subsec-bayes-4-1-1-7 { counter-set: subsec-bayes-4-1-1-7 0; }
+#subsec-bayes-4-1-1-7 > li::marker { content: ""counter(subsec-bayes-4-1-1-7,decimal)"."; }
+#subsec-bayes-4-1-1-7 > li { counter-increment: subsec-bayes-4-1-1-7; }
+#subsec-bayes-4-2-2-1 { counter-set: subsec-bayes-4-2-2-1 0; }
+#subsec-bayes-4-2-2-1 > li::marker { content: ""counter(subsec-bayes-4-2-2-1,decimal)"."; }
+#subsec-bayes-4-2-2-1 > li { counter-increment: subsec-bayes-4-2-2-1; }
 #sec-prob_exampleA-3-1-1-1 { counter-set: sec-prob_exampleA-3-1-1-1 0; }
 #sec-prob_exampleA-3-1-1-1 > li::marker { content: ""counter(sec-prob_exampleA-3-1-1-1,lower-roman)""; }
 #sec-prob_exampleA-3-1-1-1 > li { counter-increment: sec-prob_exampleA-3-1-1-1; }
@@ -495,7 +501,10 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-prob_ii.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Rules of Probability</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-prob_ii.html#subsec-cond_prob" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Conditional probability:</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-prob_ii.html#subsec-cond_prob" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Conditional probability:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-prob_ii.html#subsec-bayes" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Bayes Theorem:</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-prob_exampleA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Example A</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_fifth.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercise</span></a></div></li>
@@ -753,16 +762,196 @@ or, \quad P(A|B) \amp = \frac{N(A\cap B)}{N(B)}; \quad N(B) \neq 0. \quad \text{
 \end{align}
 </div>
 <div class="para">here <span class="process-math">\(N(A\cap B)\)</span> is the number of elements common to both A and B. <span class="process-math">\(N(B)\)</span> is the number of elements in B, and it cannot be equal to zero.</div>
+</div></section><section class="subsection" id="subsec-bayes"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="space"> </span><span class="title">Bayes Theorem:</span>
+</h3>
+<div class="para" id="subsec-bayes-2">Bayes’ theorem defines the probability of occurrence of an event associated with any condition. This is known as the formula for the likelihood of “causes”.</div>
+<div class="para logical" id="subsec-bayes-3">
+<div class="para">From conditional probability,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html">
+\begin{equation*}
+P(A|B) = \frac{P(A\cap B)}{P(B)}
+\end{equation*}
 </div>
-<div class="para logical" id="subsec-cond_prob-5">
-<div class="para">
-<em class="alert">Bayes Theorem:</em> Bayes’ theorem defines the probability of occurrence of an event associated with any condition. This is known as the formula for the likelihood of “causes”.</div>
-<div class="displaymath process-math" id="eqn-bayes1">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html" id="eqn-bayes1">
 \begin{equation}
-or, \quad P(A|B)  = \frac{P(B|A)P(A)}{P(B)}\tag{3.2.7}
+or, \, \quad  P(A\cap B) = P(A|B).P(B)\tag{3.2.7}
 \end{equation}
 </div>
-</div></section></section></div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html">
+\begin{equation*}
+P(B|A) = \frac{P(B\cap A)}{P(A)}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html" id="eqn-bayes2">
+\begin{equation}
+or, \, \quad  P(B\cap A) = P(B|A).P(A)\tag{3.2.8}
+\end{equation}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html">
+\begin{equation*}
+P(A\cap B) = P(B\cap A)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-bayes3.html" id="eqn-bayes3">
+\begin{equation}
+\therefore \quad P(A|B)  = \frac{P(B|A)P(A)}{P(B)}\tag{3.2.9}
+\end{equation}
+</div>
+<div class="para">Eqn. <a href="sec-prob_ii.html#eqn-bayes3" class="xref" data-knowl="./knowl/xref/eqn-bayes3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.9">(3.2.9)</a> is known as Baye’s theorem.</div>
+</div>
+<details id="subsec-bayes-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="subsec-bayes-4-1-1">
+<div class="para">Suppose a manufacture company has 3 suppliers A, B, and C. The supplier A give <span class="process-math">\(25\%\text{,}\)</span> supplier B give <span class="process-math">\(40\%\text{,}\)</span> and supplier C give <span class="process-math">\(35\%\)</span> of some raw materials to the company to manufacture some electronic good. If <span class="process-math">\(2\%\)</span> of the material coming from supplier A is defective, <span class="process-math">\(3\%\)</span> of the material coming from supplier B is defective, and <span class="process-math">\(5\%\)</span> of the material coming from supplier C is defective. If a final product is randomly chosen,</div>
+<ol class="decimal" id="subsec-bayes-4-1-1-7">
+<li id="subsec-bayes-4-1-1-7-1"><div class="para" id="subsec-bayes-4-1-1-7-1-1">what is the probability that this product be defective.</div></li>
+<li id="subsec-bayes-4-1-1-7-2"><div class="para" id="subsec-bayes-4-1-1-7-2-1">what is the probability that this product be defective due to supplier B raw materials.</div></li>
+</ol>
+</div>
+<div class="solutions"><details id="subsec-bayes-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-bayes-4-2-1">
+<div class="displaymath process-math" id="subsec-bayes-4-2-1-1">
+\begin{align*}
+P(A)  \amp = 0.25 \\
+P(B)  \amp = 0.40 \\
+P(C)  \amp = 0.35 
+\end{align*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" id="subsec-bayes-4-2-1-2">
+\begin{align*}
+P(D|A)  \amp = 0.02 \\
+P(D|B)  \amp = 0.03 \\
+P(D|C)  \amp = 0.05 
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-4-2-2"><ol class="decimal" id="subsec-bayes-4-2-2-1">
+<li id="subsec-bayes-4-2-2-1-1"><div class="para logical" id="subsec-bayes-4-2-2-1-1-1">
+<div class="para">Probability that this product is defective</div>
+<div class="displaymath process-math" id="subsec-bayes-4-2-2-1-1-1-1">
+\begin{align*}
+P(D)  \amp  = P(A)\times P(D|A)+P(B)\times P(D|B)+P(C)\times P(D|C)  \\
+\amp = 0.25\times 0.02 +0.4\times 0.03+0.35\times 0.05 = 0.0345 
+\end{align*}
+</div>
+</div></li>
+<li id="subsec-bayes-4-2-2-1-2"><div class="para logical" id="subsec-bayes-4-2-2-1-2-1">
+<div class="para">Probability that this product is defective due to supplier B raw materials</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(B|D)  = \frac{P(D|B)P(B)}{P(D)} = \frac{0.03\times 0.40}{0.0345} = \frac{0.012}{0.0345} = 0.35.
+\end{equation*}
+</div>
+</div></li>
+</ol></div>
+</div></details></div></article></details><details id="subsec-bayes-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.13</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-bayes-5-1-1">In 2024, there are three candidates X, Y, and Z, for the post of professor, whose chances of getting the promotion are in the proportions of <span class="process-math">\(4:2:3, \)</span> respectively. The probability that X if selected would introduce new subject of today’s requirement in the department is  0.35. The probability of Y and Z doing the same would be 0.52 and 0.80, respectively. What is the probability that there will be new subjects in the department in year 2025.</div>
+<div class="solutions"><details id="subsec-bayes-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-bayes-5-2-1">
+<div class="displaymath process-math" id="subsec-bayes-5-2-1-1">
+\begin{align*}
+P(X)  \amp = \frac{4}{9} \\
+P(Y)  \amp = \frac{2}{9} \\
+P(Z)  \amp = \frac{3}{9} = \frac{1}{3}
+\end{align*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" id="subsec-bayes-5-2-1-2">
+\begin{align*}
+P(N|X)  \amp = 0.35 \\
+P(N|Y)  \amp = 0.52 \\
+P(N|Z)  \amp = 0.80 
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-5-2-2">
+<div class="para">Probability that New subject is introduced is</div>
+<div class="displaymath process-math" id="subsec-bayes-5-2-2-1">
+\begin{align*}
+P(N)   \amp =  P(X)\times P(N|X)+P(Y)\times P(N|Y)+P(Z)\times P(N|Z)   \\
+\amp  = \frac{4}{9} \times 0.35 +\frac{2}{9}\times 0.52 +\frac{1}{3}\times 0.80 = \frac{4.84}{9}  
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-5-2-3">
+<div class="para">Probability that New subject is introduced because of professor X</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(X|N)  = \frac{P(N|X)P(X)}{P(N)} = \frac{\frac{4}{9} \times 0.35}{\frac{4.84}{9}} = 0.29.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></details><details id="subsec-bayes-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.14</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-bayes-6-1-1">There are 3 bixes, where Box A contains 1 white, 2 red, and 3 black balls, Box B contains 2 white, 3 red, and 1 black balls, and Box C contains 3 white, 1 red, and 2 black balls. A box is chosen randomly and from it two balls are taken at random. These two balls are one red and one white. Find the probability that these balls are taken from Box A.</div>
+<div class="solutions"><details id="subsec-bayes-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-bayes-6-2-1">
+<div class="displaymath process-math" id="subsec-bayes-6-2-1-1">
+\begin{align*}
+P(A)  \amp = \frac{1}{3} \\
+P(B)  \amp = \frac{1}{3} \\
+P(C)  \amp = \frac{1}{3}
+\end{align*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" id="subsec-bayes-6-2-1-2">
+\begin{align*}
+P(RW|A)  \amp = \frac{_1C_1\times _2C_1}{_6C_2} = \frac{2}{15}\\
+P(RW|B)  \amp = \frac{_3C_1\times _2C_1}{_6C_2} = \frac{6}{15}\\
+P(RW|C)  \amp = \frac{_3C_1\times _1C_1}{_6C_2} = \frac{3}{15} 
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-6-2-2">
+<div class="para">Probability of getting red and white balls</div>
+<div class="displaymath process-math" id="subsec-bayes-6-2-2-1">
+\begin{align*}
+P(RW)  \amp  = P(A)\times P(RW|A) +P(B)\times P(RW|B) +P(C)\times P(RW|C)    \\
+\amp = \frac{2}{15} \times \frac{1}{3} +\frac{6}{15} \times \frac{1}{3}+\frac{3}{15} \times \frac{1}{3}  =  \frac{11}{45}  
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-6-2-3">
+<div class="para">Probability these balls are from Box A is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(A|RW)  = \frac{P(RW|A)P(A)}{P(RW)} = \frac{\frac{2}{15} \times \frac{1}{3}}{\frac{11}{45}} = \frac{2}{11}.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></details><details id="subsec-bayes-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.15</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="subsec-bayes-7-1-1">A newly constructed bridge fell down either due to wrong design or by inferior building material used in the construction. The chance that the design is faulty is <span class="process-math">\(10\%\)</span> and the probability of its collapsing due faulty design is <span class="process-math">\(95\%\)</span> and due to inferior material is <span class="process-math">\(45\%\text{.}\)</span> Find the probability that it was due to faulty design.</div>
+<div class="solutions"><details id="subsec-bayes-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-bayes-7-2-1">
+<div class="displaymath process-math" id="subsec-bayes-7-2-1-1">
+\begin{align*}
+P(FD)  \amp = 0.1 \\
+P(IM)  \amp = 1-0.1=0.9 
+\end{align*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" id="subsec-bayes-7-2-1-2">
+\begin{align*}
+P(C|FD)  \amp = 0.95\\
+P(C|IM)  \amp = 0.45
+\end{align*}
+</div>
+</div>
+<div class="para logical" id="subsec-bayes-7-2-2">
+<div class="para">Probability collapse due to faulty design is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(FD|C)  = \frac{ P(C|FD)P(FD)}{P(C)} = \frac{0.1\times 0.95}{0.1\times 0.95+0.9\times 0.45} = 0.19.
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-prob_i.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-prob_exampleA.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
