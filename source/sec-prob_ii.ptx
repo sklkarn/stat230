@@ -308,13 +308,208 @@
       here <m>N(A\cap B)</m> is the number of elements common to both A and B. 
       <m> N(B)</m> is the number of elements in B, and it cannot be equal to zero.
       </p>
-      <p>
-        <alert>Bayes Theorem: </alert> Bayes' theorem defines the probability of occurrence of an event 
-        associated with any condition. This is known as the formula for the likelihood of “causes”.
-        <men xml:id="eqn-bayes1">
-          or, \quad P(A|B)  = \frac{P(B|A)P(A)}{P(B)}
-         </men>
-  </p>
+     
+</subsection>
+
+<subsection xml:id="subsec-bayes">
+  <title>Bayes Theorem:</title>
+  <p>
+   Bayes' theorem defines the probability of occurrence of an event 
+    associated with any condition. This is known as the formula for the likelihood of “causes”.
+    </p>
+    <p>
+      From conditional probability, 
+      <me>P(A|B) = \frac{P(A\cap B)}{P(B)}</me> 
+      <men xml:id="eqn-bayes1">
+       or, \, \quad  P(A\cap B) = P(A|B).P(B)
+      </men>
+       Also, 
+      <me>P(B|A) = \frac{P(B\cap A)}{P(A)}</me>
+      <men xml:id="eqn-bayes2">
+        or, \, \quad  P(B\cap A) = P(B|A).P(A)
+       </men>
+       But, <me>P(A\cap B) = P(B\cap A)</me>
+      <men xml:id="eqn-bayes3">
+        \therefore \quad P(A|B)  = \frac{P(B|A)P(A)}{P(B)}
+       </men>
+       Eqn. <xref ref="eqn-bayes3"/> is known as Baye's theorem.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Suppose a manufacture company has 3 suppliers A, B, and C. The supplier A give <m>25\%</m>, 
+          supplier B give <m>40\%</m>, and supplier C give <m>35\%</m> of some raw materials to the company to manufacture some electronic good. 
+          If <m>2\%</m> of the material coming from supplier A is defective, <m>3\%</m> of the material coming from supplier B is defective, and 
+          <m>5\%</m> of the material coming from supplier C is defective. If a final product is randomly chosen, 
+          <ol>
+            <li>
+              <p>
+               what is the probability that this product be defective. 
+              </p>
+            </li>
+            <li>
+              <p>
+                what is the probability that this product be defective due to supplier B raw materials. 
+              </p>
+            </li>
+          </ol>
+          </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>  P(A)  \amp = 0.25 </mrow>
+            <mrow> P(B)  \amp = 0.40 </mrow>
+            <mrow> P(C)  \amp = 0.35 </mrow>
+          </md>
+         Also,
+         <md>
+          <mrow>  P(D|A)  \amp = 0.02 </mrow>
+          <mrow> P(D|B)  \amp = 0.03 </mrow>
+          <mrow> P(D|C)  \amp = 0.05 </mrow>
+        </md>
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+               Probability that this product is defective
+               <md>
+                <mrow> P(D)  \amp  = P(A)\times P(D|A)+P(B)\times P(D|B)+P(C)\times P(D|C)  </mrow>
+                <mrow> \amp = 0.25\times 0.02 +0.4\times 0.03+0.35\times 0.05 = 0.0345 </mrow>
+               </md>
+                </p>
+            </li>
+            <li>
+              <p>
+                Probability that this product is defective due to supplier B raw materials  
+                <me>
+                  P(B|D)  = \frac{P(D|B)P(B)}{P(D)} = \frac{0.03\times 0.40}{0.0345} = \frac{0.012}{0.0345} = 0.35.
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+
+
+    <example>
+      <statement>
+        <p>
+         In 2024, there are three candidates X, Y, and Z, for the post of professor, 
+         whose chances of getting the promotion are in the proportions of <m>4:2:3, </m> respectively. 
+         The probability that X if selected would introduce new subject of today's requirement in the department is  0.35. 
+         The probability of Y and Z doing the same would be 0.52 and 0.80, respectively. What is the probability that there will be  
+         new subjects in the department in year 2025. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>  P(X)  \amp = \frac{4}{9} </mrow>
+            <mrow> P(Y)  \amp = \frac{2}{9} </mrow>
+            <mrow> P(Z)  \amp = \frac{3}{9} = \frac{1}{3}</mrow>
+          </md>
+         Also,
+         <md>
+          <mrow>  P(N|X)  \amp = 0.35 </mrow>
+          <mrow> P(N|Y)  \amp = 0.52 </mrow>
+          <mrow> P(N|Z)  \amp = 0.80 </mrow>
+        </md>
+        </p>
+        <p>
+         Probability that New subject is introduced is
+         <md>
+          <mrow>  P(N)   \amp =  P(X)\times P(N|X)+P(Y)\times P(N|Y)+P(Z)\times P(N|Z)   </mrow>
+          <mrow> \amp  = \frac{4}{9} \times 0.35 +\frac{2}{9}\times 0.52 +\frac{1}{3}\times 0.80 = \frac{4.84}{9}  </mrow>
+         </md>
+          </p>
+             <p>
+              Probability that New subject is introduced because of professor X   
+              <me>
+                P(X|N)  = \frac{P(N|X)P(X)}{P(N)} = \frac{\frac{4}{9} \times 0.35}{\frac{4.84}{9}} = 0.29.
+              </me>
+            </p>
+      </solution>
+    </example>
+
+
+
+    <example>
+      <statement>
+        <p>
+         There are 3 bixes, where Box A contains 1 white, 2 red, and 3 black balls, Box B contains 2 white, 3 red, 
+         and 1 black balls, and Box C contains 3 white, 1 red, and 2 black balls. A box is chosen randomly 
+         and from it two balls are taken at random. These two balls are one red and one white. 
+         Find the probability that these balls are taken from Box A.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>  P(A)  \amp = \frac{1}{3} </mrow>
+            <mrow> P(B)  \amp = \frac{1}{3} </mrow>
+            <mrow> P(C)  \amp = \frac{1}{3}</mrow>
+          </md>
+         Also,
+         <md>
+          <mrow>  P(RW|A)  \amp = \frac{_1C_1\times _2C_1}{_6C_2} = \frac{2}{15}</mrow>
+          <mrow> P(RW|B)  \amp = \frac{_3C_1\times _2C_1}{_6C_2} = \frac{6}{15}</mrow>
+          <mrow> P(RW|C)  \amp = \frac{_3C_1\times _1C_1}{_6C_2} = \frac{3}{15} </mrow>
+        </md>
+        </p>
+        <p>
+         Probability of getting red and white balls
+         <md>
+          <mrow>  P(RW)  \amp  = P(A)\times P(RW|A) +P(B)\times P(RW|B) +P(C)\times P(RW|C)    </mrow>
+          <mrow> \amp = \frac{2}{15} \times \frac{1}{3} +\frac{6}{15} \times \frac{1}{3}+\frac{3}{15} \times \frac{1}{3}  =  \frac{11}{45}  </mrow>
+         </md>
+          </p>
+             <p>
+              Probability these balls are from Box A is  
+              <me>
+                P(A|RW)  = \frac{P(RW|A)P(A)}{P(RW)} = \frac{\frac{2}{15} \times \frac{1}{3}}{\frac{11}{45}} = \frac{2}{11}.
+              </me>
+            </p>
+      </solution>
+    </example>
+
+
+
+
+    <example>
+      <statement>
+        <p>
+        A newly constructed bridge fell down either due to wrong design or by inferior building material used in the construction. 
+        The chance that the design is faulty is <m>10\%</m> and the probability of its collapsing due faulty design is <m>95\%</m> 
+        and due to inferior material is <m>45\%</m>. Find the probability that it was due to faulty design.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <md>
+            <mrow>  P(FD)  \amp = 0.1 </mrow>
+            <mrow> P(IM)  \amp = 1-0.1=0.9 </mrow>
+            </md>
+         Also,
+         <md>
+          <mrow>  P(C|FD)  \amp = 0.95</mrow>
+          <mrow> P(C|IM)  \amp = 0.45</mrow>
+          </md>
+        </p>
+        <p>
+         Probability collapse due to faulty design is
+              <me>
+                P(FD|C)  = \frac{ P(C|FD)P(FD)}{P(C)} = \frac{0.1\times 0.95}{0.1\times 0.95+0.9\times 0.45} = 0.19.
+              </me>
+            </p>
+      </solution>
+    </example>
+
+
 </subsection>
 
 

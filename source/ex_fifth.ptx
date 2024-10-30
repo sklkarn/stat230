@@ -370,7 +370,34 @@
   </solution>
 </exercise>
 
+<exercise>
+  <statement>
+    <p>
+      Bag A contains 3 red and 4 green balls. Bag B co9ntains 4 red and 5 green balls. 
+      One ball is drawn at random from one of the bags and found to be red. What is the probability that the ball was drawn from bag A.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      0.49
+    </p>
+  </answer>
+</exercise>
 
+
+
+<exercise>
+  <statement>
+    <p>
+      A man is known to speak truth 3 out of 4 times. He throws a die and reports that it is a Six. Find the probabilioty that it actually a Six.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      1/3.
+    </p>
+  </answer>
+</exercise>
 </exercises>
 
 
