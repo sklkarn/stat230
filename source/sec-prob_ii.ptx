@@ -5,12 +5,12 @@
 <introduction>
  
   <p> 
-    <ol marker="I">
+    <ol marker="I.">
       <li>
         <p>
           <term>Additional Rule:</term> It is used to calculate the probability that either (or both) of two events will happen. 
          <em> Notation:</em> <m>P(A \cup B), P(A + B), P(A \text{ or } B), P( \text{ either} A \text { or} B), P(\text{ at least } 1).</m>
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 For <term>mutually exclusive</term> (disjoint) events (A) and (B) [events that cannot happen at the same time], 
@@ -46,7 +46,7 @@
         <p>
           <term>Multiplication Rule:</term> It allows us to calculate the joint probability of multiple events 
           occurring together using known probabilities of those events individually. 
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 For <term>Independent events</term> (A) and (B) [events where occurance of one does not affect the other], 

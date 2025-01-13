@@ -47,7 +47,7 @@
           The goal of sampling is to create a sample that is representative of the population it is being drawn from. 
           The size of population is represented using the letter <m>N</m> and the size of sample is represented using the letter <m>n.</m> 
           The most basic sampling methods are: 
-          <ol marker ="I">
+          <ol marker ="I.">
             <li>
               <p>
                 <term>Simple Random Sampling: </term> Every member of the population, <m>N</m> has an equal chance of 
@@ -84,7 +84,7 @@
           Here are some common types of bias in statistics:
         </p>
         <p>
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 <term>Sampling Bias: </term> It occurs when the sample is not representative of the population.

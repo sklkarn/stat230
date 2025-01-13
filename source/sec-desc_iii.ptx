@@ -62,7 +62,7 @@
       <p>
         Absolute measures of dispersion use the original units of data, and are most useful on 
         understanding the dispersion within the context of your experiment and measurements. 
-      <ol marker="i">
+      <ol marker="i.">
         <li>
           <p>
             Range
@@ -96,7 +96,7 @@
       <p>
         In order to compare separate data sets or different experiments that might use different units 
         and the difference in their central values are very high, we use relative measures.
-        <ol marker="i">
+        <ol marker="i.">
           <li>
             <p>
               Coefficient of Range
@@ -877,7 +877,7 @@
     <p>
      Standard deviation is the square root of the variance. It is also called <em>root mean square deviation.</em> 
      Standard deviation, Variance and their coefficients can be calculated using the following formulae: 
-     <ol marker ="i">
+     <ol marker ="i.">
       <li>
         <title>Actual Mean Method</title>       
         <p> For a population standard deviation: 

@@ -7,7 +7,7 @@
     A t-test is used to compare the means of two groups and determine if the differences between them 
     are statistically significant. It's commonly used when dealing with small sample sizes and when 
     the population standard deviation is unknown. There are different types of t-tests, including:
-<ol marker ="i">
+<ol marker ="i.">
   <li>
     <p>
      <alert> One-sample t-test:</alert> Compares the mean of a single group against a known mean (or a hypothesized mean).
@@ -31,7 +31,7 @@
 <subsection xml:id="subsec-t_steps">
   <title>Steps to Perform a t-test</title>
   <p>
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           <alert>Formulate the Hypotheses:</alert> <ul>

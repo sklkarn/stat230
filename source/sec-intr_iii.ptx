@@ -9,7 +9,7 @@
   </p>
   <p>
    There are 4 levels of measurement: 
-   <ol marker ="i">
+   <ol marker ="i.">
     <li>
       <p>
         <term>Nominal:</term> the data can only be categorized. For example: color, gender, preferences, etc.

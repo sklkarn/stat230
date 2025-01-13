@@ -35,7 +35,7 @@
           </p>
           <p>
             Statisctics is divided into two parts: 
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   <term>Descriptive statistics: </term> the collection, analysis, and interpretation of data is done here. 
@@ -73,7 +73,7 @@
             <image source="data.png" width="75%"/>
         </figure>
         <p>
-          <ol marker="i">
+          <ol marker="i.">
             <li>
               <p>
                 <em>Structured:</em> Tables, spreadsheet, data base, etc.
@@ -112,7 +112,7 @@
             Types of Variables:
           </p>
           <p>
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                  <em> Nominal:</em> Gender, race, colors, etc.
@@ -159,7 +159,7 @@
           </p>
           <p>
             <term>Sampling Techniques:</term> 
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   Random sampling:
@@ -192,7 +192,7 @@
             Statistical data analysis steps:
           </p>
           <p>
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   Define the problem or research question.

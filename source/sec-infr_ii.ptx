@@ -20,7 +20,7 @@
    </p>
     <p>
      <term> Types of Z-tests:</term> 
-     <ol marker ="i">
+     <ol marker ="i.">
       <li>
         <p>
           One-Sample z-test: Tests whether the mean of a single sample is different from a known population mean.
@@ -48,7 +48,7 @@
             </p>
             <p>
               <term>Steps:</term> 
-              <ol marker ="a">
+              <ol marker ="a.">
                 <li>
                   <p>
                     State the hypotheses.  
@@ -113,7 +113,7 @@
         </p>
         <p>
           <term>Steps:</term> 
-          <ol marker ="a">
+          <ol marker ="a.">
             <li>
               <p>
                 State the hypotheses.  
@@ -343,7 +343,7 @@
         The average height of all residents in a city is 168 cm with a population standard deviation, <m>\sigma =3.9.</m> 
         A doctor believe that the mean to be different. He measure the height of 36 individual and found the average to be 
         169.5 cm. 
-        <ol marker ="a">
+        <ol marker ="a.">
           <li>
             <p>
               State null and alternative hypothesis.

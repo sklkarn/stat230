@@ -4,7 +4,10 @@
   <title>Descriptive Statistics</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Descriptive statistics summarize and describe the key features of a dataset. 
+    These statistics provide a way to organize, visualize, and simplify large amounts of data to make 
+    it easier to understand. Here are some key features of descriptive statistics.
+    </p>
     <p>
       <ol>
         <li>

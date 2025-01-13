@@ -18,7 +18,7 @@
         <li>
           <p>
             Quantitative (numerical) variables:
-            <ol marker="i">
+            <ol marker="i.">
               <li>
                 <p>
                   Discrete variables: countable or finite number of values. For example: number of children in a household.
@@ -41,20 +41,24 @@
       </ol>
     </p>
     <p>
-      <term>Independent and dependent variables: </term> To test cause-and-effect relationships 
-      there are two kinds of variables based on whether to manipulate or measure. Imagine that researchers 
+      <term> Explanatory (Independent) and Response (Ddependent) variables: </term> 
+      In statistics, explanatory variables and response variables are used to describe relationships between variables 
+      in a dataset. It measures the cause and effect of data. Imagine that researchers 
       want to test the effectiveness of a new weight loss medication. They split participants into three groups: 
-      one group gets 0 mg dosage (control), another gets a 50 mg dosage, and the last group gets a 100 mg dosage. After six months, the participants weights are measured.
+      one group gets <m>0</m> mg dosage (control), another gets a <m>50</m> mg dosage, and the last group gets a <m>100</m> mg dosage. 
+      After six months, the participants weights are measured.
     </p>
     <p>
-      The independent variable is the cause. Its value is independent of other variables in your study. It can be manipulated. For example: doses.
-       </p>
+      The independent variable is the cause. It explains, predicts, or influences changes in another variable. 
+      Its value is independent of other variables in the study. For example: doses. It can be manipulated. 
+             </p>
        <p>
-        The dependent variable is the effect. Its value depends on changes in the independent variable. It can be measured. For example: weight.
+        The dependent variable is the effect. It responds to or depends on changes in the explanatory variable. 
+        Its value depends on changes in the independent variable. For example: weight. It can be measured.
        </p>
     
-       <p>
-    
+       <p> In a study investigating the relationship between hours of study and test scores: Hours of study is an Explanatory Variable and 
+     Test scores is a Response Variable.
        </p>
      </introduction>  
    

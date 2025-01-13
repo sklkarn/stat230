@@ -64,7 +64,7 @@
             e.g. <m>E = \{1,3,5\}</m>
            </p>
            <p>
-            <ol marker ="I">
+            <ol marker ="I.">
               <li>
                 <p>
                   <alert>Null Event: </alert> It has no outcome, or no element in it. For example suppose a sample space 
@@ -194,7 +194,7 @@
         A coin is tossed, if it shows head then toss it again, otherwise throw a dice. Here, 
         </p>
         <p> 
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               <m>E_1</m> = getting two heads.
@@ -224,7 +224,7 @@
         has total outcomes = 8, but each outcome has different probability, i.e., they are not equally likely.
       </p>
       <p>
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               <me>
@@ -250,7 +250,7 @@
       </p>
       <p>
         The probability of event <m>E_1</m> is given by 
-        <ol marker ="i">
+        <ol marker ="i.">
           <li>
             <p>
               <me>
@@ -286,7 +286,7 @@
   
   <p>
     <term>Important Note: </term> 
-    <ol marker ="i">
+    <ol marker ="i.">
       <li>
         <p>
           Sum of probabilities of each sample point = 1.
