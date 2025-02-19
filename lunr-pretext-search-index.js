@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Correlation Coeffient, r",
-  "body": " Correlation Coeffient, r   Correlation analysis deals with association between two or more variables. The degree of relationship between the variables under consideration is measured through the correlation analysis. The measure of correlatoin called the 'correlation coefficient' or 'correlation index'. Correlation coefficient, lies between -1 and +1. If , the correlation is strong negative (i.e., if one variable is increasing then the second variable must be decreasing), if then there is no correlation, and if then correlation is stron positive (i.e., if one variable is increasing then the second variable must also be increasing or vice a versa). For example: height and weight of infent kids are strongly positve correlation. Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.  There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson's product moment method: here, is number of pair of observations.    Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.      Linear Regression  Linear regression shows the relation between two variables. The least square regression line is given by where Where is the sum of cross-deviations of y and x and is the squared-deviations of x. Or, Here is sample standard deviation of y and is sample standard deviation of x. And    "
+  "body": " Correlation Coeffient, r   Correlation analysis deals with association between two or more variables. The degree of relationship between the variables under consideration is measured through the correlation analysis. The measure of correlatoin called the 'correlation coefficient' or 'correlation index'. Correlation coefficient, lies between -1 and +1. If , the correlation is strong negative (i.e., if one variable is increasing then the second variable must be decreasing), if then there is no correlation, and if then correlation is stron positive (i.e., if one variable is increasing then the second variable must also be increasing or vice a versa). For example: height and weight of infent kids are strongly positve correlation. Price and demand are strongly negative correlation. The size of shoe and salary has no correlation.  There are many ways to determine correlation coefficient but here we are discussing only Karl Pearson's product moment method: here, is number of pair of observations. The critical value of on the basis of number of observation is given in . This value will help to determine how strong is correlation.    Find the correlation coefficient of the following data.      Now, using  Hence, the correlation is strong positive.      Linear Regression  Linear regression shows the relation between two variables. The least square regression line is given by where Where is the sum of cross-deviations of y and x and is the squared-deviations of x. Or, Here is sample standard deviation of y and is sample standard deviation of x. And    "
 },
 {
   "id": "sec-desc_vii-2-3",
@@ -1554,8 +1554,8 @@ var ptx_lunr_docs = [
   "url": "append_z-tab.html",
   "type": "Appendix",
   "number": "B",
-  "title": "z-table",
-  "body": " z-table  Standard Normal Distribution: Area under the curve to the Left of the Z score.   Std. Normal Prob.        Std. Normal Prob.       "
+  "title": ": z-table",
+  "body": " : z-table  Standard Normal Distribution: Area under the curve to the Left of the Z score.   Std. Normal Prob.        Std. Normal Prob.       "
 },
 {
   "id": "append_z-tab-3",
@@ -1576,9 +1576,18 @@ var ptx_lunr_docs = [
   "body": " Std. Normal Prob.   "
 },
 {
-  "id": "backmatter-4",
+  "id": "append_r-tab",
   "level": "1",
-  "url": "backmatter-4.html",
+  "url": "append_r-tab.html",
+  "type": "Appendix",
+  "number": "C",
+  "title": ": Pearson Correlation Coeffcient, r",
+  "body": " : Pearson Correlation Coeffcient, r     "
+},
+{
+  "id": "backmatter-5",
+  "level": "1",
+  "url": "backmatter-5.html",
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
