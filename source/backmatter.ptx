@@ -15,7 +15,8 @@
   <appendix> <title>List of Symbols</title> <notation-list/> </appendix> 
   
      <appendix xml:id="append_z-tab">
-        <title>z-table </title>
+        
+        <title>: z-table </title>
          <p>
           Standard Normal Distribution: Area under the curve to the Left of the Z score.
          </p>
@@ -114,6 +115,41 @@
     </me>
   </p>
 
+ </appendix> 
+
+ <appendix xml:id="append_r-tab">
+        
+        <title>: Pearson Correlation Coeffcient, r</title>
+        <p>        
+         <me>
+      \begin{array}{c|c c } 
+      \text{ Degree of Freedom,} &amp; \text{ Significance level,} (\alpha) \text{ for one-tailed test} &amp;   &amp;  \\ 
+       df= n-2  &amp; 0.05  &amp; 0.025 \\ \hline
+       &amp; \text{ Significance level,} (\alpha) \text{ for two-tailed test} &amp;   &amp;  \\ 
+        &amp; 0.10  &amp; 0.05    \\ \hline
+        1 &amp; 0.988  &amp; 0.997    \\ 
+        2 &amp; 0.900  &amp; 0.950    \\ 
+        3 &amp; 0.805  &amp; 0.878    \\ 
+        4 &amp; 0.729  &amp; 0.811    \\ 
+        5 &amp; 0.669  &amp; 0.754    \\ 
+        6 &amp; 0.622  &amp; 0.707    \\ 
+        7 &amp; 0.582  &amp; 0.666    \\ 
+        8 &amp; 0.549  &amp; 0.632    \\ 
+        9 &amp; 0.521  &amp; 0.602    \\ 
+        10 &amp; 0.497  &amp; 0.576    \\ 
+        20 &amp; 0.360  &amp; 0.423    \\ 
+        30 &amp; 0.296  &amp; 0.349    \\ 
+        40 &amp; 0.257  &amp; 0.304    \\ 
+        50 &amp; 0.231  &amp; 0.273    \\ 
+        60 &amp; 0.211  &amp; 0.250    \\ 
+        70 &amp; 0.195  &amp; 0.232    \\ 
+        80 &amp; 0.183  &amp; 0.217    \\ 
+        90 &amp; 0.173  &amp; 0.205    \\ 
+        100 &amp; 0.164  &amp; 0.195    \\ 
+        \infty &amp; 0.073  &amp; 0.087   \\ 
+        \end{array}
+    </me>
+  </p>
       </appendix> 
 
 
