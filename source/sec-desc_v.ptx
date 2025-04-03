@@ -27,7 +27,7 @@
   Since many real processes yield distributions with finite variance, this 
  theorem has a wide range of application in sampling theory and other areas of statistics.
   If <m>x_i (i=1, 2, 3, \cdots, n) </m> be independently distributed random variables such that <m>E(x_i) = \mu_i</m> 
-  and <m>var(x_i)=\sigma_i^2</m> then as <m>n\to \infty</m>, the distribution of the sum of these random variables, namely 
+  and <m>\var(x_i)=\sigma_i^2</m> then as <m>n\to \infty</m>, the distribution of the sum of these random variables, namely 
   <me>
     S_n = x_1 + x_2 + x_3 + \cdots + x_n
   </me>
@@ -79,16 +79,16 @@
         <p>
           Using z-table, we have 
           <me>
-            z_{value(3.25)} = 0.994
+            z_{value(3.25)} = 0.9940
           </me>
-          Hence, area under the curve from center = 0.994-0.5 = 0.494. Also, 
+          Hence, area under the curve to the left = 0.994. Also, 
           <me>
-            z_{value(-0.5)} = 0.6915
+            z_{value(-0.5)} = 0.3085
           </me>
-          Hence, area under the curve from center = 0.6915-0.5 = 0.1915.
-          Adding these two values we get 
+          Hence, area under the curve to the left = 0.3085.
+          Subtracting these two values, we get 
           <me>
-            P(10\lt \bar{x}\lt 25) = 0.494+0.1915 = 0.6855 = 68.5\%.
+            P(10\lt \bar{x}\lt 25) = 0.9940 -0.3085 = 0.6855 = 68.55\%.
           </me>
            </p>
 
@@ -106,7 +106,7 @@
         <p>
           Let <m>x:</m> number of heads, 
           <me>
-            p(x) = \frac{1}{2}
+            p(h) = \frac{1}{2}
           </me>
           Discrete binomial distribution.
           Since the sample size, <m>n=200</m> is very large, we can apply CLT. From binomial distribution approximation, we have - 
@@ -115,16 +115,16 @@
         </p>
         <p>
           Now,  <me>
-            z_{score} = \frac{x-\mu}{\sqrt{\sigma}} = \frac{x-100}{\sqrt{50}}
+            z_{score} = \frac{x-\mu}{\sigma} = \frac{x-100}{\sqrt{50}}
           </me>
           Hence, 
           <me>
             z_{80} = \frac{80-100}{\sqrt{50}} = -2.82
           </me>
           and  <me>
-            z_{80} = \frac{120-100}{\sqrt{50}} = 2.82
+            z_{120} = \frac{120-100}{\sqrt{50}} = 2.82
           </me>
-          Therefore the required probability = 
+          Therefore, the required probability = 
           <me>
             P(80\lt x \lt 120) = P(-2.82 \lt z \lt 2.82)
           </me>
@@ -140,11 +140,11 @@
           </me>
         Therefore, 
           <me>
-            P(z \gt -2.82)= 0.5-0.0024 =0.4976
+            P(z_{2.82})= 0.9976
           </me>
           Hence, 
           <me>
-            P(-2.82 \lt z \lt 2.82) =0.4976+0.4976 = 0.9952
+            P(-2.82 \lt z \lt 2.82) = 0.9952
           </me>
           
         </p>
