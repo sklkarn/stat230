@@ -553,7 +553,7 @@ window.MathJax = {
 <figure class="figure figure-like" id="sec-desc_v-4"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/pop_dist.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.1.1<span class="period">.</span></span><span class="space"> </span>clt</figcaption></figure><div class="para" id="sec-desc_v-5">According to CLT normal distribution is the limiting distribution to the sum of independent random variables with finite variance as the number of random variables get indefinitely large.</div>
 <div class="para logical" id="sec-desc_v-6">
-<div class="para">Since many real processes yield distributions with finite variance, this theorem has a wide range of application in sampling theory and other areas of statistics. If <span class="process-math">\(x_i (i=1, 2, 3, \cdots, n) \)</span> be independently distributed random variables such that <span class="process-math">\(E(x_i) = \mu_i\)</span> and <span class="process-math">\(var(x_i)=\sigma_i^2\)</span> then as <span class="process-math">\(n\to \infty\text{,}\)</span> the distribution of the sum of these random variables, namely</div>
+<div class="para">Since many real processes yield distributions with finite variance, this theorem has a wide range of application in sampling theory and other areas of statistics. If <span class="process-math">\(x_i (i=1, 2, 3, \cdots, n) \)</span> be independently distributed random variables such that <span class="process-math">\(E(x_i) = \mu_i\)</span> and <span class="process-math">\(\var(x_i)=\sigma_i^2\)</span> then as <span class="process-math">\(n\to \infty\text{,}\)</span> the distribution of the sum of these random variables, namely</div>
 <div class="displaymath process-math">
 \begin{equation*}
 S_n = x_1 + x_2 + x_3 + \cdots + x_n
@@ -611,19 +611,19 @@ z_{10} =\frac{10-12}{4} = -2/4=-0.5.
 <div class="para">Using z-table, we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-z_{value(3.25)} = 0.994
+z_{value(3.25)} = 0.9940
 \end{equation*}
 </div>
-<div class="para">Hence, area under the curve from center = 0.994-0.5 = 0.494. Also,</div>
+<div class="para">Hence, area under the curve to the left = 0.994. Also,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-z_{value(-0.5)} = 0.6915
+z_{value(-0.5)} = 0.3085
 \end{equation*}
 </div>
-<div class="para">Hence, area under the curve from center = 0.6915-0.5 = 0.1915. Adding these two values we get</div>
+<div class="para">Hence, area under the curve to the left = 0.3085. Subtracting these two values, we get</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(10\lt \bar{x}\lt 25) = 0.494+0.1915 = 0.6855 = 68.5\%.
+P(10\lt \bar{x}\lt 25) = 0.9940 -0.3085 = 0.6855 = 68.55\%.
 \end{equation*}
 </div>
 </div>
@@ -635,7 +635,7 @@ P(10\lt \bar{x}\lt 25) = 0.494+0.1915 = 0.6855 = 68.5\%.
 <div class="para">Let <span class="process-math">\(x:\)</span> number of heads,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-p(x) = \frac{1}{2}
+p(h) = \frac{1}{2}
 \end{equation*}
 </div>
 <div class="para">Discrete binomial distribution. Since the sample size, <span class="process-math">\(n=200\)</span> is very large, we can apply CLT. From binomial distribution approximation, we have - mean, <span class="process-math">\(\mu =np=200 \times  \frac{1}{2} = 100\)</span> and variance, <span class="process-math">\(\sigma^2 = npq = 200\times  \frac{1}{2} \times  \frac{1}{2} = 50.\)</span> here <span class="process-math">\(q=1-p\text{.}\)</span> Now  <span class="process-math">\(P(80\lt x \lt 120)=?\)</span>
@@ -645,7 +645,7 @@ p(x) = \frac{1}{2}
 <div class="para">Now,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-z_{score} = \frac{x-\mu}{\sqrt{\sigma}} = \frac{x-100}{\sqrt{50}}
+z_{score} = \frac{x-\mu}{\sigma} = \frac{x-100}{\sqrt{50}}
 \end{equation*}
 </div>
 <div class="para">Hence,</div>
@@ -657,10 +657,10 @@ z_{80} = \frac{80-100}{\sqrt{50}} = -2.82
 <div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-z_{80} = \frac{120-100}{\sqrt{50}} = 2.82
+z_{120} = \frac{120-100}{\sqrt{50}} = 2.82
 \end{equation*}
 </div>
-<div class="para">Therefore the required probability =</div>
+<div class="para">Therefore, the required probability =</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P(80\lt x \lt 120) = P(-2.82 \lt z \lt 2.82)
@@ -678,13 +678,13 @@ P(z_{-2.82})= 0.0024
 <div class="para">Therefore,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(z \gt -2.82)= 0.5-0.0024 =0.4976
+P(z_{2.82})= 0.9976
 \end{equation*}
 </div>
 <div class="para">Hence,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(-2.82 \lt z \lt 2.82) =0.4976+0.4976 = 0.9952
+P(-2.82 \lt z \lt 2.82) = 0.9952
 \end{equation*}
 </div>
 </div>
